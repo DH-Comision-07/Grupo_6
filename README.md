@@ -20,6 +20,6 @@ Mi nombre es Leylén Ramirez, tengo 19 años y me gusta coser y tejer, así como
 ### ANDRES
 
 ### NICOLAS
-
+Mi nombre es Miguel Nicolas Gonzalez, tengo 27 años y soy de Colonia del Sacramento, Uruguay. Actualmente me dedico en la rama metalurgica. Siempre quise comenzar con el tema de la programacion y por una recomendacion comence con el curso en Digital House.
 ### RODRIGO
 
