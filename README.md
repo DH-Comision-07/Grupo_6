@@ -15,7 +15,7 @@ Estas son algunas de las páginas de las que vamos a estar tomando inspiración 
 Mi nombre es Leylén Ramirez, tengo 19 años y me gusta coser y tejer, así como el modelado 3D y el desarrollo de videojuegos. Hice un curso de Diseño UX con Digital House y tengo algo de experiencia en programación, principalmente Python y C, así como conocimientos de HTML y CSS. 
 ### GONZALO
 
-### ANITA
+### JUANITA
 
 ### ANDRES
 
