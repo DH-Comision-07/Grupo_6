@@ -1,7 +1,8 @@
 # Grupo_6
 Las mujeres son inspiración. En esta colección virtual nuestra mujer va a encontrar el espacio para expresar su individualidad y lucir su elegancia en momentos únicos.
 
-Links de paginas de inspiracion: 
+### Inspiracion: 
+
 https://www2.hm.com/es_es/index.html (Muy buena la imagen con el cartelito de precio sobre el producto)
 
 https://www.bas.com.uy/ 
@@ -12,12 +13,15 @@ https://www.levi.com.ar/
 
 https://kingofthekongo.com.ar/ (carrito de compras)
 
+### NOSOTROS:
+
 GONZALO
+Hola! Soy Gonzalo Rosofsky, tengo 29 años y vivo en la ciudad de La plata, Argentina. Recientemente comencé mi carrera como desarrollador web fullstack. Antes de eso tuve trabajos principalmente en ventas, atención al cliente y ultimamente como sushiman en Mallorca (España).
 
 JUANITA
 
 ANDRES
-Mi nombre es Andres eduardo David Colina, tengo 17 años de edad me Encanta el baloncesto y los videojuegos, vivo en Medellin colombia , ya estoy egresado del Bachillerato desde el año pasado y espero entrar en la universidad he iniciar mi carrera en ingeniería en sistemas
+Mi nombre es Andres eduardo David Colina, tengo 17 años de edad me Encanta el baloncesto y los videojuegos, vivo en Medellin, Colombia , ya estoy egresado del Bachillerato desde el año pasado y espero entrar en la universidad he iniciar mi carrera en ingeniería en sistemas
 
 NICOLAS
 Mi nombre es Miguel Nicolas Gonzalez, tengo 27 años y soy de Colonia del Sacramento, Uruguay. Actualmente me dedico en la rama metalurgica. Siempre quise comenzar con el tema de la programacion y por una recomendacion comence con el curso en Digital House.
