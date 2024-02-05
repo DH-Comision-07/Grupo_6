@@ -13,8 +13,12 @@ https://www.levi.com.ar/
 https://kingofthekongo.com.ar/ (carrito de compras)
 
 GONZALO
+
 JUANITA
+
 ANDRES
+Mi nombre es Andres eduardo David Colina, tengo 17 años de edad me Encanta el baloncesto y los videojuegos, vivo en Medellin colombia , ya estoy egresado del Bachillerato desde el año pasado y espero entrar en la universidad he iniciar mi carrera en ingeniería en sistemas
+
 NICOLAS
 Mi nombre es Miguel Nicolas Gonzalez, tengo 27 años y soy de Colonia del Sacramento, Uruguay. Actualmente me dedico en la rama metalurgica. Siempre quise comenzar con el tema de la programacion y por una recomendacion comence con el curso en Digital House.
 
