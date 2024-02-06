@@ -16,7 +16,7 @@ Mi nombre es Leylén Ramirez, tengo 19 años y me gusta coser y tejer, así como
 ### GONZALO
 
 ### JUANITA
-
+Soy Juanita, tengo 19 años y siempre me ha encantado explorar mi creatividad. Me apasionan las matemáticas y, últimamente, decidí embarcarme en un curso de programación. Aunque estoy comenzando y no tengo muchos conocimientos previos, estoy emocionada por aprender y aplicar mis habilidades en este nuevo mundo. 
 ### ANDRES
 
 ### NICOLAS
