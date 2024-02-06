@@ -1,5 +1,8 @@
 # Grupo_6
-Las mujeres son inspiración. En esta colección virtual nuestra mujer va a encontrar el espacio para expresar su individualidad y lucir su elegancia en momentos únicos.
+
+## Acerca de nosotros:
+
+ Somos un e-commerce dedicado a la venta de indumentaria femenina. Le acercamos la posibilidad a nuestros clientes a lo largo de todo el pais de expresarse a si mismos a traves de la moda y el diseño mientras lo hacemos de una manera sustentable.
 
 ### Inspiracion: 
 
@@ -13,7 +16,7 @@ https://www.levi.com.ar/
 
 https://kingofthekongo.com.ar/ (carrito de compras)
 
-### NOSOTROS:
+### Nuestro equipo:
 
 GONZALO
 Hola! Soy Gonzalo Rosofsky, tengo 29 años y vivo en la ciudad de La plata, Argentina. Recientemente comencé mi carrera como desarrollador web fullstack. Antes de eso tuve trabajos principalmente en ventas, atención al cliente y ultimamente como sushiman en Mallorca (España).
