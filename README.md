@@ -27,7 +27,7 @@ Soy Juanita, tengo 19 años y siempre me ha encantado explorar mi creatividad. M
 ANDRES
 Mi nombre es Andres eduardo David Colina, tengo 17 años de edad me Encanta el baloncesto y los videojuegos, vivo en Medellin, Colombia , ya estoy egresado del Bachillerato desde el año pasado y espero entrar en la universidad he iniciar mi carrera en ingeniería en sistemas
 
-NICOLAS
+MIGUEL
 Mi nombre es Miguel Nicolas Gonzalez, tengo 27 años y soy de Colonia del Sacramento, Uruguay. Actualmente me dedico en la rama metalurgica. Siempre quise comenzar con el tema de la programacion y por una recomendacion comence con el curso en Digital House.
 
 LEYLEN RAMIREZ
