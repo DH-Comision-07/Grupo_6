@@ -6,10 +6,10 @@
 
 ## INSPIRACION
 Estas son algunas de las páginas de las que vamos a estar tomando inspiración a lo largo del proyecto:
-- [KING OF THE KONGO](https://kingofthekongo.com.ar/): llamativa, estilizada y a la moda.
-- [H&M ESPAÑA](https://www2.hm.com/es_es/index.html): sencilla y efectiva.
-- [LEVI](https://www.levi.com.ar/): compacta y detallda.
-- [BAS](https://www.bas.com.uy/): minimalista.
+- [KING OF THE KONGO](https://kingofthekongo.com.ar/)
+- [H&M ESPAÑA](https://www2.hm.com/es_es/index.html)
+- [LEVI](https://www.levi.com.ar/)
+- [BAS](https://www.bas.com.uy/)
 - [GAP](https://www.gap.com)
 
 ## NUESTRO EQUIPO:
