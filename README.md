@@ -1,4 +1,4 @@
-# Grupo_6
+# Grupo 6: "D&H"
 
 ## ACERCA DE NOSOTROS:
 
