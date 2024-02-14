@@ -1,0 +1,47 @@
+:root {
+  /*usar siempre variables para asignar colores a elementos*/
+  --color-gris: #42312f;
+  --color-negro: #261e1d;
+  --color-verde-oscuro: #1f2f23;
+  --color-verde-claro: #515c41;
+  --color-celeste-oscuro: #9caca2;
+  --color-celeste-claro: #a3bbbc;
+  --color-marron-claro: #c7a88c; 
+  --color-crema-oscuro: #e2ccb8;
+  --color-crema-claro: #f4e5d9;
+  --color-blanco: #ffffff;
+}
+
+/* usar BEM para nombrar clases */
+/* mantener clases ordenadas segn aparecen en la pagna*/
+
+/* header */
+  
+
+
+ /* banner de texto negro */
+ 
+
+
+/* carusel de imagen con texto */
+  
+
+
+/* on sale slider */
+  
+
+
+/* banner estatico */
+ 
+
+
+/* ultimos lanzamiento slider */
+ 
+
+
+/* subscribite a nuesto newsletter */
+  
+
+
+/* footer contacto */
+
