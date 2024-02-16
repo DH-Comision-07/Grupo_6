@@ -4,6 +4,7 @@
   --color-negro: #261e1d;
   --color-verde-oscuro: #1f2f23;
   --color-verde-claro: #515c41;
+  --color-rojo: rgb(180, 20, 20);
   --color-celeste-oscuro: #9caca2;
   --color-celeste-claro: #a3bbbc;
   --color-marron-claro: #c7a88c; 
@@ -17,6 +18,7 @@
   box-sizing: border-box;
   /* fuente de repuesto */
   font-family: Helvetica, sans-serif;
+  color: var(--color-negro);
 }
 
 /* usar BEM para nombrar clases */
@@ -41,6 +43,7 @@
   font-weight: bolder;
   text-align: center;
   margin: 10px 0;
+  color: var(--color-verde-oscuro)
 }
 .thumbnail-slider {
   display: flex;
@@ -64,10 +67,12 @@
   left: 5px;
   font-family: "Poiret One";
   font-weight: bolder;
+  color: var(--color-rojo);
 }
 .articulo__nombre {
   font-size: 1em;
   font-weight: normal;
+  color: var(--color-verde-claro)
 }
 .articulo__precio-actual {
   font-size: 1.1rem;
@@ -78,6 +83,7 @@
   font-size: 0.9rem;
   text-decoration: line-through;
   display: inline;
+  color: var(--color-celeste-oscuro);
 }
 
 
