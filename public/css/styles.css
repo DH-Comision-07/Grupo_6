@@ -29,6 +29,37 @@
 
 /* on sale slider */
   
+.thumbnail-slider {
+  display: flex;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.slider__articulo {
+  min-width: 150px;
+  margin: 0 5px;
+}
+.articulo__thumbnail {
+  position: relative;
+}
+.thumbnail__imagen {
+  width: 100%;
+}
+.thumbnail__descuento {
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  font-weight: bold;
+}
+.articulo__precio-actual {
+  font-size: 1.1rem;
+  display: inline;
+}
+.articulo__precio-original {
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  display: inline;
+}
 
 
 /* banner estatico */
