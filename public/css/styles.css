@@ -16,7 +16,7 @@
   padding: 0;
   box-sizing: border-box;
   /* fuente de repuesto */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
 
 /* usar BEM para nombrar clases */
@@ -35,7 +35,13 @@
 
 
 /* on sale slider */
-  
+
+.cabecera-de-seccion {
+  font-family: "Poiret One";
+  font-weight: bolder;
+  text-align: center;
+  margin: 10px 0;
+}
 .thumbnail-slider {
   display: flex;
   overflow: scroll;
@@ -56,11 +62,17 @@
   position: absolute;
   bottom: 10px;
   left: 5px;
-  font-weight: bold;
+  font-family: "Poiret One";
+  font-weight: bolder;
+}
+.articulo__nombre {
+  font-size: 1em;
+  font-weight: normal;
 }
 .articulo__precio-actual {
   font-size: 1.1rem;
   display: inline;
+  font-weight: bold;
 }
 .articulo__precio-original {
   font-size: 0.9rem;
