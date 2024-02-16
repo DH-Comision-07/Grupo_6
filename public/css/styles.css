@@ -11,6 +11,13 @@
   --color-crema-claro: #f4e5d9;
   --color-blanco: #ffffff;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* fuente de repuesto */
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 /* usar BEM para nombrar clases */
 /* mantener clases ordenadas segn aparecen en la pagna*/
