@@ -70,24 +70,25 @@
   position: absolute;
   bottom: 10px;
   left: 5px;
-  font-family: "Poiret One";
+  font-family: "Vonique";
   font-weight: bolder;
   color: var(--color-rojo);
 }
 .articulo__nombre {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: normal;
-  color: var(--color-verde-claro)
+  color: var(--color-verde-claro);
+  margin-bottom: 10px;
 }
 .articulo__precio-actual {
-  font-size: 1.1rem;
-  display: inline;
+  font-size: 1.2rem;
+  /* display: inline; */
   font-weight: bold;
 }
 .articulo__precio-original {
   font-size: 0.9rem;
   text-decoration: line-through;
-  display: inline;
+  /* display: inline; */
   color: var(--color-celeste-oscuro);
 }
 
