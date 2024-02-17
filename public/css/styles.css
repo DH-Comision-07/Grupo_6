@@ -44,9 +44,11 @@
 /* on sale slider */
 
 .cabecera-de-seccion {
-  font-family: Vonique;
-  font-weight: bolder;
+  /* font-family: Vonique; */
+  font-family: "Sulphur Point";
+  font-weight: bold;
   text-align: center;
+  font-size: 2em;
   margin: 40px 0 10px 0;
   color: var(--color-verde-oscuro)
 }
@@ -64,15 +66,20 @@
 }
 .thumbnail__imagen {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 .thumbnail__descuento {
-  font-size: 1.2em;
+  font-size: 1em;
   position: absolute;
   bottom: 10px;
-  left: 5px;
-  font-family: "Vonique";
-  font-weight: bolder;
+  left: 6px;
+  /* font-family: "Vonique"; */
+  font-family: "Sulphur Point";
+  font-weight: bold;
   color: var(--color-rojo);
+  background-color: var(--color-blanco);
+  padding: 0 3px;
 }
 .articulo__nombre {
   font-size: 1.2em;
@@ -113,7 +120,7 @@
 /* seguir manteniendo en orden */
 @media (min-width: 768px){           /* TABLET */
   .cabecera-de-seccion {
-    font-size: 2.2em;
+    font-size: 2.5em;
   }
   .slider__articulo {
     min-width: 23%;
