@@ -52,9 +52,38 @@
  
 
 
-/* subscribite a nuesto newsletter */
-  
-
+/* newsletter */
+.newsletter {
+  background-color: var(--color-celeste-claro);
+  text-align: center;
+  padding: 20px 10%;
+}
+.newsletter__titulo {
+  color: var(--color-blanco);
+  font-family: "Sulphur Point";
+  font-size: 2em;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.newsletter__texto {
+  color: var(--color-blanco);
+}
+.newsletter__email {
+  width: 80%;
+  height: 40px;
+  margin: 10px 0;
+  border: none;
+  padding: 10px;
+  color: var(--color-gris);
+  max-width: 70%;
+}
+.newsletter__boton-enviar {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  margin: 0;
+  border: none;
+}
 
 /* footer contacto */
 
