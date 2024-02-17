@@ -111,12 +111,18 @@
 
 /* MEDIA QUERIES */
 /* seguir manteniendo en orden */
-@media (min-width: 768px){     /* TABLET */
-  
+@media (min-width: 768px){           /* TABLET */
+  .cabecera-de-seccion {
+    font-size: 2.2em;
+  }
   .slider__articulo {
     min-width: 23%;
     margin: 0 1%;
   }
+  .thumbnail__descuento{
+    font-size: 1.6em;
+  }
 }
-@media (min-width: 1200px){    /* DESKTOP */
+@media (min-width: 1200px){         /* DESKTOP */
+  /* TODO: anadir funcionalidad para carrousel en desktop con js */
 }   
