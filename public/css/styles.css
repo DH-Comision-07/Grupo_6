@@ -56,8 +56,8 @@
   scrollbar-width: none;
 }
 .slider__articulo {
-  min-width: 150px;
-  margin: 0 5px;
+  min-width: 30%;
+  margin: 0 1.6%;
 }
 .articulo__thumbnail {
   position: relative;
@@ -107,3 +107,16 @@
 
 /* footer contacto */
 
+
+
+/* MEDIA QUERIES */
+/* seguir manteniendo en orden */
+@media (min-width: 768px){     /* TABLET */
+  
+  .slider__articulo {
+    min-width: 23%;
+    margin: 0 1%;
+  }
+}
+@media (min-width: 1200px){    /* DESKTOP */
+}   
