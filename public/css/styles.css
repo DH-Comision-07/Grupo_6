@@ -83,6 +83,7 @@
   vertical-align: middle;
   margin: 0;
   border: none;
+  background-color: var(--color-blanco);
 }
 
 /* footer contacto */
