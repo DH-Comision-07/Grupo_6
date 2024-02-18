@@ -4,6 +4,7 @@
   --color-negro: #261e1d;
   --color-verde-oscuro: #1f2f23;
   --color-verde-claro: #515c41;
+  --color-rojo: rgb(180, 20, 20);
   --color-celeste-oscuro: #9caca2;
   --color-celeste-claro: #a3bbbc;
   --color-marron-claro: #c7a88c; 
@@ -11,6 +12,19 @@
   --color-crema-claro: #f4e5d9;
   --color-blanco: #ffffff;
 }
+@font-face {
+  font-family: Vonique;
+  src: url("/fonts/vonique.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* fuente de repuesto */
+  font-family: Helvetica, sans-serif;
+  color: var(--color-negro);
+}
+
 
 /* usar BEM para nombrar clases */
 /* mantener clases ordenadas segn aparecen en la pagna*/
@@ -28,7 +42,6 @@
 
 
 /* on sale slider */
-  
 
 
 /* banner estatico */
@@ -39,9 +52,47 @@
  
 
 
-/* subscribite a nuesto newsletter */
-  
-
+/* newsletter */
+.newsletter {
+  background-color: var(--color-celeste-claro);
+  text-align: center;
+  padding: 20px 10%;
+}
+.newsletter__titulo {
+  color: var(--color-blanco);
+  font-family: "Sulphur Point";
+  font-size: 2em;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.newsletter__texto {
+  color: var(--color-blanco);
+}
+.newsletter__email {
+  width: 80%;
+  height: 40px;
+  margin: 10px 0;
+  border: none;
+  padding: 10px;
+  color: var(--color-gris);
+  max-width: 70%;
+}
+.newsletter__boton-enviar {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  margin: 0;
+  border: none;
+  background-color: var(--color-blanco);
+}
 
 /* footer contacto */
 
+
+
+/* MEDIA QUERIES */
+/* seguir manteniendo en orden */
+@media (min-width: 768px){           /* TABLET */
+}
+@media (min-width: 1200px){         /* DESKTOP */
+}   
