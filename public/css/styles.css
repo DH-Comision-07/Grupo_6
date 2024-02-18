@@ -30,8 +30,42 @@
 /* mantener clases ordenadas segn aparecen en la pagna*/
 
 /* header */
-  
 
+.header{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+.header-logo{
+  flex-grow: 0.2;
+}
+
+.header-shipping{
+  font-size: 1em;
+  padding: 10px;
+  border: 1px solid #515c41;
+  color: #515c41;
+  border-radius: 50px;
+  margin:15px;
+}
+
+.header-shipping i{
+  color: #515c41;
+} 
+
+.header-paymentsafe{
+  font-size: 1em;
+  padding: 10px;
+  border: 1px solid #c7a88c;
+  color: #c7a88c;
+  border-radius: 50px;
+  margin:15px;
+}
+
+.header-paymentsafe i{
+  color: #c7a88c;
+ }
 
  /* banner de texto negro */
  
