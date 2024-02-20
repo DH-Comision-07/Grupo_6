@@ -170,7 +170,29 @@
 }
 
 /* footer contacto */
-
+.footer {
+  background-color: var(--color-verde-claro);
+  margin-top: 20px;
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__titulo {
+  color: var(--color-blanco);
+  font-family: "Sulphur Point";
+  font-size: 2em;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.footer__boton-redes {
+  background-color: var(--color-crema-claro);
+  color: var(--color-rojo);
+  font-size: 1.8em;
+  padding: 8px;
+  border-radius: 100%;
+}
 
 
 /* MEDIA QUERIES */
