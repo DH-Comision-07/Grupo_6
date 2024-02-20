@@ -207,6 +207,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+}
+.footer__link:hover{
+  background-color: var(--color-blanco);
+}
+.footer__link:hover > .footer__icono{
+  color: var(--color-verde-oscuro);
 }
 .footer__icono {
   font-size: 2em;
