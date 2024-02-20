@@ -173,25 +173,46 @@
 .footer {
   background-color: var(--color-verde-claro);
   margin-top: 20px;
-  padding: 25px 0;
+  padding-top: 25px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .footer__titulo {
-  color: var(--color-blanco);
+  color: var(--color-crema-claro);
   font-family: "Sulphur Point";
   font-size: 2em;
   line-height: 30px;
   margin-bottom: 10px;
 }
-.footer__boton-redes {
-  background-color: var(--color-crema-claro);
-  color: var(--color-rojo);
-  font-size: 1.8em;
-  padding: 8px;
+.footer__mail {
+  color: var(--color-crema-claro);
+  
+}
+.footer__direccion {
+  color: var(--color-crema-claro);
+}
+.footer__redes {
+  display: flex;
+}
+.footer__link {
+  background-color: var(--color-crema-oscuro);
+  font-size: 2em;
+  width: 50px;
+  line-height: 50px;
+  font-weight: bold;
   border-radius: 100%;
+  text-align: center;
+  vertical-align: middle;
+  margin: 15px 5px;
+}
+.footer__icono {
+  color: var(--color-verde-oscuro);
+}
+.footer__copyright {
+  font-size: 0.8em;
 }
 
 
