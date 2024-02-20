@@ -225,6 +225,9 @@
   margin-left: 10px;
   font-size: 1.2em;
 }
+.footer__link:hover > .footer__nombre-redes{
+  color: var(--color-verde-oscuro);
+}
 .footer__copyright {
   font-size: 0.8em;
 }
