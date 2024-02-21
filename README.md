@@ -12,6 +12,9 @@ Estas son algunas de las páginas de las que vamos a estar tomando inspiración 
 - [BAS](https://www.bas.com.uy/)
 - [GAP](https://www.gap.com)
 
+## GESTION DE PROYECTO CON TRELLO
+Utilizamos Trello para gestionar el flujo de trabajo de este proyecto. Puedes seguir nuestro progreso, ver las tareas pendientes, y colaborar con nosotros en nuestra pizarra de Trello.
+[accede a nuestro trello](https://trello.com/invite/b/RlVH8Md2/ATTI3e4451d58f28dc2082cede0f6ffa6049A5E22B55/grupo-6)
 ## NUESTRO EQUIPO:
 
 ### GONZALO
