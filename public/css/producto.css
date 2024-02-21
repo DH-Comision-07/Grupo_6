@@ -1,0 +1,60 @@
+.informacion-de-producto {
+    width: 85%;
+    margin: auto;
+}
+.info__nombre-producto {
+    font-family: "Sulphur Point", sans-serif;
+    font-size: 2em;
+}
+.info__cuotas {
+    font-size: 0.9em;
+    color: var(--color-celeste-oscuro);
+    display: inline;
+}
+.info__precio-actual {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--color-rojo);
+    display: inline;
+    font-family: "Sulphur Point", sans-serif;
+    margin-right: 5px;
+}
+.info__precio-original {
+    font-family: "Sulphur Point", sans-serif;
+    text-decoration: line-through;
+    color: var(--color-gris);
+}
+
+.info__formulario {
+    margin: 15px 0;
+    width: 100%;
+}
+.formulario__radio--talle {
+    
+}
+.formulario__boton-carrito {
+    outline: none;
+    border: none;
+    background-color: var(--color-negro);
+    font-family: "Sulphur Point", sans-serif;
+    font-size: 1em;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+.formulario__boton-carrito:hover {
+    background-color: var(--color-crema-oscuro);
+    color: var(--color-negro);
+    font-weight: bold;
+}
+.formulario__icono {
+    color: white;
+    margin-right: 6px;
+    font-size: 0.9em;
+}
+.formulario__boton-carrito:hover  > .formulario__icono{
+    color: var(--color-negro);
+}
