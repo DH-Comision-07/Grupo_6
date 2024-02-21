@@ -210,7 +210,67 @@
 }
 
 /* footer contacto */
-
+.footer {
+  background-color: var(--color-verde-claro);
+  margin-top: 20px;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__titulo {
+  color: var(--color-blanco);
+  font-family: "Sulphur Point";
+  font-size: 2em;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.footer__mail {
+  color: var(--color-blanco);
+  margin-bottom: 5px;
+}
+.footer__direccion {
+  color: var(--color-blanco);
+}
+.footer__redes {
+  display: flex;
+}
+.footer__link {
+  background-color: var(--color-verde-oscuro);
+  min-width: 60px;
+  min-height: 60px;
+  font-weight: bold;
+  border-radius: 100%;
+  margin: 15px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.footer__link:hover{
+  background-color: var(--color-blanco);
+}
+.footer__link:hover > .footer__icono{
+  color: var(--color-verde-oscuro);
+}
+.footer__icono {
+  font-size: 2em;
+  color: var(--color-crema-claro);
+}
+.footer__nombre-redes{
+  display: none;
+  color: var(--color-crema-claro);
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+.footer__link:hover > .footer__nombre-redes{
+  color: var(--color-verde-oscuro);
+}
+.footer__copyright {
+  font-size: 0.8em;
+}
 
 
 /* MEDIA QUERIES */
@@ -228,6 +288,17 @@
   }
   .thumbnail__descuento{
     font-size: 1.6em;
+  }
+  
+  .footer__link {
+    border-radius: 50px;
+    padding: 0 20px;
+  }
+  .footer__icono {
+    font-size: 1.3em;
+  }
+  .footer__nombre-redes {
+    display: block;
   }
 }
 @media (min-width: 1200px){         /* DESKTOP */
