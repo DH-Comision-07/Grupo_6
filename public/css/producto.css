@@ -46,9 +46,10 @@
     margin-top: 20px;
 }
 .formulario__boton-carrito:hover {
-    background-color: var(--color-crema-oscuro);
+    background-color: var(--color-crema-claro);
     color: var(--color-negro);
     font-weight: bold;
+    text-decoration: underline;
 }
 .formulario__icono {
     color: white;
