@@ -1,14 +1,16 @@
-const express = require ('express');
+const express = require('express');
 const app = express();
 const port = 3030;
-const path = require ('path');
+const path = require('path');
 
 app.use(express.static('public'));
 
-app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname,'/views/index.html'));
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/index.html'));
+});
+app.get('/registro', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/registro.html'));
 });
 
-
-app.listen(port, () => 
-    console.log('Servidor online en el puerto '+port));
+app.listen(port, () =>
+    console.log('Servidor online en el puerto ' + port));

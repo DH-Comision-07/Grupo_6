@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Vonique;
+    src: url("/fonts/vonique.otf") format("opentype");
+}
+
+.title {
+    text-align: center;
+    font-weight: 600;
+    font-family: vonique;
+}
+
+.container_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_field {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
