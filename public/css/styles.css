@@ -68,8 +68,19 @@
  }
 
  /* banner de texto negro */
- 
+ .banner {
+width: 100%;
+text-align: center;
+margin-bottom: 20px;
+bacground-image: url("C:\Users\Rodri\Desktop\comision07\Grupo_6\public\images\Banner web sobre descuentos para tienda de ropa .jpg")
 
+
+ }
+
+.banner img{
+width: 100%;
+object-fit: cover;
+}
 
 /* carusel de imagen con texto */
   
