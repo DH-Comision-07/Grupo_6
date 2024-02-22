@@ -9,9 +9,7 @@
 rel="stylesheet">
   <!-- FUENTES  -->
   <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="/css/styles.css" />
-  <title>D&H - Inicia sesión</title>
+  <link rel="stylesheet" href="/css/styles-login.css">  <title>D&H - Inicia sesión</title>
 </head>
 
 <body>
@@ -41,12 +39,17 @@ rel="stylesheet">
 
 <main>
 <!-- formulario login -->
-  <section class="login-form">
-    <form action="/login" method="get">
-      
+<h1 id="login-title">Accedé a tu cuenta</h1>
 
-    </form>
-  </section>
+  <form action="/login" method="POST">
+    <div class="login-form">
+       <input type="text" name="username" placeholder="Nombre de usuario" required>
+       <input type="password" name="passwordlogin" placeholder="Contraseña" required minlength="8">
+       <a href=""><button type="menu">Ingresá</button></a>
+    </div>
+
+
+  </form>
 
 </main>
 
