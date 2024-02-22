@@ -27,28 +27,44 @@ rel="stylesheet">
   
 
   <main>
-    <!-- imagenes de producto   -->
+    <section class="producto">
+      <!-- <img class="imagen" src="/images/top-chaleco_thumbnail.png" alt=""> -->
+      <div class="producto__imagenes">
+        <div class="columna-grande">
+          <img class="imagen" src="/images/top-chaleco_thumbnail.png" alt="">
+        </div>
+        <div class="columna-chica">
+          <div class="imagen-chica">
+            <img class="imagen" src="/images/top-chaleco_thumbnail.png" alt="">
+          </div>
+          <div class="imagen-chica">
+            <img class="imagen" src="/images/top-chaleco_thumbnail.png" alt="">
+          </div>
+          <div class="imagen-chica">
+            <img class="imagen" src="/images/top-chaleco_thumbnail.png" alt="">
+          </div>
+        </div>
+      </div>
 
-    <!-- TODO: hacer que las imagenes vayan al lado de la informacion del producto en resoluciones tablet para arriba -->
-    <!-- informacion del producto -->
-    <section class="informacion-de-producto">
-      <h2 class="info__nombre-producto">TOP CHALECO</h2>
-      <p class="info__precio-actual">$45.000</p>
-      <p class="info__cuotas">5 cuotas de $9000</p>
-      <p class="info__precio-original">$60.000</p>
-      
-
-      <form action="/" class="info__formulario" method="post">
-        <p class="formulario__opcion">Talle</p>
-        <label class="formulario__label" for="xs">XS</label>
-        <input class="formulario__radio--talle" type="radio" name="talle" value="xs" id="xs">
-        <span class="formulario__curtom-radio"></span>
+      <div class="producto__informacion">
+        <h2 class="info__nombre-producto">TOP CHALECO</h2>
+        <p class="info__precio-actual">$45.000</p>
+        <p class="info__cuotas">5 cuotas de $9000</p>
+        <p class="info__precio-original">$60.000</p>
         
 
-        <button class="formulario__boton-carrito" type="submit" >
-          <i class="formulario__icono fa-solid fa-cart-shopping"></i>AGREGAR AL CARRITO
-        </button>
-      </form>
+        <form action="/" class="info__formulario" method="post">
+          <p class="formulario__opcion">Talle</p>
+          <label class="formulario__label" for="xs">XS</label>
+          <input class="formulario__radio--talle" type="radio" name="talle" value="xs" id="xs">
+          <span class="formulario__curtom-radio"></span>
+          
+
+          <button class="formulario__boton-carrito" type="submit" >
+            <i class="formulario__icono fa-solid fa-cart-shopping"></i>AGREGAR AL CARRITO
+          </button>
+        </form>
+      </div>
     </section>
 
     <!-- detalles adicionales del producto -->
