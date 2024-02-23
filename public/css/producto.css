@@ -1,3 +1,6 @@
+.producto {
+    display: block;
+}
 .producto__imagenes {
     background-color: aquamarine;
     width: 100%;
@@ -26,7 +29,7 @@
 
 .producto__informacion {
     width: 85%;
-    margin: auto;
+    margin-left: 20px;
 }
 .info__nombre-producto {
     font-family: "Sulphur Point", sans-serif;
@@ -75,10 +78,6 @@
 .formulario__radio:checked + label::before {
     background-color: var(--color-celeste-claro);
 }
-
-
-
-
 .formulario__boton-carrito {
     outline: none;
     border: none;
@@ -108,8 +107,20 @@
 }
 
 
-@media (min-width: 768px) {  /* tablet */
+@media (min-width: 768px) {        /* tablet */
     .columna-chica {
         display: block;
+    }
+}
+@media (min-width: 1200px){       /* desktop */
+    .producto {
+        display: flex;
+    }
+    .producto__imagenes {
+        height: 95vh;
+    }
+    .producto__informacion {
+        width: 50%;
+        margin-left: 20px;
     }
 }
