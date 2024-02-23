@@ -9,7 +9,7 @@ app.get('/', (req,res) => {
     res.sendFile(path.join(__dirname,'/views/index.html'));
 });
 app.get('/producto', (req,res) => {
-    res.sendFile(path.join(__dirname,'/views/producto.html'));
+    res.sendFile(path.join(__dirname,'/views/productDetail.html'));
 });
 
 app.listen(port, () => 

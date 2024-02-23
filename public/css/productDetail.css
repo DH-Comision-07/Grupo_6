@@ -14,9 +14,18 @@
 .columna-chica {
     background-color: pink;
     flex-grow: 1;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     display: none;
+    transition: all 400ms;
+}
+.columna-chica:hover {
+    flex-grow: 3;
+    transition: all 400ms;
+}
+.columna-chica:active{
+    flex-grow: 1;
+    
 }
 .imagen-chica {
     height: 33.33%;
