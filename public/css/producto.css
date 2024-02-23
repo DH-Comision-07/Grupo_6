@@ -62,7 +62,8 @@
 .formulario__opcion {
     font-weight: bold;
     font-size: 1.2em;
-    margin-bottom: 7px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .formulario__radio {
     display: none;
@@ -89,7 +90,7 @@
     padding: 10px;
     display: block;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .formulario__boton-carrito:hover {
     background-color: var(--color-crema-claro);
