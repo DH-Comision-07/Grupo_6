@@ -91,11 +91,11 @@
     display: block;
     margin: auto;
     margin-top: 40px;
+    transition: all 500ms;
 }
 .formulario__boton-carrito:hover {
     background-color: var(--color-crema-claro);
     color: var(--color-negro);
-    font-weight: bold;
     text-decoration: underline;
 }
 .formulario__icono {
