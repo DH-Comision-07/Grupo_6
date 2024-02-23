@@ -14,3 +14,8 @@ app.get('/producto', (req,res) => {
 
 app.listen(port, () => 
     console.log('Servidor online en el puerto '+port));
+
+    
+app.get ("/login", (req, res)=>{
+    res.sendFile(path.join(__dirname, "/views/login.html"))
+});    
