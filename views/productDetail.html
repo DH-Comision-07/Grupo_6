@@ -12,7 +12,7 @@ rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- ESTILOS -->
   <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="stylesheet" href="/css/producto.css" />
+  <link rel="stylesheet" href="/css/productDetail.css" />
   <title>Producto</title>
 </head>
 
@@ -81,14 +81,17 @@ rel="stylesheet">
           <input class="formulario__radio" type="radio" name="color" value="rojo" id="rojo">
           <label class="formulario__label" for="rojo">Rojo</label>
 
-          <button class="formulario__boton-carrito" type="submit" >
+          <button class="formulario__boton-carrito" type="submit" formaction="" formmethod="post">
             <i class="formulario__icono fa-solid fa-cart-shopping"></i>AGREGAR AL CARRITO
           </button>
         </form>
       </div>
+
+      <!-- detalles adicionales del producto -->
+      <!-- TODO: hacer que detalles se acomoden junto a las imagenes debajo de info -->
     </section>
 
-    <!-- detalles adicionales del producto -->
+    
 
 
     <!-- productos recomendados -->
