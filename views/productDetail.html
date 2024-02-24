@@ -28,7 +28,7 @@ rel="stylesheet">
 
   <main>
     <section class="producto">
-      <div class="producto__imagenes">
+      <section class="producto__imagenes">
         <div class="columna-grande">
           <img class="imagen" src="/images/top-chaleco_thumbnail.png" alt="">
         </div>
@@ -43,9 +43,9 @@ rel="stylesheet">
             <img class="imagen" src="/images/top-chaleco_imagen_1.png" alt="">
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="producto__informacion">
+      <section class="producto__informacion">
         <h2 class="info__nombre-producto">TOP CHALECO</h2>
         <p class="info__precio-actual">$45.000</p>
         <p class="info__cuotas">5 cuotas de $9000</p>
@@ -85,10 +85,18 @@ rel="stylesheet">
             <i class="formulario__icono fa-solid fa-cart-shopping"></i>AGREGAR AL CARRITO
           </button>
         </form>
-      </div>
+        
+        <section class="producto__detalles">
+          <h3 class="detalles__titulo">DESCRIPCIÓN</h3>
+          <P class="detalles__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eaque suscipit esse neque ducimus quae molestiae, odio</p>
+          <h3 class="detalles__titulo">MATERIALES</h3>
+          <P class="detalles__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eaque suscipit esse neque ducimus quae molestiae, odio</p>
+          <h3 class="detalles__titulo">CUIDADOS</h3>
+          <P class="detalles__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eaque suscipit esse neque ducimus quae molestiae, odio</p>
+        </section>
+      </section>
 
-      <!-- detalles adicionales del producto -->
-      <!-- TODO: hacer que detalles se acomoden junto a las imagenes debajo de info -->
+      
     </section>
 
     
@@ -97,7 +105,8 @@ rel="stylesheet">
     <!-- productos recomendados -->
   </main>
 
-  <!-- footer -->
+
+
   <footer class="footer">
     <h2 class="footer__titulo">CONTACTANOS</h2>
     <a class="footer__mail" href="mailto:correo@gmail.com">dhropacontacto@gmail.com</a>

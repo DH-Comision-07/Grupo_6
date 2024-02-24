@@ -1,14 +1,13 @@
 .producto {
     display: block;
+    height: 750px;
 }
 .producto__imagenes {
     background-color: aquamarine;
     width: 100%;
-    height: 70vh;
     display: flex;
 }
 .columna-grande {
-    background-color: red;
     flex-grow: 2;
 }
 .columna-chica {
@@ -38,6 +37,7 @@
 
 .producto__informacion {
     width: 85%;
+    background-color: red;
     margin-left: 20px;
 }
 .info__nombre-producto {
@@ -117,6 +117,24 @@
 }
 
 
+
+.producto__detalles {
+    background-color: var(--color-crema-claro);
+    padding: 20px;
+}
+.detalles__titulo {
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: bold;
+    display: inline;
+    font-size: 1.3em;
+}
+.detalles__texto {
+    margin-bottom: 22px;
+}
+
+
+
+
 @media (min-width: 768px) {        /* tablet */
     .columna-chica {
         display: block;
@@ -127,10 +145,11 @@
         display: flex;
     }
     .producto__imagenes {
-        height: 95vh;
+        /* height: 80vh; */
     }
     .producto__informacion {
         width: 50%;
         margin-left: 20px;
+        margin-right: 20px;
     }
 }
