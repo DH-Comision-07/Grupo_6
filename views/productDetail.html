@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ICONOS  -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a1a418fc9c.js" crossorigin="anonymous"></script>
+  <!-- FUENTES  -->
+  <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/productDetail.css" />
+  <title>Producto</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="header-logo"><img src="/images/logo.png" alt="logo"></div>
+    <div class="header-shipping">
+     <iclass="fa-solid fa-truck">i> Envíos gratis </div>
+    <div class="header-paymentsafe"><i class="fa-solid fa-lock"></i> PAGO SEGURO</div>
+  </header>
+  
+
+  <main>
+    <section class="producto">
+      <div class="producto__imagenes">
+        <div class="columna-grande">
+          <img class="imagen" src="/images/top-chaleco_thumbnail.png" alt="">
+        </div>
+        <div class="columna-chica">
+          <div class="imagen-chica">
+            <img class="imagen" src="/images/top-chaleco_imagen_1.png" alt="">
+          </div>
+          <div class="imagen-chica">
+            <img class="imagen" src="/images/top-chaleco_imagen_2.png" alt="">
+          </div>
+          <div class="imagen-chica">
+            <img class="imagen" src="/images/top-chaleco_imagen_1.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="producto__informacion">
+        <h2 class="info__nombre-producto">TOP CHALECO</h2>
+        <p class="info__precio-actual">$45.000</p>
+        <p class="info__cuotas">5 cuotas de $9000</p>
+        <p class="info__precio-original">$60.000</p>
+        
+
+        <form action="/" class="info__formulario" method="post">
+          <p class="formulario__opcion">Talle</p>
+          
+          <input class="formulario__radio" type="radio" name="talle" value="xs" id="xs">
+          <label class="formulario__label" for="xs">XS</label>
+
+          <input class="formulario__radio" type="radio" name="talle" value="s" id="s">
+          <label class="formulario__label" for="s">S</label>
+
+          <input class="formulario__radio" type="radio" name="talle" value="m" id="m">
+          <label class="formulario__label" for="m">M</label>
+
+          <input class="formulario__radio" type="radio" name="talle" value="l" id="l">
+          <label class="formulario__label" for="l">L</label>
+
+          <input class="formulario__radio" type="radio" name="talle" value="xl" id="xl">
+          <label class="formulario__label" for="xl">XL</label>
+          
+          <p class="formulario__opcion">Color</p>
+          
+          <input class="formulario__radio" type="radio" name="color" value="negro" id="negro">
+          <label class="formulario__label" for="negro">Negro</label>
+
+          <input class="formulario__radio" type="radio" name="color" value="blanco" id="blanco">
+          <label class="formulario__label" for="blanco">Blanco</label>
+
+          <input class="formulario__radio" type="radio" name="color" value="rojo" id="rojo">
+          <label class="formulario__label" for="rojo">Rojo</label>
+
+          <button class="formulario__boton-carrito" type="submit" formaction="" formmethod="post">
+            <i class="formulario__icono fa-solid fa-cart-shopping"></i>AGREGAR AL CARRITO
+          </button>
+        </form>
+      </div>
+
+      <!-- detalles adicionales del producto -->
+      <!-- TODO: hacer que detalles se acomoden junto a las imagenes debajo de info -->
+    </section>
+
+    
+
+
+    <!-- productos recomendados -->
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <h2 class="footer__titulo">CONTACTANOS</h2>
+    <a class="footer__mail" href="mailto:correo@gmail.com">dhropacontacto@gmail.com</a>
+    <p class="footer__direccion">Direccion 123, Buenos Aires, ARG</p>
+
+    <div class="footer__redes">
+      <a href="https://www.facebook.com/" class="footer__link">
+        <i class="footer__icono fa-brands fa-facebook-f"></i>
+        <p class="footer__nombre-redes">FACEBOOK</p>
+      </a>
+      <a href="https://www.instagram.com/" class="footer__link">
+        <i class="footer__icono fa-brands fa-instagram"></i>
+        <p class="footer__nombre-redes">INSTAGRAM</p>
+      </a>
+      <a href="https://www.whatsapp.com/" class="footer__link">
+        <i class="footer__icono fa-brands fa-whatsapp"></i>
+        <p class="footer__nombre-redes">WHATSAPP</p>
+      </a>
+    </div>
+
+    <p class="footer__copyright">Copytright 2024</p>
+  </footer>
+  
+  <!-- :D -->
+  
+</body>
+
+</html>

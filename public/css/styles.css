@@ -78,7 +78,6 @@
 /* on sale slider */
 
 .cabecera-de-seccion {
-  /* font-family: Vonique; */
   font-family: "Sulphur Point";
   font-weight: bold;
   text-align: center;
@@ -124,28 +123,31 @@
   position: absolute;
   bottom: 10px;
   left: 6px;
-  /* font-family: "Vonique"; */
   font-family: "Sulphur Point";
   font-weight: bold;
   color: var(--color-rojo);
   background-color: var(--color-blanco);
   padding: 0 3px;
 }
+.articulo__link {
+  text-decoration: none;
+}
 .articulo__nombre {
   font-size: 1.2em;
-  font-weight: normal;
+  font-weight: bold;
+  font-family: "Sulphur Point";
   color: var(--color-verde-claro);
   margin-bottom: 10px;
 }
 .articulo__precio-actual {
   font-size: 1.2rem;
-  /* display: inline; */
   font-weight: bold;
+  font-family: "Sulphur Point";
 }
 .articulo__precio-original {
   font-size: 0.9rem;
+  font-family: "Sulphur Point";
   text-decoration: line-through;
-  /* display: inline; */
   color: var(--color-celeste-oscuro);
 }
 
@@ -153,8 +155,6 @@
 /* banner estatico */
  
 
-
-/* ultimos lanzamiento slider */
  
 
 
