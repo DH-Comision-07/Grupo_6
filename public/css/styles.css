@@ -12,16 +12,12 @@
   --color-crema-claro: #f4e5d9;
   --color-blanco: #ffffff;
 }
-@font-face {
-  font-family: Vonique;
-  src: url("/fonts/vonique.otf") format("opentype");
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* fuente de repuesto */
-  font-family: Helvetica, sans-serif;
+  font-family: "Helvetica", sans-serif;
   color: var(--color-negro);
 }
 

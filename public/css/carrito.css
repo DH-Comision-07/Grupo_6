@@ -1,29 +1,3 @@
-:root {
-  /*usar siempre variables para asignar colores a elementos*/
-  --color-gris: #42312f;
-  --color-negro: #261e1d;
-  --color-verde-oscuro: #1f2f23;
-  --color-verde-claro: #515c41;
-  --color-rojo: rgb(180, 20, 20);
-  --color-celeste-oscuro: #9caca2;
-  --color-celeste-claro: #a3bbbc;
-  --color-marron-claro: #c7a88c; 
-  --color-crema-oscuro: #e2ccb8;
-  --color-crema-claro: #f4e5d9;
-  --color-blanco: #ffffff;
-}
-/* @font-face {
-  font-family: Vonique;
-  src: url("/fonts/vonique.otf") format("opentype");
-} */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* fuente de repuesto */
-  font-family: Helvetica, sans-serif;
-  color: var(--color-negro);
-}
 
 /* header */
 
@@ -85,23 +59,45 @@ body .main-header{
 
 /* Estilos del carrito */
 #cart-content {
-  display: flex;
-    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 20px; */
-}
-
-.product {
-  border: 1px solid #ddd;
   padding: 10px;
+}
+.product {
+  border: 1px solid var(--color-celeste-claro);
+  /* padding: 10px; */
   border-radius: 5px;
+  min-height: 160px;
+  display: flex;
 }
-
-.product img {
-  max-width: 100%;
+.image-container {
+  width: 100px;
 }
-
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
 .product-details {
-  text-align: center;
+  margin-left: 15px;
+}
+.product-details__nombre {
+  font-family: "Sulphur Point";
+  font-weight: bold;
+  margin-top: 10px;
+}
+.product-details__info {
+  font-family: "Sulphur Point";
+}
+.quantity {
+  display: inline;
+  margin: 0 5px 0 5px;
+}
+.quanity-button {
+  font-size: 1.2em;
+  width: 25px;
+  outline: none;
+  border: 1px solid var(--color-celeste-oscuro);
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 .remove-button {
@@ -111,6 +107,7 @@ body .main-header{
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
+  
 }
 
 .remove-button:hover {
@@ -126,9 +123,9 @@ body .main-header{
 
 /* newsletter */
 .newsletter {
-background-color: var(--color-celeste-claro);
-text-align: center;
-padding: 20px 10%;
+  background-color: var(--color-celeste-claro);
+  text-align: center;
+  padding: 20px 10%;
 }
 .newsletter__titulo {
   color: var(--color-blanco);
