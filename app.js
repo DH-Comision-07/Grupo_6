@@ -11,6 +11,9 @@ app.get('/', (req,res) => {
 app.get('/producto', (req,res) => {
     res.sendFile(path.join(__dirname,'/views/productDetail.html'));
 });
+app.get('/productCart', (req,res) => {
+    res.sendFile(path.join(__dirname, './views/productCart.html'));      /*agregar ruta*/
+});
 
 app.listen(port, () => 
     console.log('Servidor online en el puerto '+port));
