@@ -67,6 +67,7 @@
   color: #c7a88c;
  }
 
+
  /* banner de texto negro */
  
 
@@ -89,6 +90,7 @@
   display: flex;
   justify-content: center;
   margin: auto;
+  margin-bottom: 50px;
   width: 98%;
 }
 .thumbnail-slider__boton {
