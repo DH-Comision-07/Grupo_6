@@ -35,55 +35,38 @@
   display:flex;
   flex-wrap:wrap;
   align-items:center;
-  justify-content: space-between;
 }
 
 .header-logo{
-  margin:0 10px 0 5px;
+  flex-grow: 0.2;
 }
 
 .header-shipping{
   font-size: 1em;
-  text-align: center;
   padding: 10px;
   border: 1px solid #515c41;
   color: #515c41;
   border-radius: 50px;
-  margin:5px;
-  margin-right:auto;
-  }
+  margin:15px;
+}
 
 .header-shipping i{
   color: #515c41;
 } 
 
-
 .header-paymentsafe{
   font-size: 1em;
-  text-align: center;
   padding: 10px;
   border: 1px solid #c7a88c;
   color: #c7a88c;
   border-radius: 50px;
-  margin:5px;
-  margin-left:auto;
-  }
+  margin:15px;
+}
 
 .header-paymentsafe i{
   color: #c7a88c;
  }
 
- .header-keep-buying{
-    color:#c7a88c;
-    padding: 10px;
-    margin: 5px;
- }
-
- .header-keep-buying a{
-  text-decoration: none;
-  color:#c7a88c;
-
- }
 
  /* banner de texto negro */
  
