@@ -2,17 +2,14 @@
     display: block;
 }
 .producto__imagenes {
-    background-color: aquamarine;
-    width: 100%;
-    height: 70vh;
+    flex-basis: 100%;
     display: flex;
+    
 }
 .columna-grande {
-    background-color: red;
     flex-grow: 2;
 }
 .columna-chica {
-    background-color: pink;
     flex-grow: 1;
     /* display: flex; */
     flex-direction: column;
@@ -37,8 +34,8 @@
 }
 
 .producto__informacion {
-    width: 85%;
     margin-left: 20px;
+    margin-right: 20px;
 }
 .info__nombre-producto {
     font-family: "Sulphur Point", sans-serif;
@@ -117,20 +114,41 @@
 }
 
 
+
+.producto__detalles {
+    background-color: var(--color-crema-claro);
+    padding: 20px;
+    width: 100%;
+}
+.detalles__titulo {
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: bold;
+    display: inline;
+    font-size: 1.3em;
+}
+.detalles__texto {
+    margin-bottom: 22px;
+}
+
+
+
+
 @media (min-width: 768px) {        /* tablet */
     .columna-chica {
         display: block;
+    }
+    .producto__imagenes {
+        height: 80vh;
+        min-height: 750px;
     }
 }
 @media (min-width: 1200px){       /* desktop */
     .producto {
         display: flex;
     }
-    .producto__imagenes {
-        height: 95vh;
-    }
     .producto__informacion {
         width: 50%;
         margin-left: 20px;
+        margin-right: 20px;
     }
 }
