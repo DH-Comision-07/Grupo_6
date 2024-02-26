@@ -74,7 +74,7 @@ body .main-header{
 .image {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 .product-details {
   margin-left: 15px;
@@ -99,7 +99,10 @@ body .main-header{
   border-radius: 5px;
   margin-top: 10px;
 }
-
+.quanity-button:active {
+  background-color: var(--color-celeste-oscuro);
+  color: white;
+}
 .remove-button {
   background-color: #ff6347;
   color: #fff;
@@ -107,11 +110,17 @@ body .main-header{
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-  
+  /* display: block;
+  margin-top: 10px;
+  margin-bottom: 10px; */
+  transition: 450ms;
+  margin-left: 5px;
 }
-
 .remove-button:hover {
   background-color: #cc4731;
+}
+.fa-trash {
+  color: #fff;
 }
 
 
