@@ -1,30 +1,50 @@
-@font-face {
-    font-family: Vonique;
-    src: url("/fonts/vonique.otf") format("opentype");
+body {
+    font-family: "Sulphur Point";
 }
 
 .title {
     text-align: center;
-    font-weight: 600;
-    font-family: vonique;
+    font-weight: 700;
+    font-size: 46px;
+    margin-bottom: 80px;
+    padding-top: 70px;
 }
 
 .container_form {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
 }
 
 .form_field {
-    width: 800px;
     display: flex;
     flex-direction: column;
-
-
 }
 
 input {
     outline: none;
     border: none;
     border-bottom: 1px solid black;
+}
+
+.condiciones {
+    display: flex;
+    flex-direction: column;
+}
+
+.condiciones type {
+    float: left;
+    margin-right: 10px;
+}
+
+.condiciones label {
+    font-size: 10px ;
 }
