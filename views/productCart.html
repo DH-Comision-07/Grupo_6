@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONOS  -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1a418fc9c.js" crossorigin="anonymous"></script>
+    <!-- FUENTES  -->
+    <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/carrito.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    
+
+    <title>Carrito de compras</title>
+</head>
+<body>
+  
+    <!-- header -->
+  <header class="header">
+    
+    <img class="header-logo" src="/images/logo.png" alt="logo">
+    
+    <div class="header-burger">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+    <div class="header-shipping"> 
+     <i class="fas fa-solid fa-truck"></i> Envíos gratis 
+    </div>
+    
+    <div class="header-paymentsafe">
+      <i class="fas fa-solid fa-lock"></i> PAGO SEGURO </div>
+
+    <div class="header-searchbar">
+      <form action="/" method="GET">
+          <input type="text" name="searchbar" placeholder=""> <button
+              type="submit"><i class="fas fa-search"></i></button>
+       </form>
+    </div>
+    
+    <a href="" rel="login"><div class="header-login">
+      <i class="fas fa-solid fa-user"></i>    
+    </div></a>
+
+    <a href="" rel="carrito"><div class="header-shoppingcart">
+      <i class="fas fa-solid fa-basket-shopping"></i> <p>>></p>
+    </div></a>
+
+
+  </header>
+
+
+    <main>
+        <section class="cart">
+            <div id="cart-content">
+                <article class="product">
+                    <div class="image-container">
+                        <img class="image" src="/images/vestido-largo_thumbnail.PNG" alt="Producto 1">
+                    </div>
+                    
+                    <div class="product-details">
+                        <h2 class="product-details__nombre">VESTIDO LARGO</h2>
+                        <p class="product-details__precio">$25.000</p>
+                        <p class="product-details__info">Azul</p>
+                        <p class="product-details__info">M</p>
+                        
+                        <button class="quanity-button">-</button>
+                        <p class="quantity">2</p>
+                        <button class="quanity-button">+</button>
+                        <button class="remove-button">
+                            <i class="fa-solid fa-trash"></i>
+                            <p class="remove-text">Eliminar</p>
+                        </button>
+                        
+                    </div>
+                </article>
+
+                <article class="product">
+                    <div class="image-container">
+                        <img class="image" src="/images/top-chaleco_thumbnail.PNG" alt="Producto 1">
+                    </div>
+                    
+                    <div class="product-details">
+                        <h2 class="product-details__nombre">TOP CHALECO</h2>
+                        <p class="product-details__precio">$25.000</p>
+                        <p class="product-details__info">Negro</p>
+                        <p class="product-details__info">S</p>
+                        
+                        <button class="quanity-button">-</button>
+                        <p class="quantity">1</p>
+                        <button class="quanity-button">+</button>
+                        <button class="remove-button">
+                            <i class="fa-solid fa-trash"></i>
+                            <p class="remove-text">Eliminar</p>
+                        </button>
+                        
+                    </div>
+                </article>
+                
+            </div>
+
+            <div id="cart-summary">
+                <h2 class="summary__title">RESUMEN DE COMPRA</h2>
+                <p class="summary__line">Vestido largo<span class="line__price">$25.000</span></p>
+                <p class="summary__line">Vestido largo<span class="line__price">$25.000</span></p>
+                <p class="summary__line">Top chaleco<span class="line__price">$50.000</span></p>
+                <p class="summary__line">Envio<span class="line__price">$500</span></p>
+                
+                <h2 class="summary__title">TOTAL: $100.500</h2>
+
+                <form action="/" method="post">
+                    
+                    <button class="form-button">Finalizar Compra</button>
+                    <button class="form-button">Seguir Comprando</button>
+                </form>
+                
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <h2 class="footer__titulo">CONTACTANOS</h2>
+        <a class="footer__mail" href="mailto:correo@gmail.com">dhropacontacto@gmail.com</a>
+        <p class="footer__direccion">Direccion 123, Buenos Aires, ARG</p>
+    
+        <div class="footer__redes">
+          <a href="https://www.facebook.com/" class="footer__link">
+            <i class="footer__icono fa-brands fa-facebook-f"></i>
+            <p class="footer__nombre-redes">FACEBOOK</p>
+          </a>
+          <a href="https://www.instagram.com/" class="footer__link">
+            <i class="footer__icono fa-brands fa-instagram"></i>
+            <p class="footer__nombre-redes">INSTAGRAM</p>
+          </a>
+          <a href="https://www.whatsapp.com/" class="footer__link">
+            <i class="footer__icono fa-brands fa-whatsapp"></i>
+            <p class="footer__nombre-redes">WHATSAPP</p>
+          </a>
+        </div>
+    
+        <p class="footer__copyright">Copytright 2024</p>
+      </footer>
+    <!-- <script src="app.js"></script> -->
+</body>
+</html>
