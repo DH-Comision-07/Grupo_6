@@ -48,3 +48,29 @@ input {
 .condiciones label {
     font-size: 10px ;
 }
+button {
+    border: none;
+    color: black ;
+    background-color:white;
+ }
+
+.container_form button {
+    color:white; 
+    padding: 10px 20px;
+    background-color:black;
+    font-size: 30px;
+    margin-top: 44px;
+    cursor: pointer; 
+    min-width: 200px;
+    border-radius: 8px;
+    border-width: 1px;
+
+  }
+
+  .container_form p {
+    margin-top: 20px;
+  }
+
+.container_form a {
+    color:#515c41;
+}
