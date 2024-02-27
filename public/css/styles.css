@@ -33,40 +33,138 @@
 
 .header{
   display:flex;
-  flex-wrap:wrap;
   align-items:center;
+  justify-content: space-between;
 }
 
 .header-logo{
-  flex-grow: 0.2;
+  margin: 10px 0 5px;
+  width:45%;
+  max-width: 200px;
 }
 
-.header-shipping{
-  font-size: 1em;
+
+
+.header-burger{
+  margin:20px;
+  background-color: #261e1d;
+  border-radius: 5px;
+  padding: 10px; 
+  margin-left: auto;
+  
+}
+
+.header-burger i{
+  color:#ffffff;
+  font-size: 1.5em;
+}
+
+.header-shipping {
+  font-size: 0.75em;
   padding: 10px;
   border: 1px solid #515c41;
   color: #515c41;
   border-radius: 50px;
-  margin:15px;
-}
+  margin:5px 5px 5px 25px;
+  display: none;
+  min-width: 112px;
+  }
 
 .header-shipping i{
   color: #515c41;
+  padding-right: 5px;
 } 
 
 .header-paymentsafe{
-  font-size: 1em;
+  font-size: 0.75em;
+  text-align: center;
   padding: 10px;
-  border: 1px solid #c7a88c;
-  color: #c7a88c;
+  border: 1px solid #42312f;
+  color: #42312f;
   border-radius: 50px;
-  margin:15px;
-}
+  margin:5px;
+  display: none;
+  margin-right:auto;
+  min-width: 127px;
+  }
 
 .header-paymentsafe i{
-  color: #c7a88c;
+  color: #42312f;
+  padding-right: 5px;
  }
 
+.header-searchbar{
+    margin-top: 10px;
+    width: 50%;
+    display:none;
+    margin-left:auto;
+}
+
+.header-searchbar input {
+  width: 65%;
+  height: 35px;
+  border-radius: 4px;
+  border-color: #42312f;
+  border-style: none;
+  padding: 10px;
+  color: #42312f;
+  outline: none;
+}
+
+
+.header-searchbar i {
+  padding: 2px 1px;
+  border-radius: 2px;
+  color: #FFF;
+}
+
+.header-searchbar button {
+  background-color: #42312f;
+  border-style: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* border: solid #42312f 1px; */
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+ .header a{
+  text-decoration: none;
+ }
+
+ .header-login{
+  color: #42312f;
+  font-size: 1.25em;
+  text-align: center;
+  align-items: center;
+  border-radius: 50%;
+  border:2px solid #42312f;
+  padding: 10px;
+  margin: 15px;
+  display:none;
+ }
+
+ .header-shoppingcart{
+  color: #1f2f23;
+  font-size: 1.25em;
+  text-align: center;
+  align-items: center;
+  justify-content:space-between;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+  display:none;
+  height:50px;
+ }
+
+ .header-shoppingcart p{
+  font-size: 0.75em;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 0 0 3px;
+ }
+ 
  /* banner de texto negro */
  
 
@@ -78,7 +176,6 @@
 /* on sale slider */
 
 .cabecera-de-seccion {
-  /* font-family: Vonique; */
   font-family: "Sulphur Point";
   font-weight: bold;
   text-align: center;
@@ -90,6 +187,7 @@
   display: flex;
   justify-content: center;
   margin: auto;
+  margin-bottom: 50px;
   width: 98%;
 }
 .thumbnail-slider__boton {
@@ -124,28 +222,31 @@
   position: absolute;
   bottom: 10px;
   left: 6px;
-  /* font-family: "Vonique"; */
   font-family: "Sulphur Point";
   font-weight: bold;
   color: var(--color-rojo);
   background-color: var(--color-blanco);
   padding: 0 3px;
 }
+.articulo__link {
+  text-decoration: none;
+}
 .articulo__nombre {
   font-size: 1.2em;
-  font-weight: normal;
+  font-weight: bold;
+  font-family: "Sulphur Point";
   color: var(--color-verde-claro);
   margin-bottom: 10px;
 }
 .articulo__precio-actual {
   font-size: 1.2rem;
-  /* display: inline; */
   font-weight: bold;
+  font-family: "Sulphur Point";
 }
 .articulo__precio-original {
   font-size: 0.9rem;
+  font-family: "Sulphur Point";
   text-decoration: line-through;
-  /* display: inline; */
   color: var(--color-celeste-oscuro);
 }
 
@@ -153,8 +254,6 @@
 /* banner estatico */
  
 
-
-/* ultimos lanzamiento slider */
  
 
 
@@ -259,6 +358,34 @@
 /* MEDIA QUERIES */
 /* seguir manteniendo en orden */
 @media (min-width: 768px){           /* TABLET */
+  .header-burger{
+    display: none;
+  }
+  .header-shipping{
+    display:flex;
+  }
+  .header-paymentsafe{
+    display:flex;
+  }
+  
+  .header-login{
+    display: flex;
+  }
+
+  .header-shoppingcart{
+    display: flex;
+  }
+  
+  .header-searchbar {
+    margin-top: 0px;
+    width: 33.3%;
+    display: flex;
+  }
+
+  .header-searchbar input {
+    width: 15vw;
+  }
+
   .cabecera-de-seccion {
     font-size: 2.5em;
   }

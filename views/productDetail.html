@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ICONOS  -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a1a418fc9c.js" crossorigin="anonymous"></script>
+  <!-- FUENTES  -->
+  <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/productDetail.css" />
+  <title>Producto</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+    
+      <div class="header-logo">
+        <a href="/"><img src="/images/logo.png" alt="logo"></a>
+      </div>  
+      
+      <div class="header-burger">
+        <i class="fas fa-bars"></i>
+      </div>
+      
+      <div class="header-shipping"> 
+       <i class="fas fa-solid fa-truck"></i> Envíos gratis 
+      </div>
+      
+      <div class="header-paymentsafe">
+        <i class="fas fa-solid fa-lock"></i> PAGO SEGURO 
+      </div>
+  
+      <div class="header-searchbar">
+        <form action="/" method="GET" class="header-searchbar-form">
+            <input type="text" name="searchbar" placeholder="Buscar..."> 
+            <button type="submit"><i class="fas fa-solid fa-magnifying-glass"></i></button>
+         </form>
+      </div>
+      
+      <div class="header-login">
+            <a href="/login" rel="login">
+           <i class="fas fa-solid fa-user"></i>    
+          </a>
+      </div>
+  
+      <a href="" rel="carrito">
+        <div class="header-shoppingcart">
+          <i class="fas fa-solid fa-basket-shopping"></i> <p>>></p>
+        </div>
+      </a>
+  
+  
+    </header>np
+  
+
+  <main>
+    <section class="producto">
+      <section class="producto__imagenes">
+        <div class="columna-grande">
+          <img class="imagen" src="/images/top-chaleco_thumbnail.png" alt="">
+        </div>
+        <div class="columna-chica">
+          <div class="imagen-chica">
+            <img class="imagen" src="/images/top-chaleco_imagen_1.png" alt="">
+          </div>
+          <div class="imagen-chica">
+            <img class="imagen" src="/images/top-chaleco_imagen_2.png" alt="">
+          </div>
+          <div class="imagen-chica">
+            <img class="imagen" src="/images/top-chaleco_imagen_1.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="producto__informacion">
+        <h2 class="info__nombre-producto">TOP CHALECO</h2>
+        <p class="info__precio-actual">$45.000</p>
+        <p class="info__cuotas">5 cuotas de $9000</p>
+        <p class="info__precio-original">$60.000</p>
+        
+
+        <form action="/" class="info__formulario" method="post">
+          <p class="formulario__opcion">Talle</p>
+          
+          <input class="formulario__radio" type="radio" name="talle" value="xs" id="xs">
+          <label class="formulario__label" for="xs">XS</label>
+
+          <input class="formulario__radio" type="radio" name="talle" value="s" id="s">
+          <label class="formulario__label" for="s">S</label>
+
+          <input class="formulario__radio" type="radio" name="talle" value="m" id="m">
+          <label class="formulario__label" for="m">M</label>
+
+          <input class="formulario__radio" type="radio" name="talle" value="l" id="l">
+          <label class="formulario__label" for="l">L</label>
+
+          <input class="formulario__radio" type="radio" name="talle" value="xl" id="xl">
+          <label class="formulario__label" for="xl">XL</label>
+          
+          <p class="formulario__opcion">Color</p>
+          
+          <input class="formulario__radio" type="radio" name="color" value="negro" id="negro">
+          <label class="formulario__label" for="negro">Negro</label>
+
+          <input class="formulario__radio" type="radio" name="color" value="blanco" id="blanco">
+          <label class="formulario__label" for="blanco">Blanco</label>
+
+          <input class="formulario__radio" type="radio" name="color" value="rojo" id="rojo">
+          <label class="formulario__label" for="rojo">Rojo</label>
+
+          <button class="formulario__boton-carrito" type="submit" formaction="" formmethod="post">
+            <i class="formulario__icono fa-solid fa-cart-shopping"></i>AGREGAR AL CARRITO
+          </button>
+        </form>
+        
+        <section class="producto__detalles">
+          <h3 class="detalles__titulo">DESCRIPCIÓN</h3>
+          <P class="detalles__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eaque suscipit esse neque ducimus quae molestiae, odio</p>
+          <h3 class="detalles__titulo">MATERIALES</h3>
+          <P class="detalles__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eaque suscipit esse neque ducimus quae molestiae, odio</p>
+          <h3 class="detalles__titulo">CUIDADOS</h3>
+          <P class="detalles__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eaque suscipit esse neque ducimus quae molestiae, odio</p>
+        </section>
+      </section>
+    </section>
+
+    <section class="ultimos-lanzamientos">
+      <h2 class="cabecera-de-seccion">TAMBIÉN TE PUEDE GUSTAR</h2>
+  
+      <div class="thumbnail-slider--con_botones">
+        <button class="thumbnail-slider__boton"><i class="fas fa-solid fa-arrow-left"></i></button>
+        <div class="thumbnail-slider">
+                  
+          <article class="slider__articulo">
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/vestido-camisero_thumbnail.png" alt="" >
+  
+              </div>
+  
+              <h3 class="articulo__nombre">VESTIDO CAMISERO</h3>
+              <p class="articulo__precio-actual">25.000$</p>
+          
+            </a>
+          </article>
+                
+          <article class="slider__articulo">
+  
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/vestido-largo_thumbnail.png" alt="" >
+  
+              </div>
+  
+              <h3 class="articulo__nombre">VESTIDO LARGO</h3>
+              <p class="articulo__precio-actual">25.000$</p>
+          
+            </a>
+          </article>
+                
+          <article class="slider__articulo">
+  
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/musculosa_thumbnail.png" alt="" >
+  
+              </div>
+  
+              <h3 class="articulo__nombre">MUSCULOSA</h3>
+              <p class="articulo__precio-actual">30.000$</p>
+          
+            </a>
+          </article>
+                
+          <article class="slider__articulo">
+  
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/top-chaleco_thumbnail.png" alt="" >
+  
+              </div>
+  
+              <h3 class="articulo__nombre">TOP CHALECO</h3>
+              <p class="articulo__precio-actual">25.000$</p>
+          
+            </a>
+          </article>
+                
+          <article class="slider__articulo">
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/vestido-largo_thumbnail.png" alt="" >
+  
+              </div>
+  
+              <h3 class="articulo__nombre">VESTIDO LARGO</h3>
+              <p class="articulo__precio-actual">25.000$</p>
+          
+            </a>
+          </article>
+  
+          <article class="slider__articulo">
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/musculosa_thumbnail.png" alt="" >
+  
+              </div>
+  
+              <h3 class="articulo__nombre">MUSCULOSA</h3>
+              <p class="articulo__precio-actual">30.000$</p>
+          
+            </a>
+          </article>
+  
+          
+        </div>
+        <button class="thumbnail-slider__boton"><i class="fas fa-solid fa-arrow-right"></i></button>
+      </div>
+    </section>
+    
+
+  </main>
+
+
+
+  <footer class="footer">
+    <h2 class="footer__titulo">CONTACTANOS</h2>
+    <a class="footer__mail" href="mailto:correo@gmail.com">dhropacontacto@gmail.com</a>
+    <p class="footer__direccion">Direccion 123, Buenos Aires, ARG</p>
+
+    <div class="footer__redes">
+      <a href="https://www.facebook.com/" class="footer__link">
+        <i class="footer__icono fa-brands fa-facebook-f"></i>
+        <p class="footer__nombre-redes">FACEBOOK</p>
+      </a>
+      <a href="https://www.instagram.com/" class="footer__link">
+        <i class="footer__icono fa-brands fa-instagram"></i>
+        <p class="footer__nombre-redes">INSTAGRAM</p>
+      </a>
+      <a href="https://www.whatsapp.com/" class="footer__link">
+        <i class="footer__icono fa-brands fa-whatsapp"></i>
+        <p class="footer__nombre-redes">WHATSAPP</p>
+      </a>
+    </div>
+
+    <p class="footer__copyright">Copytright 2024</p>
+  </footer>
+  
+  <!-- :D -->
+  
+</body>
+
+</html>
