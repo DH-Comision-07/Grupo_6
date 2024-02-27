@@ -180,7 +180,7 @@ margin-bottom: 20px;
 background-image: url("\images\home_banner4.jpg")
 }
 
-.h2 {
+.h2.banner {
   color: #1f2f23;
   font-size: 1.25em;
   text-align: center;
@@ -191,6 +191,12 @@ background-image: url("\images\home_banner4.jpg")
   margin: 0 20px 0 0;
   display:none;
   height:50px;  
+}
+.h2.banner{
+font-family: "Sulphur Point", sans-serif;
+font-weight: bold;
+display: inline;
+font-size: 1.3em;
 }
 
 .banner img{
