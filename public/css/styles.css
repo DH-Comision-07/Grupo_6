@@ -12,16 +12,12 @@
   --color-crema-claro: #f4e5d9;
   --color-blanco: #ffffff;
 }
-@font-face {
-  font-family: Vonique;
-  src: url("/fonts/vonique.otf") format("opentype");
-}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* fuente de repuesto */
-  font-family: Helvetica, sans-serif;
+  font-family: "Helvetica", sans-serif;
   color: var(--color-negro);
 }
 
@@ -61,12 +57,11 @@
 
 .header-shipping {
   font-size: 0.75em;
-  text-align: center;
   padding: 10px;
   border: 1px solid #515c41;
   color: #515c41;
   border-radius: 50px;
-  margin:5px;
+  margin:5px 5px 5px 25px;
   display: none;
   min-width: 112px;
   }
@@ -98,37 +93,34 @@
     margin-top: 10px;
     width: 50%;
     display:none;
+    margin-left:auto;
 }
 
 .header-searchbar input {
-  width: 70%;
+  width: 65%;
   height: 35px;
   border-radius: 4px;
   border-color: #42312f;
   border-style: none;
   padding: 10px;
+  color: #42312f;
+  outline: none;
 }
 
-
-.header-searchbar input:focus{
-  border-color: #42312f;
-}
 
 .header-searchbar i {
-  background-color: #FFF;
   padding: 2px 1px;
   border-radius: 2px;
+  color: #FFF;
 }
 
 .header-searchbar button {
-  background-color: #FFF;
-  color: #666;
-  height: 25px;
+  background-color: #42312f;
   border-style: none;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  border-left: solid #42312f 1px;
-  padding-left: 5px;
+  /* border: solid #42312f 1px; */
+  padding: 5px;
   position: relative;
   cursor: pointer;
 }
@@ -138,17 +130,15 @@
  }
 
  .header-login{
-  color: #1f2f23;
+  color: #42312f;
   font-size: 1.25em;
   text-align: center;
   align-items: center;
-  justify-content:space-between;
   border-radius: 50%;
-  border:1px solid #42312f;
+  border:2px solid #42312f;
   padding: 10px;
-  margin: 20px;
+  margin: 15px;
   display:none;
-  margin-left:auto;
  }
 
  .header-shoppingcart{
@@ -159,10 +149,9 @@
   justify-content:space-between;
   border-radius: 50%;
   padding: 10px;
-  margin: 0 20px 0 0;
+  margin-right: 10px;
   display:none;
   height:50px;
-  /* margin-left:auto; */
  }
 
  .header-shoppingcart p{
@@ -365,6 +354,7 @@ object-fit: cover;
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  transition: all 450ms;
 }
 .footer__link:hover{
   background-color: var(--color-blanco);
@@ -418,7 +408,7 @@ object-fit: cover;
   }
 
   .header-searchbar input {
-    width: 85%;
+    width: 15vw;
   }
 
   .cabecera-de-seccion {
