@@ -11,22 +11,15 @@ app.get('/', (req, res) => {
 app.get('/registro', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/registro.html'));
 });
-
-<<<<<<< HEAD
-app.listen(port, () =>
-    console.log('Servidor online en el puerto ' + port));
-=======
 app.get('/login', (req,res) => {
     res.sendFile(path.join(__dirname,'/views/login.html'));
 });
-
 app.get('/producto', (req,res) => {
     res.sendFile(path.join(__dirname,'/views/productDetail.html'));
 });
-app.get('/productCart', (req,res) => {
-    res.sendFile(path.join(__dirname, './views/productCart.html'));      /*agregar ruta*/
+app.get('/carrito', (req,res) => {
+    res.sendFile(path.join(__dirname, './views/productCart.html')); 
 });
 
 app.listen(port, () => 
     console.log('Servidor online en el puerto '+port));
->>>>>>> daa30a118b130f118a8b9960c5a822c10f111239
