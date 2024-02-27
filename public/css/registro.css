@@ -38,6 +38,7 @@ input {
 .condiciones {
     display: flex;
     flex-direction: column;
+    gap: 3px;
 }
 
 .condiciones type {
@@ -47,7 +48,16 @@ input {
 
 .condiciones label {
     font-size: 10px ;
+    display: flex;
+    align-items: center;
 }
+
+.condiciones label>p{
+    margin: 0;
+    text-align: center;
+    margin-top: 2px;
+}
+
 button {
     border: none;
     color: black ;
