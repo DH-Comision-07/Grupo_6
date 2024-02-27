@@ -1,72 +1,22 @@
 
-/* header */
-
-body .main-header{
-  padding: 12px 0;
-  text-align: center;
-  border-bottom: 1px solid #cbcbcb;
-  position: relative;
-  background-color: #FFF;
-  margin-bottom: 40px;
-}
-
-.header-link {
-  position: absolute;
-  left: 0px;
-  top: calc(100% + 18px);
-  display: none;
-}
-  
-.header-logo{
-    display: inline-block;
-    font-size: 24px;
-    border: none;
-    line-height: 39px;
-    max-width: calc(100% - 180px);
-}
-  
-  
-.header-shipping{
-    font-size: 1em;
-    padding: 10px;
-    border: 1px solid #515c41;
-    color: #515c41;
-    border-radius: 50px;
-    margin:15px;
-}
-  
-.header-shipping i{
-    color: #515c41;
-} 
-  
-.header-paymentsafe{
-    font-size: 1em;
-    padding: 10px;
-    border: 1px solid #c7a88c;
-    color: #c7a88c;
-    border-radius: 50px;
-    margin:15px;
-}
-  
-  .header-paymentsafe i{
-    color: #c7a88c;
-   }
-
-
-
-
 
 
 /* Estilos del carrito */
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #cart-content {
-  padding: 10px;
+  width: 98%;
+  margin-bottom: 20px;
 }
 .product {
   border: 1px solid var(--color-celeste-claro);
-  /* padding: 10px; */
   border-radius: 5px;
   min-height: 160px;
   display: flex;
+  margin-bottom: 20px;
 }
 .image-container {
   width: 100px;
@@ -83,6 +33,11 @@ body .main-header{
   font-family: "Sulphur Point";
   font-weight: bold;
   margin-top: 10px;
+}
+.product-details__precio {
+  font-family: "Sulphur Point";
+  font-weight: bold;
+  font-size: 1.2em;
 }
 .product-details__info {
   font-family: "Sulphur Point";
@@ -110,9 +65,6 @@ body .main-header{
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-  /* display: block;
-  margin-top: 10px;
-  margin-bottom: 10px; */
   transition: 450ms;
   margin-left: 5px;
 }
@@ -122,152 +74,70 @@ body .main-header{
 .fa-trash {
   color: #fff;
 }
-
-
-
-
-
-
-
-
-/* newsletter */
-.newsletter {
-  background-color: var(--color-celeste-claro);
-  text-align: center;
-  padding: 20px 10%;
-}
-.newsletter__titulo {
-  color: var(--color-blanco);
-  font-family: "Sulphur Point";
-  font-size: 2em;
-  line-height: 30px;
-  margin-bottom: 10px;
-}
-.newsletter__texto {
-  color: var(--color-blanco);
-}
-.newsletter__email {
-  width: 80%;
-  height: 40px;
-  margin: 10px 0;
-  border: none;
-  padding: 10px;
-  color: var(--color-gris);
-  max-width: 70%;
-}
-.newsletter__boton-enviar {
-  height: 40px;
-  width: 40px;
-  vertical-align: middle;
-  margin: 0;
-  border: none;
-  background-color: var(--color-blanco);
-}
-  
-  /* footer contacto */
-.footer {
-  background-color: var(--color-verde-claro);
-  margin-top: 20px;
-  padding-top: 25px;
-  padding-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.footer__titulo {
-  color: var(--color-blanco);
-  font-family: "Sulphur Point";
-  font-size: 2em;
-  line-height: 30px;
-  margin-bottom: 10px;
-}
-.footer__mail {
-  color: var(--color-blanco);
-  margin-bottom: 5px;
-}
-.footer__direccion {
-  color: var(--color-blanco);
-}
-.footer__redes {
-  display: flex;
-}
-.footer__link {
-  background-color: var(--color-verde-oscuro);
-  min-width: 60px;
-  min-height: 60px;
-  font-weight: bold;
-  border-radius: 100%;
-  margin: 15px 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-.footer__link:hover{
-  background-color: var(--color-blanco);
-}
-.footer__link:hover > .footer__icono{
-  color: var(--color-verde-oscuro);
-}
-.footer__icono {
-  font-size: 2em;
-  color: var(--color-crema-claro);
-}
-.footer__nombre-redes{
+.remove-text {
   display: none;
-  color: var(--color-crema-claro);
-  margin-left: 10px;
-  font-size: 1.2em;
+  color: #fff;
+  margin-left: 5px;
 }
-.footer__link:hover > .footer__nombre-redes{
-  color: var(--color-verde-oscuro);
+
+#cart-summary {
+  width: 98%;
+  border: 1px solid var(--color-celeste-oscuro);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
 }
-.footer__copyright {
-  font-size: 0.8em;
+.summary__title {
+  font-family: "Sulphur Point";
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-  
+.summary__line {
+  margin-bottom: 7px;
+  width: 90%;
+}
+.line__price {
+  font-weight: bold;
+  float: right;
+}
+.form-button {
+  background-color: var(--color-negro);
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 450ms;
+  font-weight: bold;
+}
+.form-button:hover {
+  background-color: var(--color-crema-oscuro);
+  color: var(--color-negro);
+  text-decoration: underline;
+}
+
+
+
+
   
 /* MEDIA QUERIES */
 /* seguir manteniendo en orden */
 @media (min-width: 768px){           /* TABLET */
-  .cabecera-de-seccion {
-    font-size: 2.5em;
+  .cart {
+    padding: 10px;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
   }
-  .slider__articulo {
-    min-width: 23%;
-    margin: 0 1%;
+  .remove-text {
+    display: inline;
   }
-  .thumbnail__imagen {
-    height: 280px;
-  }
-  .thumbnail__descuento{
-    font-size: 1.6em;
-  }
-  
-  .footer__link {
-    border-radius: 50px;
-    padding: 0 20px;
-  }
-  .footer__icono {
-    font-size: 1.3em;
-  }
-  .footer__nombre-redes {
-    display: block;
+  #cart-summary {
+    width: 60%;
   }
 }
 @media (min-width: 1200px){         /* DESKTOP */
-  .thumbnail-slider--con_botones {
-    width: 90%;
-  }
-  .thumbnail-slider__boton {
-    display: block;
-  }
-  .slider__articulo {
-    min-width: 18%;
-    margin: 0 1%;
-  }
-  .thumbnail__imagen {
-    height: 370px;
-  }
+  
 }   
