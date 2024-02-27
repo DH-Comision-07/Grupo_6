@@ -13,6 +13,7 @@ rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/login-reg-styles.css" />
   <title>D&H - Inicia sesión</title>
 </head>
 
@@ -68,15 +69,46 @@ rel="stylesheet">
 
 <main>
 <!-- formulario login -->
-  <section class="login-form">
-    <form action="/login" method="get">
+  <section class="login-form-section">
+    <h1 id="registrarse-text">Acceder</h1>
 
-      <label for="gi"></label>
-      
+    <form action="/login" method="POST">
+        <div class="login-form">
+            <input type="text" name="username" placeholder="Nombre de usuario" required>
+            <input type="password" name="passwordlogin" placeholder="Contraseña" required minlength="10">
+            <a href=""><button type="menu">Acceder con tu cuenta <i class="fas fa-sign-in-alt"></i></button></a>
+        </div>
+
 
     </form>
   </section>
 
 </main>
+
+<!-- footer -->
+
+<footer class="footer">
+  <h2 class="footer__titulo">CONTACTANOS</h2>
+  <a class="footer__mail" href="mailto:correo@gmail.com">dhropacontacto@gmail.com</a>
+  <p class="footer__direccion">Direccion 123, Buenos Aires, ARG</p>
+
+  <div class="footer__redes">
+    <a href="https://www.facebook.com/" class="footer__link">
+      <i class="footer__icono fa-brands fa-facebook-f"></i>
+      <p class="footer__nombre-redes">FACEBOOK</p>
+    </a>
+    <a href="https://www.instagram.com/" class="footer__link">
+      <i class="footer__icono fa-brands fa-instagram"></i>
+      <p class="footer__nombre-redes">INSTAGRAM</p>
+    </a>
+    <a href="https://www.whatsapp.com/" class="footer__link">
+      <i class="footer__icono fa-brands fa-whatsapp"></i>
+      <p class="footer__nombre-redes">WHATSAPP</p>
+    </a>
+  </div>
+
+  <p class="footer__copyright">Copytright 2024</p>
+</footer>
+
 
 </html>
