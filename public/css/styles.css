@@ -177,10 +177,21 @@
 width: 100%;
 text-align: center;
 margin-bottom: 20px;
-background-image: url("\images\Banner web sobre descuentos para tienda de ropa .jpg")
+background-image: url("\images\home_banner4.jpg")
+}
 
-
- }
+.h2 {
+  color: #1f2f23;
+  font-size: 1.25em;
+  text-align: center;
+  align-items: center;
+  justify-content:space-between;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 20px 0 0;
+  display:none;
+  height:50px;  
+}
 
 .banner img{
 width: 100%;
