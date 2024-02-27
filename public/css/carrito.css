@@ -139,5 +139,8 @@
   }
 }
 @media (min-width: 1200px){         /* DESKTOP */
-  
+  .cart {
+    max-width: 90%;
+    margin: auto;
+  }
 }   
