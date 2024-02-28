@@ -10,141 +10,144 @@
     <!-- FUENTES  -->
     <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/css/carrito.css" />
+    <link rel="stylesheet" href="/css/productCart.css" />
     <link rel="stylesheet" href="/css/index.css" />
     
 
     <title>Carrito de compras</title>
 </head>
+
 <body>
-  
-    <!-- header -->
   <header class="header">
     
-    <img class="header-logo" src="/images/logo.png" alt="logo">
+    <a class="header-logo" href="/"><img src="/images/logo.png" alt="logo"></a>
     
     <div class="header-burger">
       <i class="fas fa-bars"></i>
     </div>
     
     <div class="header-shipping"> 
-     <i class="fas fa-solid fa-truck"></i> Envíos gratis 
+      <i class="fas fa-solid fa-truck"></i> Envíos gratis 
     </div>
     
     <div class="header-paymentsafe">
-      <i class="fas fa-solid fa-lock"></i> PAGO SEGURO </div>
-
-    <div class="header-searchbar">
-      <form action="/" method="GET">
-          <input type="text" name="searchbar" placeholder=""> <button
-              type="submit"><i class="fas fa-search"></i></button>
-       </form>
+      <i class="fas fa-solid fa-lock"></i> PAGO SEGURO 
     </div>
+
     
-    <a href="" rel="login"><div class="header-login">
-      <i class="fas fa-solid fa-user"></i>    
-    </div></a>
+    <form action="/" method="GET" class="header-searchbar">
+      <input type="text" name="searchbar" placeholder="Buscar..."> 
+      <button type="submit"><i class="fas fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    
 
-    <a href="" rel="carrito"><div class="header-shoppingcart">
-      <i class="fas fa-solid fa-basket-shopping"></i> <p>>></p>
-    </div></a>
+    <div class="header-icon">
+      <a href="/login" rel="login">
+        <i class="fas fa-solid fa-user"></i>    
+      </a>
+    </div>
 
+    <div class="header-icon">
+      <a href="/carrito" rel="carrito">
+        <i class="fas fa-solid fa-basket-shopping"></i>
+      </a>
+    </div>
 
   </header>
 
 
-    <main>
-        <section class="cart">
-            <div id="cart-content">
-                <article class="product">
-                    <div class="image-container">
-                        <img class="image" src="/images/vestido-largo_thumbnail.PNG" alt="Producto 1">
-                    </div>
-                    
-                    <div class="product-details">
-                        <h2 class="product-details__nombre">VESTIDO LARGO</h2>
-                        <p class="product-details__precio">$25.000</p>
-                        <p class="product-details__info">Azul</p>
-                        <p class="product-details__info">M</p>
-                        
-                        <button class="quanity-button">-</button>
-                        <p class="quantity">2</p>
-                        <button class="quanity-button">+</button>
-                        <button class="remove-button">
-                            <i class="fa-solid fa-trash"></i>
-                            <p class="remove-text">Eliminar</p>
-                        </button>
-                        
-                    </div>
-                </article>
+  <main>
+      <section class="cart">
+          <div id="cart-content">
+              <article class="product">
+                  <div class="image-container">
+                      <img class="image" src="/images/vestido-largo_thumbnail.PNG" alt="Producto 1">
+                  </div>
+                  
+                  <div class="product-details">
+                      <h2 class="product-details__nombre">VESTIDO LARGO</h2>
+                      <p class="product-details__precio">$25.000</p>
+                      <p class="product-details__info">Azul</p>
+                      <p class="product-details__info">M</p>
+                      
+                      <button class="quanity-button">-</button>
+                      <p class="quantity">2</p>
+                      <button class="quanity-button">+</button>
+                      <button class="remove-button">
+                          <i class="fa-solid fa-trash"></i>
+                          <p class="remove-text">Eliminar</p>
+                      </button>
+                      
+                  </div>
+              </article>
 
-                <article class="product">
-                    <div class="image-container">
-                        <img class="image" src="/images/top-chaleco_thumbnail.PNG" alt="Producto 1">
-                    </div>
-                    
-                    <div class="product-details">
-                        <h2 class="product-details__nombre">TOP CHALECO</h2>
-                        <p class="product-details__precio">$25.000</p>
-                        <p class="product-details__info">Negro</p>
-                        <p class="product-details__info">S</p>
-                        
-                        <button class="quanity-button">-</button>
-                        <p class="quantity">1</p>
-                        <button class="quanity-button">+</button>
-                        <button class="remove-button">
-                            <i class="fa-solid fa-trash"></i>
-                            <p class="remove-text">Eliminar</p>
-                        </button>
-                        
-                    </div>
-                </article>
-                
-            </div>
+              <article class="product">
+                  <div class="image-container">
+                      <img class="image" src="/images/top-chaleco_thumbnail.PNG" alt="Producto 1">
+                  </div>
+                  
+                  <div class="product-details">
+                      <h2 class="product-details__nombre">TOP CHALECO</h2>
+                      <p class="product-details__precio">$25.000</p>
+                      <p class="product-details__info">Negro</p>
+                      <p class="product-details__info">S</p>
+                      
+                      <button class="quanity-button">-</button>
+                      <p class="quantity">1</p>
+                      <button class="quanity-button">+</button>
+                      <button class="remove-button">
+                          <i class="fa-solid fa-trash"></i>
+                          <p class="remove-text">Eliminar</p>
+                      </button>
+                      
+                  </div>
+              </article>
+              
+          </div>
 
-            <div id="cart-summary">
-                <h2 class="summary__title">RESUMEN DE COMPRA</h2>
-                <p class="summary__line">Vestido largo<span class="line__price">$25.000</span></p>
-                <p class="summary__line">Vestido largo<span class="line__price">$25.000</span></p>
-                <p class="summary__line">Top chaleco<span class="line__price">$50.000</span></p>
-                <p class="summary__line">Envio<span class="line__price">$500</span></p>
-                
-                <h2 class="summary__title">TOTAL: $100.500</h2>
+          <div id="cart-summary">
+              <h2 class="summary__title">RESUMEN DE COMPRA</h2>
+              <p class="summary__line">Vestido largo<span class="line__price">$25.000</span></p>
+              <p class="summary__line">Vestido largo<span class="line__price">$25.000</span></p>
+              <p class="summary__line">Top chaleco<span class="line__price">$50.000</span></p>
+              <p class="summary__line">Envio<span class="line__price">$500</span></p>
+              
+              <h2 class="summary__title">TOTAL: $100.500</h2>
 
-                <form action="/" method="post">
-                    
-                    <button class="form-button">Finalizar Compra</button>
-                    <button class="form-button">Seguir Comprando</button>
-                </form>
-                
-            </div>
-        </section>
+              <form action="/" method="post">
+                  
+                  <button class="form-button">Finalizar Compra</button>
+                  <button class="form-button">Seguir Comprando</button>
+              </form>
+              
+          </div>
+      </section>
 
-    </main>
+  </main>
 
 
-    <footer class="footer">
-        <h2 class="footer__titulo">CONTACTANOS</h2>
-        <a class="footer__mail" href="mailto:correo@gmail.com">contacto@dhindumentaria.com</a>
-        <p class="footer__direccion">Direccion 123, Buenos Aires, ARG</p>
+  <footer class="footer">
+      <h2 class="footer__titulo">CONTACTANOS</h2>
+      <a class="footer__mail" href="mailto:correo@gmail.com">contacto@dhindumentaria.com</a>
+      <p class="footer__direccion">Direccion 123, Buenos Aires, ARG</p>
+  
+      <div class="footer__redes">
+        <a href="https://www.facebook.com/" class="footer__link">
+          <i class="footer__icono fa-brands fa-facebook-f"></i>
+          <p class="footer__nombre-redes">FACEBOOK</p>
+        </a>
+        <a href="https://www.instagram.com/" class="footer__link">
+          <i class="footer__icono fa-brands fa-instagram"></i>
+          <p class="footer__nombre-redes">INSTAGRAM</p>
+        </a>
+        <a href="https://www.whatsapp.com/" class="footer__link">
+          <i class="footer__icono fa-brands fa-whatsapp"></i>
+          <p class="footer__nombre-redes">WHATSAPP</p>
+        </a>
+      </div>
+  
+      <p class="footer__copyright">Copytright 2024</p>
+    </footer>
     
-        <div class="footer__redes">
-          <a href="https://www.facebook.com/" class="footer__link">
-            <i class="footer__icono fa-brands fa-facebook-f"></i>
-            <p class="footer__nombre-redes">FACEBOOK</p>
-          </a>
-          <a href="https://www.instagram.com/" class="footer__link">
-            <i class="footer__icono fa-brands fa-instagram"></i>
-            <p class="footer__nombre-redes">INSTAGRAM</p>
-          </a>
-          <a href="https://www.whatsapp.com/" class="footer__link">
-            <i class="footer__icono fa-brands fa-whatsapp"></i>
-            <p class="footer__nombre-redes">WHATSAPP</p>
-          </a>
-        </div>
-    
-        <p class="footer__copyright">Copytright 2024</p>
-      </footer>
-    <!-- <script src="app.js"></script> -->
 </body>
 </html>
