@@ -162,8 +162,36 @@
  }
  
  /* banner de texto negro */
- 
+ .banner {
+width: 100%;
+text-align: center;
+margin-bottom: 20px;
+background-image: url("\images\home_banner4.jpg")
+}
 
+.h2.banner {
+  color: #1f2f23;
+  font-size: 1.25em;
+  text-align: center;
+  align-items: center;
+  justify-content:space-between;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 0 20px 0 0;
+  display:none;
+  height:50px;  
+}
+.h2.banner {
+font-family: "Sulphur Point", sans-serif;
+font-weight: bold;
+display: inline;
+font-size: 1.3em;
+}
+
+.banner img{
+width: 100%;
+object-fit: cover;
+}
 
 /* carusel de imagen con texto */
   
