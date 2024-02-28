@@ -13,6 +13,7 @@ rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/login-reg-styles.css" />
   <title>D&H - Inicia sesión</title>
 </head>
 
@@ -30,53 +31,69 @@ rel="stylesheet">
       <div class="header-burger">
         <i class="fas fa-bars"></i>
       </div>
-      
-      <div class="header-shipping"> 
-       <i class="fas fa-solid fa-truck"></i> Envíos gratis 
-      </div>
-      
-      <div class="header-paymentsafe">
-        <i class="fas fa-solid fa-lock"></i> PAGO SEGURO 
-      </div>
-  
-      <div class="header-searchbar">
-        <form action="/" method="GET" class="header-searchbar-form">
-            <input type="text" name="searchbar" placeholder="Buscar..."> 
-            <button type="submit"><i class="fas fa-solid fa-magnifying-glass"></i></button>
-         </form>
-      </div>
-      
-      <div class="header-login">
-            <a href="/login" rel="login">
-           <i class="fas fa-solid fa-user"></i>    
-          </a>
-      </div>
-  
-      <a href="" rel="carrito">
-        <div class="header-shoppingcart">
-          <i class="fas fa-solid fa-basket-shopping"></i> <p>>></p>
+
+      <a href="/" rel="home">
+        <div class="header-return">
+          <i class="fas fa-solid fa-arrow-left"></i> <p>REGRESAR</p>
         </div>
       </a>
-  
-  
+
     </header>
   
   
   
-  <!-- :D -->
+  
 </body>
 
 <main>
 <!-- formulario login -->
-  <section class="login-form">
-    <form action="/login" method="get">
 
-      <label for="gi"></label>
-      
+<div class="container_form">
+  <h1 class="title">Ingresá a tu cuenta</h1>
+  <form>
+      <div class="form_field">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email"/>
+      </div>
+      <div class="form_field">
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" id="password"/>
+      </div>
+      <div class="condiciones">
+              <label for="recordar">
+                  <input type="checkbox" value="recordar" id="recordar" checked>
+                  <p> Recordarme</p>
+              </label>
+      </div>
 
-    </form>
-  </section>
+      <button class="button-login-reg" type="submit">
+          Continuar
+      </button>
+
+      <div class="form-register">
+        <p>
+            ¿No tienes una cuenta?
+            <a href="/registro">¡Registrate!</a>
+        </p>
+    </div>
+
+  </form>
 
 </main>
 
+<!-- footer -->
+
+<footer class="footer">
+  <h2 class="footer__titulo">CONTACTANOS</h2>
+  <a class="footer__mail" href="mailto:correo@gmail.com">contacto@dhindumentaria.com</a>
+  <p class="footer__direccion">Direccion 123, Buenos Aires, ARG</p>
+
+  <p class="footer__copyright">Copytright 2024</p>
+</footer>
+
+
 </html>
+
+
+
+<!-- :D -->
