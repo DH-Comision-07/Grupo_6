@@ -13,7 +13,7 @@ rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/index.css" />
-  <link rel="stylesheet" href="/css/login-reg-styles.css" />
+  <link rel="stylesheet" href="/css/loginRegister.css"/>
   <title>D&H - Inicia sesión</title>
 </head>
 
@@ -24,11 +24,9 @@ rel="stylesheet">
     <!-- header -->
     <header class="header">
     
-      <div class="header-logo">
-        <a href="/"><img src="/images/logo.png" alt="logo"></a>
-      </div>  
+      <a class="header-logo" href="/"><img src="/images/logo.png" alt="logo"></a>
       
-      <div class="header-burger">
+      <!-- <div class="header-burger">
         <i class="fas fa-bars"></i>
       </div>
 
@@ -36,61 +34,54 @@ rel="stylesheet">
         <div class="header-return">
           <i class="fas fa-solid fa-arrow-left"></i> <p>REGRESAR</p>
         </div>
-      </a>
-
+      </a> -->
+  
     </header>
   
     <main>
-      <!-- formulario login -->
-      
-      <div class="container_form">
+      <section class="container_form">
         <h1 class="title">INGRESA A TU CUENTA</h1>
         <form>
-            <div class="form_field">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email"/>
-            </div>
-            <div class="form_field">
-                <label for="password">Contraseña</label>
-                <input type="password" name="password" id="password"/>
-            </div>
-            <div class="condiciones">
-                    <label for="recordar">
-                        <input type="checkbox" value="recordar" id="recordar" checked>
-                        <p> Recordarme</p>
-                    </label>
-            </div>
-      
-            <button class="button-login-reg" type="submit">
-                Continuar
-            </button>
-      
-            <div class="form-register">
-              <p>
-                  ¿No tienes una cuenta?
-                  <a href="/registro">¡Registrate!</a>
-              </p>
+          <div class="form_field">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email"/>
           </div>
-      
+          <div class="form_field">
+              <label for="password">Contraseña</label>
+              <input type="password" name="password" id="password"/>
+          </div>
+          <div class="condiciones">
+                  <label for="recordar">
+                      <input type="checkbox" value="recordar" id="recordar" checked>
+                      <p> Recordarme</p>
+                  </label>
+          </div>
+    
+          <button class="button-login-reg" type="submit">
+              Continuar
+          </button>
+    
+          <div class="form-register">
+            <p>
+                ¿No tienes una cuenta?
+                <a href="/registro">¡Registrate!</a>
+            </p>
+          </div>
         </form>
+      </section>
       
-      </main>
+    </main>
       
-      <!-- footer -->
+      
       
       <footer class="footer">
         <h2 class="footer__titulo">CONTACTANOS</h2>
         <a class="footer__mail" href="mailto:correo@gmail.com">contacto@dhindumentaria.com</a>
         <p class="footer__direccion">Direccion 123, Buenos Aires, ARG</p>
-      
+    
         <p class="footer__copyright">Copytright 2024</p>
       </footer>
       
 </body>
 
-
 </html>
-
-
-
-<!-- :D -->
