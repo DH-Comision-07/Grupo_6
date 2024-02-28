@@ -1,7 +1,4 @@
 
-
-
-/* Estilos del carrito */
 .cart {
   display: flex;
   flex-direction: column;
@@ -121,12 +118,7 @@
 }
 
 
-
-
-  
-/* MEDIA QUERIES */
-/* seguir manteniendo en orden */
-@media (min-width: 768px){           /* TABLET */
+@media (min-width: 768px){
   .cart {
     padding: 10px;
     flex-direction: row;
@@ -140,7 +132,7 @@
     width: 60%;
   }
 }
-@media (min-width: 1200px){         /* DESKTOP */
+@media (min-width: 1200px){
   .cart {
     max-width: 90%;
     margin-left: auto;

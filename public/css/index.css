@@ -139,11 +139,7 @@
   object-fit: cover;
 }
 
-/* carusel de imagen con texto */
-  
 
-
-/* sliders */
 
 .cabecera-de-seccion {
   font-family: "Sulphur Point";
@@ -224,9 +220,6 @@
  
 
  
-
-
-
 .newsletter {
   background-color: var(--color-celeste-claro);
   text-align: center;
@@ -331,8 +324,7 @@
 
 
 
-
-@media (min-width: 768px){           /* TABLET */
+@media (min-width: 768px){
   .header-burger{
     display: none;
   }
