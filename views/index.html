@@ -16,268 +16,261 @@ rel="stylesheet">
 </head>
 
 <body>
-  <!-- instalar node modules con npm  -->
-  <!-- MOBILE FIRST Y ADAPTATIVO  -->
+  <header class="header">
   
-    <!-- header -->
-    <header class="header">
+    <div class="header-logo">
+      <a href="/"><img src="/images/logo.png" alt="logo"></a>
+    </div>  
     
-      <div class="header-logo">
-        <a href="/"><img src="/images/logo.png" alt="logo"></a>
-      </div>  
-      
-      <div class="header-burger">
-        <i class="fas fa-bars"></i>
+    <div class="header-burger">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+    <div class="header-shipping"> 
+      <i class="fas fa-solid fa-truck"></i> Envíos gratis 
+    </div>
+    
+    <div class="header-paymentsafe">
+      <i class="fas fa-solid fa-lock"></i> PAGO SEGURO 
+    </div>
+
+    <div class="header-searchbar">
+      <form action="/" method="GET" class="header-searchbar-form">
+          <input type="text" name="searchbar" placeholder="Buscar..."> 
+          <button type="submit"><i class="fas fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+    
+    <div class="header-login">
+          <a href="/login" rel="login">
+          <i class="fas fa-solid fa-user"></i>    
+        </a>
+    </div>
+
+    <a href="" rel="carrito">
+      <div class="header-shoppingcart">
+        <i class="fas fa-solid fa-basket-shopping"></i>
       </div>
-      
-      <div class="header-shipping"> 
-       <i class="fas fa-solid fa-truck"></i> Envíos gratis 
-      </div>
-      
-      <div class="header-paymentsafe">
-        <i class="fas fa-solid fa-lock"></i> PAGO SEGURO 
-      </div>
+    </a>
+
+  </header>
   
-      <div class="header-searchbar">
-        <form action="/" method="GET" class="header-searchbar-form">
-            <input type="text" name="searchbar" placeholder="Buscar..."> 
-            <button type="submit"><i class="fas fa-solid fa-magnifying-glass"></i></button>
-         </form>
-      </div>
-      
-      <div class="header-login">
-            <a href="/login" rel="login">
-           <i class="fas fa-solid fa-user"></i>    
-          </a>
-      </div>
-  
-      <a href="" rel="carrito">
-        <div class="header-shoppingcart">
-          <i class="fas fa-solid fa-basket-shopping"></i> <p>>></p>
+
+  <main>
+
+    <section class="banner">
+      <img class="banner__img" src="/images/home_banner4.jpg"></img>
+      <h2 class="banner__texto">¡Descuento del 20% en toda la colección de primavera!</h2>
+    </section>
+
+    
+    <section class="on-sale">
+      <h2 class="cabecera-de-seccion">ON SALE</h2>
+
+      <div class="thumbnail-slider--con_botones">
+        <button class="thumbnail-slider__boton"><i class="fas fa-solid fa-arrow-left"></i></button>
+        <div class="thumbnail-slider">
+                  
+          <article class="slider__articulo">
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/vestido-camisero_thumbnail.png" alt="" >
+                <p class="thumbnail__descuento">%50 OFF</p>
+              </div>
+
+              <h3 class="articulo__nombre">VESTIDO CAMISERO</h3>
+              <p class="articulo__precio-actual">25.000$</p>
+              <p class="articulo__precio-original">50.000$</p>
+            </a>
+          </article>
+                
+          <article class="slider__articulo">
+
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/vestido-largo_thumbnail.png" alt="" >
+                <p class="thumbnail__descuento">%50 OFF</p>
+              </div>
+
+              <h3 class="articulo__nombre">VESTIDO LARGO</h3>
+              <p class="articulo__precio-actual">25.000$</p>
+              <p class="articulo__precio-original">50.000$</p>
+            </a>
+          </article>
+                
+          <article class="slider__articulo">
+
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/musculosa_thumbnail.png" alt="" >
+                <p class="thumbnail__descuento">%25 OFF</p>
+              </div>
+
+              <h3 class="articulo__nombre">MUSCULOSA</h3>
+              <p class="articulo__precio-actual">30.000$</p>
+              <p class="articulo__precio-original">40.000$</p>
+            </a>
+          </article>
+                
+          <article class="slider__articulo">
+
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/top-chaleco_thumbnail.png" alt="" >
+                <p class="thumbnail__descuento">%50 OFF</p>
+              </div>
+
+              <h3 class="articulo__nombre">TOP CHALECO</h3>
+              <p class="articulo__precio-actual">25.000$</p>
+              <p class="articulo__precio-original">50.000$</p>
+            </a>
+          </article>
+                
+          <article class="slider__articulo">
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/vestido-largo_thumbnail.png" alt="" >
+                <p class="thumbnail__descuento">%50 OFF</p>
+              </div>
+
+              <h3 class="articulo__nombre">VESTIDO LARGO</h3>
+              <p class="articulo__precio-actual">25.000$</p>
+              <p class="articulo__precio-original">50.000$</p>
+            </a>
+          </article>
+
+          <article class="slider__articulo">
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/musculosa_thumbnail.png" alt="" >
+                <p class="thumbnail__descuento">%25 OFF</p>
+              </div>
+
+              <h3 class="articulo__nombre">MUSCULOSA</h3>
+              <p class="articulo__precio-actual">30.000$</p>
+              <p class="articulo__precio-original">40.000$</p>
+            </a>
+          </article>
+
+          
         </div>
-      </a>
-  
-  
-    </header>
-  
-  <!-- banner de texto negro -->
-  <div class="banner"> <img src="/images/home_banner4.jpg"> </img>
-  <h2>¡Descuento del 20% en toda la colección de primavera!</h2>
-</div>
-  
-  <!-- carusel de imagen con texto -->
-  
-  
-  <!-- on sale slider -->
-  <section class="on-sale">
-    <h2 class="cabecera-de-seccion">ON SALE</h2>
-
-    <div class="thumbnail-slider--con_botones">
-      <button class="thumbnail-slider__boton"><i class="fas fa-solid fa-arrow-left"></i></button>
-      <div class="thumbnail-slider">
-                
-        <article class="slider__articulo">
-          <a href="/producto" class="articulo__link">
-            <div class="articulo__thumbnail">
-              <img class="thumbnail__imagen" src="/images/vestido-camisero_thumbnail.png" alt="" >
-              <p class="thumbnail__descuento">%50 OFF</p>
-            </div>
-
-            <h3 class="articulo__nombre">VESTIDO CAMISERO</h3>
-            <p class="articulo__precio-actual">25.000$</p>
-            <p class="articulo__precio-original">50.000$</p>
-          </a>
-        </article>
-              
-        <article class="slider__articulo">
-
-          <a href="/producto" class="articulo__link">
-            <div class="articulo__thumbnail">
-              <img class="thumbnail__imagen" src="/images/vestido-largo_thumbnail.png" alt="" >
-              <p class="thumbnail__descuento">%50 OFF</p>
-            </div>
-
-            <h3 class="articulo__nombre">VESTIDO LARGO</h3>
-            <p class="articulo__precio-actual">25.000$</p>
-            <p class="articulo__precio-original">50.000$</p>
-          </a>
-        </article>
-              
-        <article class="slider__articulo">
-
-          <a href="/producto" class="articulo__link">
-            <div class="articulo__thumbnail">
-              <img class="thumbnail__imagen" src="/images/musculosa_thumbnail.png" alt="" >
-              <p class="thumbnail__descuento">%25 OFF</p>
-            </div>
-
-            <h3 class="articulo__nombre">MUSCULOSA</h3>
-            <p class="articulo__precio-actual">30.000$</p>
-            <p class="articulo__precio-original">40.000$</p>
-          </a>
-        </article>
-              
-        <article class="slider__articulo">
-
-          <a href="/producto" class="articulo__link">
-            <div class="articulo__thumbnail">
-              <img class="thumbnail__imagen" src="/images/top-chaleco_thumbnail.png" alt="" >
-              <p class="thumbnail__descuento">%50 OFF</p>
-            </div>
-
-            <h3 class="articulo__nombre">TOP CHALECO</h3>
-            <p class="articulo__precio-actual">25.000$</p>
-            <p class="articulo__precio-original">50.000$</p>
-          </a>
-        </article>
-              
-        <article class="slider__articulo">
-          <a href="/producto" class="articulo__link">
-            <div class="articulo__thumbnail">
-              <img class="thumbnail__imagen" src="/images/vestido-largo_thumbnail.png" alt="" >
-              <p class="thumbnail__descuento">%50 OFF</p>
-            </div>
-
-            <h3 class="articulo__nombre">VESTIDO LARGO</h3>
-            <p class="articulo__precio-actual">25.000$</p>
-            <p class="articulo__precio-original">50.000$</p>
-          </a>
-        </article>
-
-        <article class="slider__articulo">
-          <a href="/producto" class="articulo__link">
-            <div class="articulo__thumbnail">
-              <img class="thumbnail__imagen" src="/images/musculosa_thumbnail.png" alt="" >
-              <p class="thumbnail__descuento">%25 OFF</p>
-            </div>
-
-            <h3 class="articulo__nombre">MUSCULOSA</h3>
-            <p class="articulo__precio-actual">30.000$</p>
-            <p class="articulo__precio-original">40.000$</p>
-          </a>
-        </article>
-
-        
+        <button class="thumbnail-slider__boton"><i class="fas fa-solid fa-arrow-right"></i></button>
       </div>
-      <button class="thumbnail-slider__boton"><i class="fas fa-solid fa-arrow-right"></i></button>
-    </div>
 
-  </section>
-  
-  <!-- banner estatico -->
-  
-  
-  <!-- ultimos lanzamiento slider -->
-  <section class="ultimos-lanzamientos">
-    <h2 class="cabecera-de-seccion">ULTIMOS LANZAMIENTOS</h2>
+    </section>
+    
+    <!-- banner estatico -->
+    
+    
+    <!-- ultimos lanzamiento slider -->
+    <section class="ultimos-lanzamientos">
+      <h2 class="cabecera-de-seccion">ULTIMOS LANZAMIENTOS</h2>
 
-    <div class="thumbnail-slider--con_botones">
-      <button class="thumbnail-slider__boton"><i class="fas fa-solid fa-arrow-left"></i></button>
-      <div class="thumbnail-slider">
+      <div class="thumbnail-slider--con_botones">
+        <button class="thumbnail-slider__boton"><i class="fas fa-solid fa-arrow-left"></i></button>
+        <div class="thumbnail-slider">
+                  
+          <article class="slider__articulo">
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/vestido-camisero_thumbnail.png" alt="" >
+
+              </div>
+
+              <h3 class="articulo__nombre">VESTIDO CAMISERO</h3>
+              <p class="articulo__precio-actual">25.000$</p>
+          
+            </a>
+          </article>
                 
-        <article class="slider__articulo">
-          <a href="/producto" class="articulo__link">
-            <div class="articulo__thumbnail">
-              <img class="thumbnail__imagen" src="/images/vestido-camisero_thumbnail.png" alt="" >
+          <article class="slider__articulo">
 
-            </div>
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/vestido-largo_thumbnail.png" alt="" >
 
-            <h3 class="articulo__nombre">VESTIDO CAMISERO</h3>
-            <p class="articulo__precio-actual">25.000$</p>
-        
-          </a>
-        </article>
-              
-        <article class="slider__articulo">
+              </div>
 
-          <a href="/producto" class="articulo__link">
-            <div class="articulo__thumbnail">
-              <img class="thumbnail__imagen" src="/images/vestido-largo_thumbnail.png" alt="" >
+              <h3 class="articulo__nombre">VESTIDO LARGO</h3>
+              <p class="articulo__precio-actual">25.000$</p>
+          
+            </a>
+          </article>
+                
+          <article class="slider__articulo">
 
-            </div>
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/musculosa_thumbnail.png" alt="" >
 
-            <h3 class="articulo__nombre">VESTIDO LARGO</h3>
-            <p class="articulo__precio-actual">25.000$</p>
-        
-          </a>
-        </article>
-              
-        <article class="slider__articulo">
+              </div>
 
-          <a href="/producto" class="articulo__link">
-            <div class="articulo__thumbnail">
-              <img class="thumbnail__imagen" src="/images/musculosa_thumbnail.png" alt="" >
+              <h3 class="articulo__nombre">MUSCULOSA</h3>
+              <p class="articulo__precio-actual">30.000$</p>
+          
+            </a>
+          </article>
+                
+          <article class="slider__articulo">
 
-            </div>
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/top-chaleco_thumbnail.png" alt="" >
 
-            <h3 class="articulo__nombre">MUSCULOSA</h3>
-            <p class="articulo__precio-actual">30.000$</p>
-        
-          </a>
-        </article>
-              
-        <article class="slider__articulo">
+              </div>
 
-          <a href="/producto" class="articulo__link">
-            <div class="articulo__thumbnail">
-              <img class="thumbnail__imagen" src="/images/top-chaleco_thumbnail.png" alt="" >
+              <h3 class="articulo__nombre">TOP CHALECO</h3>
+              <p class="articulo__precio-actual">25.000$</p>
+          
+            </a>
+          </article>
+                
+          <article class="slider__articulo">
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/vestido-largo_thumbnail.png" alt="" >
 
-            </div>
+              </div>
 
-            <h3 class="articulo__nombre">TOP CHALECO</h3>
-            <p class="articulo__precio-actual">25.000$</p>
-        
-          </a>
-        </article>
-              
-        <article class="slider__articulo">
-          <a href="/producto" class="articulo__link">
-            <div class="articulo__thumbnail">
-              <img class="thumbnail__imagen" src="/images/vestido-largo_thumbnail.png" alt="" >
+              <h3 class="articulo__nombre">VESTIDO LARGO</h3>
+              <p class="articulo__precio-actual">25.000$</p>
+          
+            </a>
+          </article>
 
-            </div>
+          <article class="slider__articulo">
+            <a href="/producto" class="articulo__link">
+              <div class="articulo__thumbnail">
+                <img class="thumbnail__imagen" src="/images/musculosa_thumbnail.png" alt="" >
 
-            <h3 class="articulo__nombre">VESTIDO LARGO</h3>
-            <p class="articulo__precio-actual">25.000$</p>
-        
-          </a>
-        </article>
+              </div>
 
-        <article class="slider__articulo">
-          <a href="/producto" class="articulo__link">
-            <div class="articulo__thumbnail">
-              <img class="thumbnail__imagen" src="/images/musculosa_thumbnail.png" alt="" >
+              <h3 class="articulo__nombre">MUSCULOSA</h3>
+              <p class="articulo__precio-actual">30.000$</p>
+          
+            </a>
+          </article>
 
-            </div>
-
-            <h3 class="articulo__nombre">MUSCULOSA</h3>
-            <p class="articulo__precio-actual">30.000$</p>
-        
-          </a>
-        </article>
-
-        
+          
+        </div>
+        <button class="thumbnail-slider__boton"><i class="fas fa-solid fa-arrow-right"></i></button>
       </div>
-      <button class="thumbnail-slider__boton"><i class="fas fa-solid fa-arrow-right"></i></button>
-    </div>
-  </section>
-  
-  <!-- subscribite a nuesto newsletter -->
-  
-  <section class="newsletter">
-    <h2 class="newsletter__titulo">
-      SUBSCRIBITE A NUESTRO NEWSLETTER
-    </h2>
-    <P class="newsletter__texto">
-      ¡Recibí novedades y disfrutá descuentos exclusivos!
-    </P>
-    <input type="text" class="newsletter__email" placeholder="Email">
-    <button class="newsletter__boton-enviar"><i class="fas fa-solid fa-paper-plane"></i></button>
-  </section>
-  
-  <!-- footer contacto -->
-  
-
+    </section>
+    
+    <!-- subscribite a nuesto newsletter -->
+    
+    <section class="newsletter">
+      <h2 class="newsletter__titulo">
+        SUBSCRIBITE A NUESTRO NEWSLETTER
+      </h2>
+      <P class="newsletter__texto">
+        ¡Recibí novedades y disfrutá descuentos exclusivos!
+      </P>
+      <input type="text" class="newsletter__email" placeholder="Email">
+      <button class="newsletter__boton-enviar"><i class="fas fa-solid fa-paper-plane"></i></button>
+    </section>
+    
+  </main>
 
   <footer class="footer">
     <h2 class="footer__titulo">CONTACTANOS</h2>
