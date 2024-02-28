@@ -11,6 +11,8 @@
   --color-crema-oscuro: #e2ccb8;
   --color-crema-claro: #f4e5d9;
   --color-blanco: #ffffff;
+
+  height: 100vh;
 }
 * {
   margin: 0;
