@@ -31,57 +31,53 @@ rel="stylesheet">
       <div class="header-burger">
         <i class="fas fa-bars"></i>
       </div>
-      
-      <div class="header-shipping"> 
-       <i class="fas fa-solid fa-truck"></i> Envíos gratis 
-      </div>
-      
-      <div class="header-paymentsafe">
-        <i class="fas fa-solid fa-lock"></i> PAGO SEGURO 
-      </div>
-  
-      <div class="header-searchbar">
-        <form action="/" method="GET" class="header-searchbar-form">
-            <input type="text" name="searchbar" placeholder="Buscar..."> 
-            <button type="submit"><i class="fas fa-solid fa-magnifying-glass"></i></button>
-         </form>
-      </div>
-      
-      <div class="header-login">
-            <a href="/login" rel="login">
-           <i class="fas fa-solid fa-user"></i>    
-          </a>
-      </div>
-  
-      <a href="" rel="carrito">
-        <div class="header-shoppingcart">
-          <i class="fas fa-solid fa-basket-shopping"></i> <p>>></p>
+
+      <a href="/" rel="home">
+        <div class="header-return">
+          <i class="fas fa-solid fa-arrow-left"></i> <p>REGRESAR</p>
         </div>
       </a>
-  
-  
+
     </header>
   
   
   
-  <!-- :D -->
+  
 </body>
 
 <main>
 <!-- formulario login -->
-  <section class="login-form-section">
-    <h1 id="registrarse-text">Acceder</h1>
 
-    <form action="/login" method="POST">
-        <div class="login-form">
-            <input type="text" name="username" placeholder="Nombre de usuario" required>
-            <input type="password" name="passwordlogin" placeholder="Contraseña" required minlength="10">
-            <a href=""><button type="menu">Acceder con tu cuenta <i class="fas fa-sign-in-alt"></i></button></a>
-        </div>
+<div class="container_form">
+  <h1 class="title">Ingresá a tu cuenta</h1>
+  <form>
+      <div class="form_field">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email"/>
+      </div>
+      <div class="form_field">
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" id="password"/>
+      </div>
+      <div class="condiciones">
+              <label for="recordar">
+                  <input type="checkbox" value="recordar" id="recordar" checked>
+                  <p> Recordarme</p>
+              </label>
+      </div>
 
+      <button class="button-login-reg" type="submit">
+          Continuar
+      </button>
 
-    </form>
-  </section>
+      <div class="form-register">
+        <p>
+            ¿No tienes una cuenta?
+            <a href="/registro">¡Registrate!</a>
+        </p>
+    </div>
+
+  </form>
 
 </main>
 
@@ -89,26 +85,15 @@ rel="stylesheet">
 
 <footer class="footer">
   <h2 class="footer__titulo">CONTACTANOS</h2>
-  <a class="footer__mail" href="mailto:correo@gmail.com">dhropacontacto@gmail.com</a>
+  <a class="footer__mail" href="mailto:correo@gmail.com">contacto@dhindumentaria.com</a>
   <p class="footer__direccion">Direccion 123, Buenos Aires, ARG</p>
-
-  <div class="footer__redes">
-    <a href="https://www.facebook.com/" class="footer__link">
-      <i class="footer__icono fa-brands fa-facebook-f"></i>
-      <p class="footer__nombre-redes">FACEBOOK</p>
-    </a>
-    <a href="https://www.instagram.com/" class="footer__link">
-      <i class="footer__icono fa-brands fa-instagram"></i>
-      <p class="footer__nombre-redes">INSTAGRAM</p>
-    </a>
-    <a href="https://www.whatsapp.com/" class="footer__link">
-      <i class="footer__icono fa-brands fa-whatsapp"></i>
-      <p class="footer__nombre-redes">WHATSAPP</p>
-    </a>
-  </div>
 
   <p class="footer__copyright">Copytright 2024</p>
 </footer>
 
 
 </html>
+
+
+
+<!-- :D -->

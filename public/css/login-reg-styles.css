@@ -123,7 +123,7 @@
     border-style: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    /* border: solid #42312f 1px; */
+    border: solid #42312f 1px; 
     padding: 5px;
     position: relative;
     cursor: pointer;
@@ -165,6 +165,26 @@
     margin: 0 0 0 3px;
    }
 
+   .header-return{
+    color: #1f2f23;
+    font-size: 1.25em;
+    text-align: center;
+    align-items: center;
+    justify-content:space-between;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10vw;
+    display:none;
+    height:50px;
+   }
+  
+   .header-return p{
+    font-size: 0.75em;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 0 0 5px;
+   }
+
 
 /* formulario login */
 
@@ -172,21 +192,109 @@
 
    } */
 
-   .login-form{
+   body {
+    font-family: "Sulphur Point";
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 46px;
+    margin-bottom: 80px;
+    padding-top: 70px;
+}
+
+.container_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;
+}
+
+form{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-   }
+    gap: 10px;
+    width: 60%;
+}
 
-   /* .login-form input{
-    
-   } */
+.form_field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-register{
+  text-align: center;
+}
+
+input {
+    outline: none;
+    border: none;
+    margin: 5px;
+    border-bottom: 1px solid black;
+}
+
+.condiciones {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.condiciones type {
+    float: left;
+    margin-right: 10px;
+}
+
+.condiciones label {
+    font-size: 10px ;
+    display: flex;
+    align-items: center;
+}
+
+.condiciones label>p{
+    margin: 0;
+    text-align: center;
+    margin-top: 2px;
+}
+
+button {
+    border: none;
+    color: black ;
+    background-color:white;
+ }
+
+.container_form button {
+    color:white; 
+    padding: 10px 20px;
+    background-color:black;
+    font-size: 30px;
+    margin-top: 44px;
+    cursor: pointer; 
+    min-width: 200px;
+    border-radius: 8px;
+    border-width: 1px;
+
+  }
+
+  .button-login-reg{
+    width: 10vw;
+    align-self: center
+  }
+
+  .container_form p {
+    margin-top: 20px;
+  }
+
+.container_form a {
+    color:#515c41;
+}
+
+
 
 /* footer contacto */
 .footer {
     background-color: var(--color-verde-claro);
-    margin-top: 20px;
+    margin-top: 10vw;
     padding-top: 25px;
     padding-bottom: 10px;
     display: flex;
@@ -243,6 +351,7 @@
     color: var(--color-verde-oscuro);
   }
   .footer__copyright {
+    margin-top: 3vw;
     font-size: 0.8em;
   }
   
@@ -253,23 +362,10 @@
     .header-burger{
       display: none;
     }
-    /* .header-shipping{
+
+    .header-return{
       display:flex;
     }
-    .header-paymentsafe{
-      display:flex;
-    } */
-    
-    /* .header-searchbar {
-      margin-top: 0px;
-      width: 33.3%;
-      display: flex;
-    }
-  
-    .header-searchbar input {
-      width: 15vw;
-    } */
-  
     
     .footer__link {
       border-radius: 50px;
