@@ -4,14 +4,12 @@
 .producto__imagenes {
     flex-basis: 100%;
     display: flex;
-    
 }
 .columna-grande {
     flex-grow: 2;
 }
 .columna-chica {
     flex-grow: 1;
-    /* display: flex; */
     flex-direction: column;
     display: none;
     transition: all 400ms;
@@ -22,7 +20,6 @@
 }
 .columna-chica:active{
     flex-grow: 1;
-    
 }
 .imagen-chica {
     height: 33.33%;
@@ -32,7 +29,6 @@
     height: 100%;
     object-fit: cover;
 }
-
 .producto__informacion {
     margin-left: 20px;
     margin-right: 20px;
@@ -133,7 +129,7 @@
 
 
 
-@media (min-width: 768px) {        /* tablet */
+@media (min-width: 768px) {
     .columna-chica {
         display: block;
     }
@@ -142,7 +138,7 @@
         min-height: 750px;
     }
 }
-@media (min-width: 1200px){       /* desktop */
+@media (min-width: 1200px){
     .producto {
         display: flex;
     }
