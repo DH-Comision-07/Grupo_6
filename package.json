@@ -1,0 +1,16 @@
+{
+  "name": "grupo_6",
+  "version": "1.0.0",
+  "description": "Somos un e-commerce dedicado a la venta de indumentaria femenina. Le acercamos la posibilidad a nuestros clientes a lo largo de todo el pais de expresarse a si mismos a traves de la moda y el diseño mientras lo hacemos de una manera sustentable.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "expres": "^0.0.5",
+    "express": "^4.18.2"
+  }
+}

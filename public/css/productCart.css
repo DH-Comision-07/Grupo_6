@@ -1,0 +1,141 @@
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 75vh;
+  margin-top: 110px;
+}
+#cart-content {
+  width: 98%;
+  margin-bottom: 20px;
+}
+.product {
+  border: 1px solid var(--color-celeste-claro);
+  border-radius: 5px;
+  min-height: 160px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.image-container {
+  width: 100px;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-details {
+  margin-left: 15px;
+}
+.product-details__nombre {
+  font-family: "Sulphur Point";
+  font-weight: bold;
+  margin-top: 10px;
+}
+.product-details__precio {
+  font-family: "Sulphur Point";
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.product-details__info {
+  font-family: "Sulphur Point";
+}
+.quantity {
+  display: inline;
+  margin: 0 5px 0 5px;
+}
+.quanity-button {
+  font-size: 1.2em;
+  width: 25px;
+  outline: none;
+  border: 1px solid var(--color-celeste-oscuro);
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.quanity-button:active {
+  background-color: var(--color-celeste-oscuro);
+  color: white;
+}
+.remove-button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 450ms;
+  margin-left: 5px;
+}
+.remove-button:hover {
+  background-color: #cc4731;
+}
+.fa-trash {
+  color: #fff;
+}
+.remove-text {
+  display: none;
+  color: #fff;
+  margin-left: 5px;
+}
+
+#cart-summary {
+  width: 98%;
+  border: 1px solid var(--color-celeste-oscuro);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.summary__title {
+  font-family: "Sulphur Point";
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.summary__line {
+  margin-bottom: 7px;
+  width: 90%;
+}
+.line__price {
+  font-weight: bold;
+  float: right;
+}
+.form-button {
+  background-color: var(--color-negro);
+  color: #fff;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 450ms;
+  font-weight: bold;
+}
+.form-button:hover {
+  background-color: var(--color-crema-oscuro);
+  color: var(--color-negro);
+  text-decoration: underline;
+}
+
+
+@media (min-width: 768px){
+  .cart {
+    padding: 10px;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .remove-text {
+    display: inline;
+  }
+  #cart-summary {
+    width: 60%;
+  }
+}
+@media (min-width: 1200px){
+  .cart {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}   

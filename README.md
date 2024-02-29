@@ -12,13 +12,16 @@ Estas son algunas de las páginas de las que vamos a estar tomando inspiración 
 - [BAS](https://www.bas.com.uy/)
 - [GAP](https://www.gap.com)
 
+## GESTION DE PROYECTO CON TRELLO
+Utilizamos Trello para gestionar el flujo de trabajo de este proyecto. Puedes seguir nuestro progreso, ver las tareas pendientes, y colaborar con nosotros en nuestra pizarra de Trello.
+[accede a nuestro trello](https://trello.com/invite/b/RlVH8Md2/ATTI3e4451d58f28dc2082cede0f6ffa6049A5E22B55/grupo-6)
 ## NUESTRO EQUIPO:
 
 ### GONZALO
 Hola! Soy Gonzalo Rosofsky, tengo 29 años y vivo en la ciudad de La plata, Argentina. Recientemente comencé mi carrera como desarrollador web fullstack. Antes de eso tuve trabajos principalmente en ventas, atención al cliente y ultimamente como sushiman en Mallorca (España).
 
 ### JUANITA
-Soy Juanita, tengo 19 años y siempre me ha encantado explorar mi creatividad. Me apasionan las matemáticas y, últimamente, decidí embarcarme en un curso de programación. Aunque estoy comenzando y no tengo muchos conocimientos previos, estoy emocionada por aprender y aplicar mis habilidades en este nuevo mundo. 
+Soy Juanita, tengo 19 años y siempre me ha encantado explorar mi creatividad. Me apasionan las matemáticas y, últimamente, decidí embarcarme en un curso de programación. Aunque estoy comenzando y no tengo muchos conocimientos previos, estoy emocionada por aprender y aplicar mis habilidades en este nuevo mundo.
 
 ### ANDRES
 Mi nombre es Andres eduardo David Colina, tengo 17 años de edad me Encanta el baloncesto y los videojuegos, vivo en Medellin, Colombia , ya estoy egresado del Bachillerato desde el año pasado y espero entrar en la universidad he iniciar mi carrera en ingeniería en sistemas
