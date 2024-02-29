@@ -233,7 +233,16 @@
 }
 
 
-/* banner estatico */
+.carrusel__imagen-contenedor{
+  width: 100%;
+  height: 600px;
+}
+
+.carrusel__imagen{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
  
 
  
