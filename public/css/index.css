@@ -115,6 +115,20 @@
   border:2px solid #42312f; */
   margin: 10px;
   display:none;
+  position: relative;
+}
+.header-icon a {
+  text-decoration: none;
+}
+.carrito-icono__cantindad {
+  background-color: var(--color-rojo);
+  border-radius: 50%;
+  color: white;
+  font-size: 0.7em;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  padding: 2px 5px;
 }
 
 
