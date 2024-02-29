@@ -1,3 +1,26 @@
+.header-return{
+  color: #1f2f23;
+  font-size: 1.25em;
+  text-align: center;
+  align-items: center;
+  justify-content:space-between;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 4vw;
+  display:none;
+  height:50px;
+  
+}
+.header-return p{
+  font-size: 0.75em;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 0 0 5px;
+}
+.header a {
+  text-decoration: none;
+}
+
 
 .title {
   font-family: "Sulphur Point";
@@ -97,3 +120,10 @@ button {
 
 
 
+
+
+@media (min-width: 768px){
+  .header-return {
+    display: flex;
+  }
+}

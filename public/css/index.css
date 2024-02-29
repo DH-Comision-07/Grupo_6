@@ -34,7 +34,7 @@
   top: 0;
 }
 .header-logo{
-  width: 230px;
+  width: 210px;
 }
 .header-logo img {
   width: 100%;
@@ -60,7 +60,7 @@
   border-radius: 50px;
   /* margin: 5px; */
   display: none;
-  min-width: 112px;
+  min-width: 137px;
 }
 .header-shipping i{
   color: #515c41;
@@ -84,10 +84,10 @@
 .header-searchbar {
   display:none;
   justify-content: flex-end;
-  width: 40%;
+  width: 45%;
 }
 .header-searchbar input {
-  width: 80%;
+  width: 70%;
   height: 40px;
   border: #42312f 1px solid;
   border-radius: 5px 0 0 5px;
@@ -129,6 +129,9 @@
   top: -5px;
   right: -10px;
   padding: 2px 5px;
+}
+.header-return {
+  display: none;
 }
 
 
@@ -354,7 +357,7 @@
   .header-searchbar {
     display: flex;
   }
-
+  
 
 
   .cabecera-de-seccion {
