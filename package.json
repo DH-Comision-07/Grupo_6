@@ -4,7 +4,7 @@
   "description": "Somos un e-commerce dedicado a la venta de indumentaria femenina. Le acercamos la posibilidad a nuestros clientes a lo largo de todo el pais de expresarse a si mismos a traves de la moda y el diseño mientras lo hacemos de una manera sustentable.",
   "main": "app.js",
   "scripts": {
-    "start": "node --watch app.js"
+    "start": "node --watch src/app.js"
   },
   "keywords": [],
   "author": "",
