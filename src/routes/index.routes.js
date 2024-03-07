@@ -5,7 +5,8 @@ const routes = express.Router();
 const productRouter = require('./products.routes');
 const userRouter = require('./users.routes');
 
-routes.get('/', (req,res) => res.sendFile(path.resolve(__dirname, '../views/index.html')));
+// routes.get('/', (req,res) => res.sendFile(path.resolve(__dirname, '../views/index.html')));
+routes.get('/', (req,res) => res.render("index"));
 routes.use('/producto', productRouter);
 routes.use('/cuenta', userRouter);
 
