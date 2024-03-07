@@ -3,8 +3,9 @@ const app = express();
 const path = require('path');
 const indexRouter = require('./routes/index.routes');
 
-
 app.use(express.static('public'));
+
+app.set("view engine", "ejs");
 
 const port = 3030;
 
