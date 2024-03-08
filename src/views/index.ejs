@@ -2,16 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a1a418fc9c.js" crossorigin="anonymous"></script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="/css/index.css" />
+  <%- include('./partials/head') %>
 
   <title>D&H</title>
 </head>
@@ -242,28 +233,7 @@ rel="stylesheet">
 
 
   
-  <footer class="footer">
-    <h2 class="footer__titulo">CONTACTANOS</h2>
-    <a class="footer__mail" href="mailto:correo@gmail.com">contacto@dhindumentaria.com</a>
-    <p class="footer__direccion">Direccion 123, Buenos Aires, ARG</p>
-
-    <div class="footer__redes">
-      <a href="https://www.facebook.com/" class="footer__link" target="_blank">
-        <i class="footer__icono fa-brands fa-facebook-f"></i>
-        <p class="footer__nombre-redes">FACEBOOK</p>
-      </a>
-      <a href="https://www.instagram.com/" class="footer__link" target="_blank">
-        <i class="footer__icono fa-brands fa-instagram"></i>
-        <p class="footer__nombre-redes">INSTAGRAM</p>
-      </a>
-      <a href="https://www.whatsapp.com/" class="footer__link" target="_blank">
-        <i class="footer__icono fa-brands fa-whatsapp"></i>
-        <p class="footer__nombre-redes">WHATSAPP</p>
-      </a>
-    </div>
-
-    <p class="footer__copyright">Copytright 2024</p>
-  </footer>
+  <%- include("./partials/footer") %>
   
 </body>
 
