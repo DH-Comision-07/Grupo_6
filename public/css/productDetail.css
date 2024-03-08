@@ -1,5 +1,6 @@
 .producto {
     display: block;
+    padding-top: 100px;
 }
 .producto__imagenes {
     flex-basis: 100%;
