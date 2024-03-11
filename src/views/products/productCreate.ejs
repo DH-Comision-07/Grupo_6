@@ -1,26 +1,47 @@
-<h1>Crear Nuevo articulo</h1>  
+<!DOCTYPE html>
+<html lang="en">
 
-<form action="/articulos" method="post">
-    <label for="name">Nombre del producto:</label>
-    <input type="text" id="name" name="name" required><br>
+<head>
+    <%- include("../partials/head") %>
 
-    <label for="description">Descripción:</label>
-    <textarea id="description" name="description" required></textarea><br>
+    <title>Nuevo Articulo</title>
+</head>
 
-    <label for="image">Imagen:</label>
-    <input type="file" id="image" name="image"><br>
+<body>
 
-    <label for="category">Categoría:</label>
-    <input type="text" id="category" name="category" required><br>
+    <%- include("../partials/header") %>
 
-    <label for="colors">Colores:</label>
-    <input type="text" id="colors" name="colors"><br>
+    <main>
+        <h1>Crear Nuevo articulo</h1>  
+        <form action="/articulos" method="post">
+            <label for="name">Nombre del producto:</label>
+            <input type="text" id="name" name="name" required><br>
 
-    <label for="sizes">Talles:</label>
-    <input type="text" id="sizes" name="sizes"><br>
+            <label for="description">Descripción:</label>
+            <textarea id="description" name="description" required></textarea><br>
 
-    <label for="price">Precio:</label>
-    <input type="number" id="price" name="price" step="0.01" min="0" required><br>
+            <label for="image">Imagen:</label>
+            <input type="file" id="image" name="image"><br>
 
-    <button type="submit">Guardar</button>
-</form>
+            <label for="category">Categoría:</label>
+            <input type="text" id="category" name="category" required><br>
+
+            <label for="colors">Colores:</label>
+            <input type="text" id="colors" name="colors"><br>
+
+            <label for="sizes">Talles:</label>
+            <input type="text" id="sizes" name="sizes"><br>
+
+            <label for="price">Precio:</label>
+            <input type="number" id="price" name="price" step="0.01" min="0" required><br>
+
+            <button type="submit">Guardar</button>
+    </form>
+    </main>
+
+    <%- include("../partials/footer") %>
+        
+</body>
+
+</html>
+    
