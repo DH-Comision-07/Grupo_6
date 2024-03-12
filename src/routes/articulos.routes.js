@@ -14,7 +14,7 @@ router.post('/', (req, res) => {                          // Ruta para manejar l
 
 router.get('/:id/editar', (req, res) => {                  // Ruta para mostrar el formulario de edición de un producto específico
 // res.render('form_edicion_articilo', { producto: /*datos del articulo*/});
-res.render('./products/productEdit');
+    res.render('./products/productEdit');
 });
 
 
