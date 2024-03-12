@@ -40,43 +40,48 @@
             </div>
             <div class="formulario__field">
                 <label for="colors">Colores disponibles</label>  <!-- TODO: referenciar lista de colores desde la base de datos? -->
-                <input class="formulario__checkbox" type="checkbox" name="color" value="negro" id="negro">
-                <label class="formulario__label" for="negro">Negro</label>
+                <!-- <div class="contenedor-opciones">
+                    <input class="formulario__checkbox" type="checkbox" name="color" value="negro" id="negro">
+                    <label class="formulario__label" for="negro">Negro</label>
 
-                <input class="formulario__checkbox" type="checkbox" name="color" value="blanco" id="blanco">
-                <label class="formulario__label" for="blanco">Blanco</label>
+                    <input class="formulario__checkbox" type="checkbox" name="color" value="blanco" id="blanco">
+                    <label class="formulario__label" for="blanco">Blanco</label>
 
-                <input class="formulario__checkbox" type="checkbox" name="color" value="rojo" id="rojo">
-                <label class="formulario__label" for="rojo">Rojo</label>
+                    <input class="formulario__checkbox" type="checkbox" name="color" value="rojo" id="rojo">
+                    <label class="formulario__label" for="rojo">Rojo</label>
 
-                <input class="formulario__checkbox" type="checkbox" name="color" value="azul" id="azul">
-                <label class="formulario__label" for="azul">Azul</label>
+                    <input class="formulario__checkbox" type="checkbox" name="color" value="azul" id="azul">
+                    <label class="formulario__label" for="azul">Azul</label>
 
-                <input class="formulario__checkbox" type="checkbox" name="color" value="marron" id="marron">
-                <label class="formulario__label" for="marron">Marron</label>
+                    <input class="formulario__checkbox" type="checkbox" name="color" value="marron" id="marron">
+                    <label class="formulario__label" for="marron">Marron</label>
 
-                <input class="formulario__checkbox" type="checkbox" name="color" value="rosa" id="rosa">
-                <label class="formulario__label" for="rosa">Rosa</label>
+                    <input class="formulario__checkbox" type="checkbox" name="color" value="rosa" id="rosa">
+                    <label class="formulario__label" for="rosa">Rosa</label>
 
-                <input class="formulario__checkbox" type="checkbox" name="color" value="rosa" id="otro">
-                <label class="formulario__label" for="otro">Otro</label>
+                    <input class="formulario__checkbox" type="checkbox" name="color" value="rosa" id="otro">
+                    <label class="formulario__label" for="otro">Otro</label>
+                </div> -->
+                <input type="text" id="colores" name="colores" class="formulario__texto" required>
             </div>
             <div class="formulario__field">
                 <label for="talles">Talles disponibles</label>
-                <input class="formulario__checkbox" type="checkbox" name="talle" value="xs" id="xs">
-                <label class="formulario__label" for="xs">XS</label>
-
-                <input class="formulario__checkbox" type="checkbox" name="talle" value="s" id="s">
-                <label class="formulario__label" for="s">S</label>
-
-                <input class="formulario__checkbox" type="checkbox" name="talle" value="m" id="m">
-                <label class="formulario__label" for="m">M</label>
-
-                <input class="formulario__checkbox" type="checkbox" name="talle" value="l" id="l">
-                <label class="formulario__label" for="l">L</label>
-
-                <input class="formulario__checkbox" type="checkbox" name="talle" value="xl" id="xl">
-                <label class="formulario__label" for="xl">XL</label>
+                <div class="contenedor-opciones">
+                    <input class="formulario__checkbox" type="checkbox" name="talle" value="xs" id="xs">
+                    <label class="formulario__label" for="xs">XS</label>
+    
+                    <input class="formulario__checkbox" type="checkbox" name="talle" value="s" id="s">
+                    <label class="formulario__label" for="s">S</label>
+    
+                    <input class="formulario__checkbox" type="checkbox" name="talle" value="m" id="m">
+                    <label class="formulario__label" for="m">M</label>
+    
+                    <input class="formulario__checkbox" type="checkbox" name="talle" value="l" id="l">
+                    <label class="formulario__label" for="l">L</label>
+    
+                    <input class="formulario__checkbox" type="checkbox" name="talle" value="xl" id="xl">
+                    <label class="formulario__label" for="xl">XL</label>
+                </div>
             </div>
             <div class="formulario__field">
                 <label for="price">Precio</label>
