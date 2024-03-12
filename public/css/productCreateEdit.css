@@ -74,30 +74,8 @@
 }
 .formulario__precio {
     height: 30px;
+    width: 200px;
 }
-/* .condiciones {
-display: flex;
-flex-direction: column;
-gap: 3px;
-}
-
-.condiciones type {
-float: left;
-margin-right: 10px;
-}
-
-.condiciones label {
-font-size: 10px ;
-display: flex;
-align-items: center;
-}
-
-.condiciones label>p{
-margin: 0;
-text-align: center;
-margin-top: 2px;
-} */
-
 .formulario__boton {
     color:white; 
     padding: 10px 20px;
@@ -110,5 +88,10 @@ margin-top: 2px;
     border-width: 1px;
     border: none;
     width: 10vw;
-    align-self: center
+    align-self: center;
+    transition: all 450ms;
 }
+.formulario__boton:hover {
+    background-color: var(--color-crema-oscuro);
+    color: var(--color-negro);
+  }
