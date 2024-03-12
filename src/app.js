@@ -12,7 +12,7 @@ app.set("views", __dirname+"/views");
 const port = 3030;
 
 app.use('/', indexRouter);
-app.use('/artuculos', articulosRoutes);   
+app.use('/articulos', articulosRoutes);   
 
 
 app.listen(port, () => 

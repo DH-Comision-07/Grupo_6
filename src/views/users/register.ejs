@@ -4,11 +4,15 @@
 <head>
     <%- include('../partials/head') %>
     <link rel="stylesheet" href="/css/loginRegister.css"/>
+
     <title>Registrate</title>
 </head>
   
 <body>
-    <%- include("../partials/header", {simplificarHeader: true}) %>
+    
+    <header class="header">
+        <a class="header-logo" href="/"><img src="/images/logo.png" alt="logo"></a>
+    </header>
 
     <main>
         <section class="container_form">
@@ -62,7 +66,13 @@
         </section>
     </main>
 
-    <%- include("../partials/footer", {simplificarFooter: true}) %>
+    <footer class="footer">
+        <h2 class="footer__titulo">CONTACTANOS</h2>
+        <a class="footer__mail" href="mailto:correo@gmail.com">contacto@dhindumentaria.com</a>
+        <p class="footer__direccion">Direccion 123, Buenos Aires, ARG</p>
+      
+        <p class="footer__copyright">Copytright 2024</p>
+    </footer>
 
 </body>
 

@@ -3,7 +3,7 @@ const router = express.Router();
 
 
 router.get('/nuevo', (req, res) => {                      // Ruta para mostrar el formulario de creación de productos
-    res.render('form_creacion_artucilo');
+    res.render('./products/productCreate');
 });
 
 
@@ -13,7 +13,8 @@ router.post('/', (req, res) => {                          // Ruta para manejar l
 
 
 router.get('/:id/editar', (req, res) => {                  // Ruta para mostrar el formulario de edición de un producto específico
-res.render('form_edicion_articilo', { producto: /*datos del articulo*/});
+// res.render('form_edicion_articilo', { producto: /*datos del articulo*/});
+res.render('./products/productEdit');
 });
 
 
