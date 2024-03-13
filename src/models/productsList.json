@@ -13,7 +13,7 @@
       "id": 2,
       "name": "Vestido con Flores",
       "description": "Beautiful floral dress for any occasion",
-      "colors": ["Red Floral", "Blue Floral", "Pink Floral"],
+      "colors": ["RedFloral", "BlueFloral", "PinkFloral"],
       "sizes": ["XS", "S", "M", "L"],
       "url": "https://example.com/floral-dress",
       "price": 49.99
@@ -67,7 +67,7 @@
       "id": 8,
       "name": "Shorts Jean",
       "description": "Classic denim shorts for warm weather",
-      "colors": ["Light Blue", "Dark Blue"],
+      "colors": ["LightBlue", "DarkBlue"],
       "sizes": ["XS", "S", "M", "L"],
       "url": "https://example.com/denim-shorts",
       "price": 24.99

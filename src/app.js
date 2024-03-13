@@ -13,7 +13,5 @@ const port = 3030;
 
 app.use('/', indexRouter);
 
-
-
 app.listen(port, () => 
     console.log('Servidor online en el puerto '+port));

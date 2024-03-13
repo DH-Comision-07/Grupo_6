@@ -4,6 +4,7 @@
 <head>
     <%- include("../partials/head") %>
 
+    <link rel="stylesheet" href="/css/productCreateEdit.css">
     <title>Nuevo Articulo</title>
 </head>
 
@@ -12,31 +13,36 @@
     <%- include("../partials/header") %>
 
     <main>
-        <h1>Crear Nuevo articulo</h1>  
-        <form action="/articulos" method="post">
-            <label for="name">Nombre del producto:</label>
-            <input type="text" id="name" name="name" required><br>
-
-            <label for="description">Descripción:</label>
-            <textarea id="description" name="description" required></textarea><br>
-
-            <label for="image">Imagen:</label>
-            <input type="file" id="image" name="image"><br>
-
-            <label for="category">Categoría:</label>
-            <input type="text" id="category" name="category" required><br>
-
-            <label for="colors">Colores:</label>
-            <input type="text" id="colors" name="colors"><br>
-
-            <label for="sizes">Talles:</label>
-            <input type="text" id="sizes" name="sizes"><br>
-
-            <label for="price">Precio:</label>
-            <input type="number" id="price" name="price" step="0.01" min="0" required><br>
-
-            <button type="submit">Guardar</button>
-    </form>
+        <section class="contenedor-formulario">
+            <h1 class="titulo">NUEVO ARTICULO</h1>  
+            <form action="" method="" class="formulario">
+            <div class="formulario__field">
+                <label for="name">Nombre del producto</label>
+                <input type="text" id="name" name="name" class="formulario__texto" required>
+            </div>
+            <div class="formulario__field">    
+                <label for="description">Descripción</label>
+                <textarea id="description" name="description" class="formulario__textarea" required></textarea>
+            </div>
+            <div class="formulario__field">
+                <label for="image">Imagenes</label>
+                <input type="file" id="image" name="image" class="formulario__imagenes" required>
+            </div>
+            <div class="formulario__field">
+                <label for="colors">Colores disponibles</label> 
+                <input type="text" id="colores" name="colores" class="formulario__texto" required>
+            </div>
+            <div class="formulario__field">
+                <label for="talles">Talles disponibles</label>
+                <input type="text" id="colores" name="colores" class="formulario__texto" required>
+            </div>
+            <div class="formulario__field">
+                <label for="price">Precio</label>
+                <input type="number" id="price" name="price" class="formulario__precio" step="50" min="0" required>
+            </div>
+                <button class="formulario__boton" type="submit">Crear</button>
+            </form>
+        </section>
     </main>
 
     <%- include("../partials/footer") %>
