@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
 
 <head>
     <%- include("../partials/head") %>
@@ -19,69 +18,27 @@
             <form action="" method="" class="formulario">
             <div class="formulario__field">
                 <label for="name">Nombre del producto</label>
-                <input type="text" id="name" name="name" class="formulario__texto" required>
+                <input type="text" id="name" name="name" class="formulario__texto" value="<%= product.name %>" required>
             </div>
             <div class="formulario__field">    
                 <label for="description">Descripción</label>
-                <textarea id="description" name="description" class="formulario__textarea" required></textarea>
+                <textarea id="description" name="description" class="formulario__textarea" required><%= product.description %></textarea>
             </div>
             <div class="formulario__field">
                 <label for="image">Imagenes</label>
                 <input type="file" id="image" name="image" class="formulario__imagenes" required>
             </div>
             <div class="formulario__field">
-                <label for="category">Categoría</label>
-                <select id="category" name="category" class="formulario__select" required>
-                    <option value="remeras">Remeras</option>
-                    <option value="pantalones">Pantalones</option>
-                    <option value="busos">Busos</option>
-                    <option value="calzados">Calzados</option>
-                    <option value="Accesorios">Accesorios</option>
-                </select>
+                <label for="colors">Colores disponibles (separados por comas)</label>
+                <input type="text" id="colores" name="colores" class="formulario__texto" value=<%= product.colors.toString() %> required>
             </div>
             <div class="formulario__field">
-                <label for="colors">Colores disponibles</label>  <!-- TODO: referenciar lista de colores desde la base de datos? -->
-                <input class="formulario__checkbox" type="checkbox" name="color" value="negro" id="negro">
-                <label class="formulario__label" for="negro">Negro</label>
-
-                <input class="formulario__checkbox" type="checkbox" name="color" value="blanco" id="blanco">
-                <label class="formulario__label" for="blanco">Blanco</label>
-
-                <input class="formulario__checkbox" type="checkbox" name="color" value="rojo" id="rojo">
-                <label class="formulario__label" for="rojo">Rojo</label>
-
-                <input class="formulario__checkbox" type="checkbox" name="color" value="azul" id="azul">
-                <label class="formulario__label" for="azul">Azul</label>
-
-                <input class="formulario__checkbox" type="checkbox" name="color" value="marron" id="marron">
-                <label class="formulario__label" for="marron">Marron</label>
-
-                <input class="formulario__checkbox" type="checkbox" name="color" value="rosa" id="rosa">
-                <label class="formulario__label" for="rosa">Rosa</label>
-
-                <input class="formulario__checkbox" type="checkbox" name="color" value="rosa" id="otro">
-                <label class="formulario__label" for="otro">Otro</label>
-            </div>
-            <div class="formulario__field">
-                <label for="talles">Talles disponibles</label>
-                <input class="formulario__checkbox" type="checkbox" name="talle" value="xs" id="xs">
-                <label class="formulario__label" for="xs">XS</label>
-
-                <input class="formulario__checkbox" type="checkbox" name="talle" value="s" id="s">
-                <label class="formulario__label" for="s">S</label>
-
-                <input class="formulario__checkbox" type="checkbox" name="talle" value="m" id="m">
-                <label class="formulario__label" for="m">M</label>
-
-                <input class="formulario__checkbox" type="checkbox" name="talle" value="l" id="l">
-                <label class="formulario__label" for="l">L</label>
-
-                <input class="formulario__checkbox" type="checkbox" name="talle" value="xl" id="xl">
-                <label class="formulario__label" for="xl">XL</label>
+                <label for="talles">Talles disponibles (separados por comas)</label>
+                <input type="text" id="talles" name="talles" class="formulario__texto" value=<%= product.sizes.toString() %> required>
             </div>
             <div class="formulario__field">
                 <label for="price">Precio</label>
-                <input type="number" id="price" name="price" class="formulario__precio" step="50" min="0" required>
+                <input type="number" id="price" name="price" class="formulario__precio" step="0.01" min="0" value="<%= product.price %>" required>
             </div>
                 <button class="formulario__boton" type="submit">Guardar</button>
             </form>
@@ -94,14 +51,3 @@
 
 </html>
     
-=======
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p> <%=product.id  %></p>
-</body>
-</html>
->>>>>>> e8e317429c5ddacb6c22406b5992103552d67f9c
