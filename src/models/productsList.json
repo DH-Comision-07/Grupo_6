@@ -1,0 +1,85 @@
+ 
+  [
+    {
+      "id": 1,
+      "name": "Sueter Rayado",
+      "description": "Cozy striped sweater perfect for chilly days",
+      "colors": ["Blue/White", "Red/White", "Green/White"],
+      "sizes": ["S", "M", "L"],
+      "url": "https://example.com/striped-sweater",
+      "price": 39.99
+    },
+    {
+      "id": 2,
+      "name": "Vestido con Flores",
+      "description": "Beautiful floral dress for any occasion",
+      "colors": ["Red Floral", "Blue Floral", "Pink Floral"],
+      "sizes": ["XS", "S", "M", "L"],
+      "url": "https://example.com/floral-dress",
+      "price": 49.99
+    },
+    {
+      "id": 3,
+      "name": "Jeans Skinny",
+      "description": "Classic skinny jeans for a stylish look",
+      "colors": ["Black", "Blue", "Gray"],
+      "sizes": ["XS", "S", "M", "L", "XL"],
+      "url": "https://example.com/skinny-jeans",
+      "price": 59.99
+    },
+    {
+      "id": 4,
+      "name": "Cardigan Tejido",
+      "description": "Soft knit cardigan to layer with any outfit",
+      "colors": ["Beige", "Gray", "Navy"],
+      "sizes": ["S", "M", "L"],
+      "url": "https://example.com/knit-cardigan",
+      "price": 34.99
+    },
+    {
+      "id": 5,
+      "name": "Cazadora Cuero",
+      "description": "Edgy leather jacket for a chic look",
+      "colors": ["Black", "Brown"],
+      "sizes": ["S", "M", "L"],
+      "url": "https://example.com/leather-jacket",
+      "price": 89.99
+    },
+    {
+      "id": 6,
+      "name": "Blusa Estampada",
+      "description": "Stylish printed blouse to elevate your wardrobe",
+      "colors": ["White/Black Print", "Blue/White Print", "Pink/Red Print"],
+      "sizes": ["XS", "S", "M", "L"],
+      "url": "https://example.com/printed-blouse",
+      "price": 29.99
+    },
+    {
+      "id": 7,
+      "name": "Pollera Oversize",
+      "description": "Flowy maxi skirt for a bohemian vibe",
+      "colors": ["Black", "Navy", "Green"],
+      "sizes": ["S", "M", "L"],
+      "url": "https://example.com/maxi-skirt",
+      "price": 39.99
+    },
+    {
+      "id": 8,
+      "name": "Shorts Jean",
+      "description": "Classic denim shorts for warm weather",
+      "colors": ["Light Blue", "Dark Blue"],
+      "sizes": ["XS", "S", "M", "L"],
+      "url": "https://example.com/denim-shorts",
+      "price": 24.99
+    },
+    {
+      "id": 9,
+      "name": "Bufanda Tejida",
+      "description": "Cozy knit scarf to keep you warm in style",
+      "colors": ["Gray", "Red", "Cream"],
+      "sizes": ["One Size"],
+      "url": "https://example.com/knit-scarf",
+      "price": 19.99
+    }
+  ]
+  

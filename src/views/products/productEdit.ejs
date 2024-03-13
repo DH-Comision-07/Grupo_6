@@ -1,26 +1,11 @@
-<h1>Editar articulo</h1>
-
-<form action="/articulos/<%= articulos._id %>" method="post">
-    <label for="name">Nombre del producto:</label>
-    <input type="text" id="name" name="name" value="<%= articulos.name %>" required><br>
-
-    <label for="description">Descripción:</label>
-    <textarea id="description" name="description" required><%= articulos.description %></textarea><br>
-
-    <label for="image">Imagen:</label>cd
-    <input type="file" id="image" name="image"><br>
-
-    <label for="category">Categoría:</label>
-    <input type="text" id="category" name="category" value="<%= articulos.category %>" required><br>
-
-    <label for="colors">Colores:</label>
-    <input type="text" id="colors" name="colors" value="<%= articulos.colors %>"><br>
-
-    <label for="sizes">Talles:</label>
-    <input type="text" id="sizes" name="sizes" value="<%= articulos.sizes %>"><br>
-
-    <label for="price">Precio:</label>
-    <input type="number" id="price" name="price" step="0.01" min="0" value="<%= articulos.price %>" required><br>
-
-    <button type="submit">Guardar cambios</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> <%=product.id  %></p>
+</body>
+</html>
