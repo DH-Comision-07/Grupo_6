@@ -4,7 +4,7 @@ let productos = require('../models/productsList.json');
 
 
 const productsController = { 
-    getDetail: (req,res) => res.render("products/productDetail"),    
+    getDetail: (req,res) => res.render("products/productDetail",{products: productos}),    
     
     getCart: (req,res) => res.render("products/productCart"),
 

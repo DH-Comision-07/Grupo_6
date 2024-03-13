@@ -10,13 +10,13 @@
         <article class="slider__articulo">
           <a href="/producto/detalle" class="articulo__link">
             <div class="articulo__thumbnail">
-              <img class="thumbnail__imagen" src="/images/vestido-camisero_thumbnail.png" alt="" >
-              <p class="thumbnail__descuento">%50 OFF</p>
+              <img class="thumbnail__imagen" src=<%= products[i].url %> alt="" >
+             <!-- <p class="thumbnail__descuento">%50 OFF</p>linea para hacer precio con descuento --> 
             </div>
 
             <h3 class="articulo__nombre"><%= products[i].name %></h3>
-            <p class="articulo__precio-actual">25.000$</p>
-            <p class="articulo__precio-original">50.000$</p>
+            <p class="articulo__precio-actual">$ <%= products[i].price %></p>
+            <!-- <p class="articulo__precio-original">50.000$</p> linea para hacer precio con descuento -->  
           </a>
         </article>
             
