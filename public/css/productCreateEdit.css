@@ -90,6 +90,7 @@
     width: 10vw;
     align-self: center;
     transition: all 450ms;
+    text-decoration: none;
 }
 .formulario__boton:hover {
     background-color: var(--color-crema-oscuro);
