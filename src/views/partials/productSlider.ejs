@@ -5,7 +5,7 @@
       <!-- TODO: hacer que cartel de descuento aparezca/desaparezca segun si esta o no en descuento -->
       <!-- TODO: referencia a base de datos ? -->
       
-      <% for (let i = 0; i < 10; i++) { %>
+      <% for (let i = 0; i < products.length; i++) { %>
       
         <article class="slider__articulo">
           <a href="/producto/detalle" class="articulo__link">
@@ -14,7 +14,7 @@
               <p class="thumbnail__descuento">%50 OFF</p>
             </div>
 
-            <h3 class="articulo__nombre">VESTIDO CAMISERO</h3>
+            <h3 class="articulo__nombre"><%= products[i].name %></h3>
             <p class="articulo__precio-actual">25.000$</p>
             <p class="articulo__precio-original">50.000$</p>
           </a>
