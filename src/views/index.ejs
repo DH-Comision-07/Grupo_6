@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('./partials/head') %>
+
+  <title>D&H</title>
+</head>
+
+
+
+<body>
+
+   <%- include('./partials/header') %>
+
+  <main>
+
+    <section class="banner">
+      <img class="banner__img" src="/images/home_banner4.jpg"></img>
+      <h2 class="banner__texto">¡Descuento del 20% en toda la colección de primavera!</h2>
+    </section>
+    
+    <section class="on-sale">
+      <h2 class="cabecera-de-seccion">ON SALE</h2>
+
+      <%- include("./partials/productSlider") %>
+
+    </section>
+    
+    <!-- banner estatico -->
+
+    <section class="carrusel">
+      <div class="carrusel__imagen-contenedor">
+        <img class="carrusel__imagen" src="/images/carrusel.png" alt="">
+      </div>
+    </section>
+    
+    <section class="ultimos-lanzamientos">
+      <h2 class="cabecera-de-seccion">ULTIMOS LANZAMIENTOS</h2>
+
+      <%- include("./partials/productSlider") %>
+    </section>
+
+    <section class="all-products">
+      <a href="/producto" class="all-products__button">VER TODOS LOS PRODUCTOS</a>
+    </section>
+    
+    <section class="newsletter">
+      <h2 class="newsletter__titulo">
+        SUBSCRIBITE A NUESTRO NEWSLETTER
+      </h2>
+      <P class="newsletter__texto">
+        ¡Recibí novedades y disfrutá descuentos exclusivos!
+      </P>
+      <input type="text" class="newsletter__email" placeholder="Email">
+      <button class="newsletter__boton-enviar"><i class="fas fa-solid fa-paper-plane"></i></button>
+    </section>
+    
+  </main>
+
+
+  
+  <%- include('./partials/footer') %>
+  
+</body>
+
+</html>

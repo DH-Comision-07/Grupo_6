@@ -1,0 +1,100 @@
+.product-list {
+    margin-top: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.product-link {
+    text-decoration: none;
+}
+.product {
+  border: 1px solid var(--color-celeste-claro);
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.image-container {
+  min-width: 100px;
+  max-width: 100px;
+  height: 100%;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-details {
+  padding-left: 15px;
+  width: 100%;
+}
+.product-details__nombre {
+  font-family: "Sulphur Point";
+  font-weight: bold;
+  margin-top: 10px;
+}
+.product-details__precio {
+  font-family: "Sulphur Point";
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.product-details__info {
+  font-family: "Sulphur Point";
+  max-width: 90%;
+}
+.product-details__edit {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    padding: 5px;
+    text-decoration: none;
+    gap: 4px;
+    font-size: 0.7em;
+    margin: 10px 0;
+    border: 1px var(--color-celeste-claro) solid;
+    border-radius: 5px;
+    transition: all 400ms;
+}
+.product-details__edit:hover {
+    background-color: var(--color-celeste-claro);
+    color: white;
+}
+.product-details i {
+    transition: all 400ms;
+}
+.product-details__edit:hover > i {
+    color: white;
+}
+
+.new-product {
+  color:white; 
+  padding: 10px 20px;
+  background-color: black;
+  font-size: 30px;
+  cursor: pointer; 
+  min-width: 200px;
+  border-radius: 8px;
+  border-width: 1px;
+  border: none;
+  transition: all 450ms;
+  text-decoration: none;
+  align-self: center;
+  text-align: center;
+  margin: 20px 0;
+}
+.new-product:hover {
+  background-color: var(--color-crema-oscuro);
+  color: var(--color-negro);
+}
+
+
+
+@media (min-width: 768px){ 
+  .product-list {
+    padding: 10px 40px;
+  }
+}
+@media (min-width: 1200px){
+  .product-list {
+    padding: 10px 70px;
+  }
+}

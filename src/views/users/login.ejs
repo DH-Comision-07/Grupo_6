@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head') %>
+<<<<<<< HEAD
+
+=======
+>>>>>>> develop
+  <link rel="stylesheet" href="/css/loginRegister.css"/>
+  <title>Inicia sesion</title>
+</head>
+
+<body>
+  <%- include("../partials/header", {simplificarHeader: true}) %>
+
+  <main>
+    <section class="container_form">
+      <h1 class="title">INGRESA A TU CUENTA</h1>
+      <form>
+        <div class="form_field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"/>
+        </div>
+        <div class="form_field">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password"/>
+        </div>
+        <div class="condiciones">
+                <label for="recordar">
+                    <input type="checkbox" value="recordar" id="recordar" checked>
+                    <p> Recordarme</p>
+                </label>
+        </div>
+  
+        <button class="button-login-reg" type="submit">
+            Continuar
+        </button>
+  
+        <div class="form-register">
+          <p>
+              ¿No tienes una cuenta?
+              <a href="/cuenta/registro">¡Registrate!</a>
+          </p>
+        </div>
+      </form>
+    </section>
+    
+  </main>
+    
+  
+  <%- include("../partials/footer", {simplificarFooter: true}) %>
+      
+</body>
+
+</html>
