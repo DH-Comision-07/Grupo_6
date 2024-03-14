@@ -32,29 +32,19 @@
       </section>
 
       <section class="producto__informacion">
-        <h2 class="info__nombre-producto">TOP CHALECO</h2>
-        <p class="info__precio-actual">$45.000</p>
-        <p class="info__cuotas">5 cuotas de $9000</p>
-        <p class="info__precio-original">$60.000</p>
+        <h2 class="info__nombre-producto"><%= product.name %></h2>
+        <p class="info__precio-actual">$ <%= product.price %></p>
+        <!-- <p class="info__cuotas">5 cuotas de $9000</p>
+        <p class="info__precio-original">$60.000</p> para agregar precios con descuentos -->
         
 
         <form action="/" class="info__formulario" method="post">
           <p class="formulario__opcion">Talle</p>
           
-          <input class="formulario__radio" type="radio" name="talle" value="xs" id="xs">
-          <label class="formulario__label" for="xs">XS</label>
-
-          <input class="formulario__radio" type="radio" name="talle" value="s" id="s">
-          <label class="formulario__label" for="s">S</label>
-
-          <input class="formulario__radio" type="radio" name="talle" value="m" id="m">
-          <label class="formulario__label" for="m">M</label>
-
-          <input class="formulario__radio" type="radio" name="talle" value="l" id="l">
-          <label class="formulario__label" for="l">L</label>
-
-          <input class="formulario__radio" type="radio" name="talle" value="xl" id="xl">
-          <label class="formulario__label" for="xl">XL</label>
+          <% product.sizes.forEach((talle) => { %>
+            <input class="formulario__radio" type="radio" name="talle" value="<%= talle %>" id="<%= talle %><%= talle %>">
+            <label class="formulario__label" for="<%= talle %>"> <%= talle %> </label>
+          <% }); %>
           
           <p class="formulario__opcion">Color</p>
           
