@@ -8,7 +8,7 @@
       <% for (let i = 0; i < products.length; i++) { %>
       
         <article class="slider__articulo">
-          <a href="/producto/detalle" class="articulo__link">
+          <a href="/producto/detalle/<%= products[i].id %>" class="articulo__link">
             <div class="articulo__thumbnail">
               <img class="thumbnail__imagen" src=<%= products[i].url %> alt="" >
              <!-- <p class="thumbnail__descuento">%50 OFF</p>linea para hacer precio con descuento --> 
