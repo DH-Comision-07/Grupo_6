@@ -6,7 +6,7 @@
       "description": "Cozy striped sweater perfect for chilly days",
       "colors": ["Blue/White", "Red/White", "Green/White"],
       "sizes": ["S", "M", "L"],
-      "url": "https://example.com/striped-sweater",
+      "url": "/images/vestido-camisero_thumbnail.png",
       "price": 39.99
     },
     {
@@ -15,7 +15,7 @@
       "description": "Beautiful floral dress for any occasion",
       "colors": ["RedFloral", "BlueFloral", "PinkFloral"],
       "sizes": ["XS", "S", "M", "L"],
-      "url": "https://example.com/floral-dress",
+      "url": "/images/vestido-largo_thumbnail.PNG",
       "price": 49.99
     },
     {
@@ -24,7 +24,7 @@
       "description": "Classic skinny jeans for a stylish look",
       "colors": ["Black", "Blue", "Gray"],
       "sizes": ["XS", "S", "M", "L", "XL"],
-      "url": "https://example.com/skinny-jeans",
+      "url": "/images/top-chaleco_imagen_1.png",
       "price": 59.99
     },
     {
@@ -33,7 +33,7 @@
       "description": "Soft knit cardigan to layer with any outfit",
       "colors": ["Beige", "Gray", "Navy"],
       "sizes": ["S", "M", "L"],
-      "url": "https://example.com/knit-cardigan",
+      "url": "/images/top-chaleco_imagen_2.PNG",
       "price": 34.99
     },
     {
@@ -42,7 +42,7 @@
       "description": "Edgy leather jacket for a chic look",
       "colors": ["Black", "Brown"],
       "sizes": ["S", "M", "L"],
-      "url": "https://example.com/leather-jacket",
+      "url": "/images/top-chaleco_thumbnail.PNG",
       "price": 89.99
     },
     {
@@ -51,7 +51,7 @@
       "description": "Stylish printed blouse to elevate your wardrobe",
       "colors": ["White/Black Print", "Blue/White Print", "Pink/Red Print"],
       "sizes": ["XS", "S", "M", "L"],
-      "url": "https://example.com/printed-blouse",
+      "url": "/images/vestido-camisero_thumbnail.PNG",
       "price": 29.99
     },
     {
@@ -60,7 +60,7 @@
       "description": "Flowy maxi skirt for a bohemian vibe",
       "colors": ["Black", "Navy", "Green"],
       "sizes": ["S", "M", "L"],
-      "url": "https://example.com/maxi-skirt",
+      "url": "/images/vestido-largo_thumbnail.PNG",
       "price": 39.99
     },
     {
