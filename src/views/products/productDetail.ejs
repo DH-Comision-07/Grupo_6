@@ -16,17 +16,17 @@
     <section class="producto">
       <section class="producto__imagenes">
         <div class="columna-grande">
-          <img class="imagen" src="/images/top-chaleco_thumbnail.png" alt="">
+          <img class="imagen" src="<%= product.url %>" alt="">
         </div>
         <div class="columna-chica">
           <div class="imagen-chica">
-            <img class="imagen" src="/images/top-chaleco_imagen_1.png" alt="">
+            <img class="imagen" src="<%= product.url %>" alt="">
           </div>
           <div class="imagen-chica">
-            <img class="imagen" src="/images/top-chaleco_imagen_2.png" alt="">
+            <img class="imagen" src="<%= product.url %>" alt="">
           </div>
           <div class="imagen-chica">
-            <img class="imagen" src="/images/top-chaleco_imagen_1.png" alt="">
+            <img class="imagen" src="<%= product.url %>" alt="">
           </div>
         </div>
       </section>
@@ -48,14 +48,12 @@
           
           <p class="formulario__opcion">Color</p>
           
-          <input class="formulario__radio" type="radio" name="color" value="negro" id="negro">
-          <label class="formulario__label" for="negro">Negro</label>
+          <% product.colors.forEach((color) => { %>
+            <input class="formulario__radio" type="radio" name="color" value="<%= color %>" id="<%= color %>">
+            <label class="formulario__label" for="<%= color %>"><%= color %></label>
+          <% }); %>
 
-          <input class="formulario__radio" type="radio" name="color" value="blanco" id="blanco">
-          <label class="formulario__label" for="blanco">Blanco</label>
 
-          <input class="formulario__radio" type="radio" name="color" value="rojo" id="rojo">
-          <label class="formulario__label" for="rojo">Rojo</label>
 
           <button class="formulario__boton-carrito" type="submit" formaction="" formmethod="post">
             <i class="formulario__icono fa-solid fa-cart-shopping"></i>AGREGAR AL CARRITO
@@ -64,7 +62,7 @@
         
         <section class="producto__detalles">
           <h3 class="detalles__titulo">DESCRIPCIÓN</h3>
-          <P class="detalles__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eaque suscipit esse neque ducimus quae molestiae, odio</p>
+          <P class="detalles__texto"><%= product.description %></p>
           <h3 class="detalles__titulo">MATERIALES</h3>
           <P class="detalles__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error eaque suscipit esse neque ducimus quae molestiae, odio</p>
           <h3 class="detalles__titulo">CUIDADOS</h3>
