@@ -11,9 +11,9 @@ const productsController = {
     
     productCart: (req,res) => res.render("products/productCart"),
 
-    getNew: (req,res) => res.render("products/productCreate"),
+    productCreate: (req,res) => res.render("products/productCreate"), 
 
-    getEditBy: (req,res) => res.render("products/productEdit", {product: productos.find ((producto) => producto.id==req.params.id)}),
+    productEdit: (req,res) => res.render("products/productEdit", {product: productService.getOneBy(req.params.id)}),
     
 };
 
