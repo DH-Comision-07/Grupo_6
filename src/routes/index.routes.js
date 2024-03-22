@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const routes = express.Router();
-const productos = require('../models/productsList.json')
+const productos = require('../database/products.json')
 
 const productRouter = require('./products.routes');
 const userRouter = require('./users.routes');
