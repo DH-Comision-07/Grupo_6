@@ -1,102 +1,42 @@
 [
     {
         "id": 1,
-        "name": "dress",
-        "description": "denim jeans",
-        "category": "pants",
-        "colors": ["rojo", "azul", "blanco"],
+        "name": "MUSCULOSA",
+        "description": "Musculosa blanca.",
+        "category": "shirts",
+        "colors": ["rojo", "azul", "blanco", "negro"],
         "sizes": ["s", "m", "l"],
-        "price": 1298.79,
-        "image": "img-ejemplo.png"
+        "price": 10000,
+        "image": "img-musculosa.png"
     },
     {
         "id": 2,
-        "name": "socks",
-        "description": "silk blouse",
-        "category": "pants",
+        "name": "TOP CHALECO",
+        "description": "Chaleco corte top.",
+        "category": "shirts",
         "colors": ["rojo", "azul", "blanco"],
-        "sizes": ["s", "m", "l"],
-        "price": 5098.86,
-        "image": "img-ejemplo.png"
+        "sizes": ["s", "m", "l", "xl"],
+        "price": 25000,
+        "image": "img-top-chaleco-1.png"
     },
     {
         "id": 3,
-        "name": "hat",
-        "description": "cotton t-shirt",
-        "category": "hats",
-        "colors": ["rojo", "azul", "blanco"],
-        "sizes": ["s", "m", "l"],
-        "price": 1689.76,
-        "image": "img-ejemplo.png"
+        "name": "VESTIDO CAMISERO",
+        "description": "Camisa onda vestido, perfecto para el verano.",
+        "category": "dresses",
+        "colors": ["rojo", "azul", "blanco", "floreado"],
+        "sizes": ["xs", "s", "m", "l"],
+        "price": 30000,
+        "image": "img-vestido-camisero.png"
     },
     {
         "id": 4,
-        "name": "hat",
-        "description": "cotton t-shirt",
-        "category": "jackets",
-        "colors": ["rojo", "azul", "blanco"],
-        "sizes": ["s", "m", "l"],
-        "price": 9906.71,
-        "image": "img-ejemplo.png"
-    },
-    {
-        "id": 5,
-        "name": "pants",
-        "description": "leather jacket",
-        "category": "shoes",
-        "colors": ["rojo", "azul", "blanco"],
-        "sizes": ["s", "m", "l"],
-        "price": 3067.2,
-        "image": "img-ejemplo.png"
-    },
-    {
-        "id": 6,
-        "name": "skirt",
-        "description": "cotton t-shirt",
-        "category": "jackets",
-        "colors": ["rojo", "azul", "blanco"],
-        "sizes": ["s", "m", "l"],
-        "price": 9952.41,
-        "image": "img-ejemplo.png"
-    },
-    {
-        "id": 7,
-        "name": "socks",
-        "description": "denim jeans",
-        "category": "shirts",
-        "colors": ["rojo", "azul", "blanco"],
-        "sizes": ["s", "m", "l"],
-        "price": 9644.42,
-        "image": "img-ejemplo.png"
-    },
-    {
-        "id": 8,
-        "name": "pants",
-        "description": "silk blouse",
-        "category": "shirts",
-        "colors": ["rojo", "azul", "blanco"],
-        "sizes": ["s", "m", "l"],
-        "price": 4865.44,
-        "image": "img-ejemplo.png"
-    },
-    {
-        "id": 9,
-        "name": "gloves",
-        "description": "silk blouse",
-        "category": "pants",
-        "colors": ["rojo", "azul", "blanco"],
-        "sizes": ["s", "m", "l"],
-        "price": 5181.46,
-        "image": "img-ejemplo.png"
-    },
-    {
-        "id": 10,
-        "name": "scarf",
-        "description": "silk blouse",
-        "category": "jackets",
-        "colors": ["rojo", "azul", "blanco"],
-        "sizes": ["s", "m", "l"],
-        "price": 2784.96,
-        "image": "img-ejemplo.png"
+        "name": "VESTIDO LARGO",
+        "description": "Vestido largo.",
+        "category": "dresses",
+        "colors": ["rojo", "azul", "blanco", "negro"],
+        "sizes": ["s", "l"],
+        "price": 35000,
+        "image": "img-vestido-largo.png"
     }
 ]

@@ -5,8 +5,8 @@ const productsController = require('../controllers/productsController')
 
 router.get('/', productsController.index);
 router.get('/detalle/:id', productsController.productDetail)
-router.get('/carrito', productsController.getCart)
-router.get('/nuevo', productsController.getNew)
+router.get('/carrito', productsController.productCart)
+router.get('/nuevo', productsController.getNew)            // no usar get, reservado para sercvice
 router.get('/editar/:id', productsController.getEditBy),
     
 

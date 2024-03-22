@@ -9,7 +9,7 @@ const productsController = {
 
     productDetail: (req,res) => res.render("products/productDetail",{products: productService.getAll(), product: productService.getOneBy(req.params.id)}),    
     
-    getCart: (req,res) => res.render("products/productCart"),
+    productCart: (req,res) => res.render("products/productCart"),
 
     getNew: (req,res) => res.render("products/productCreate"),
 
