@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 
-let productService = require('../database/productService');
+let productService = require('../data/productService');
 
 
 const productsController = { 

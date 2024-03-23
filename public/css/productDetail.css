@@ -68,6 +68,9 @@
     margin-top: 30px;
     margin-bottom: 10px;
 }
+.formulario__label {
+    text-transform: uppercase; 
+}
 .formulario__radio {
     display: none;
 }

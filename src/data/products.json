@@ -9,7 +9,7 @@
         "colors": ["rojo", "azul", "blanco", "negro"],
         "sizes": ["s", "m", "l"],
         "price": 10000,
-        "image": "img-musculosa.png",
+        "image": "/images/products/img-musculosa.png",
         "discount": 10,
         "stock": 20
     },
@@ -23,7 +23,7 @@
         "colors": ["rojo", "azul", "blanco"],
         "sizes": ["s", "m", "l", "xl"],
         "price": 25000,
-        "image": "img-top-chaleco-1.png",
+        "image": "/images/products/img-top-chaleco-1.png",
         "discount": 20,
         "stock": 30
     },
@@ -37,7 +37,7 @@
         "colors": ["rojo", "azul", "blanco", "floreado"],
         "sizes": ["xs", "s", "m", "l"],
         "price": 30000,
-        "image": "img-vestido-camisero.png",
+        "image": "/images/products/img-vestido-camisero.png",
         "discount": 50,
         "stock": 10
     },
@@ -51,7 +51,7 @@
         "colors": ["rojo", "azul", "blanco", "negro"],
         "sizes": ["s", "l"],
         "price": 35000,
-        "image": "img-vestido-largo.png",
+        "image": "/images/products/img-vestido-largo.png",
         "discount": 10,
         "stock": 2
     },
@@ -65,7 +65,7 @@
         "colors": ["verde", "negro", "caqui"],
         "sizes": ["s", "m", "l", "xl"],
         "price": 28000,
-        "image": "img-pantalon-cargo.png",
+        "image": "/images/products/img-pantalon-cargo.jpeg",
         "discount": 15,
         "stock": 25
     },
@@ -79,7 +79,7 @@
         "colors": ["negro", "marrón", "rojo"],
         "sizes": ["xs", "s", "m", "l", "xl"],
         "price": 70000,
-        "image": "img-campera-cuero.png",
+        "image": "/images/products/img-campera-cuero.jpg",
         "discount": 0,
         "stock": 8
     },
@@ -93,7 +93,7 @@
         "colors": ["gris", "azul", "rojo", "blanco"],
         "sizes": ["única"],
         "price": 15000,
-        "image": "img-bufanda-tejida.png",
+        "image": "/images/products/img-bufanda-tejida.jpg",
         "discount": 10,
         "stock": 15
     },
@@ -107,7 +107,7 @@
         "colors": ["negro", "blanco", "rojo", "azul"],
         "sizes": ["única"],
         "price": 18000,
-        "image": "img-gorra-trucker.png",
+        "image": "/images/products/img-gorra-trucker.jpeg",
         "discount": 0,
         "stock": 20
     },
@@ -121,7 +121,7 @@
         "colors": ["azul", "gris", "negro", "blanco"],
         "sizes": ["s", "m", "l"],
         "price": 32000,
-        "image": "img-sweater-cuello-v.png",
+        "image": "/images/products/img-sweater-cuello-v.webp",
         "discount": 25,
         "stock": 12
     },
@@ -135,7 +135,7 @@
         "colors": ["negro", "azul", "gris", "verde"],
         "sizes": ["s", "m", "l", "xl"],
         "price": 20000,
-        "image": "img-shorts-deportivos.png",
+        "image": "/images/products/img-shorts-deportivos.jpg",
         "discount": 10,
         "stock": 18
     },
@@ -149,7 +149,7 @@
         "colors": ["blanco", "rosa", "azul"],
         "sizes": ["xs", "s", "m", "l"],
         "price": 28000,
-        "image": "img-blusa-floreada.png",
+        "image": "/images/products/img-blusa-floreada.webp",
         "discount": 0,
         "stock": 22
     }
