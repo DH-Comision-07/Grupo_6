@@ -15,7 +15,7 @@ const productsController = {
     productCreate: (req,res) => res.render("products/productCreate"), 
     
     store: (req,res) => {
-        productService.save(req.body);
+        productService.save(req.body, req.file);
 		res.redirect('/producto');
     },
     

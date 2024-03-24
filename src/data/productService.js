@@ -13,7 +13,7 @@ let productService = {
         return products.find((product) => product.id == id)
     },
 
-    save: function(product) {
+    save: function(product, image) {
         let newProduct = {
             id: products[products.length - 1].id + 1, // crea id, ARREGLAR?
             name: product.name.toUpperCase(),
@@ -24,7 +24,7 @@ let productService = {
             colors: product.colors.replace(/\s/g, "").split(","),
             sizes: product.sizes.replace(/\s/g, "").split(","),
             price: product.price,
-            image: "/images/products/img-musculosa.png",    // ARREGLAR
+            image: "/images/products/"+image.filename,    // ARREGLAR
             discount: product.discount,
             stock: product.stock,
         };
