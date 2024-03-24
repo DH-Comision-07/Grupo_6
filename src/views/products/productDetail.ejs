@@ -41,17 +41,22 @@
         <form action="/" class="info__formulario" method="post">
           <p class="formulario__opcion">Talle</p>
           
-          <% product.sizes.forEach((talle) => { %>
-            <input class="formulario__radio" type="radio" name="talle" value="<%= talle %>" id="<%= talle %><%= talle %>">
-            <label class="formulario__label" for="<%= talle %>"> <%= talle %> </label>
-          <% }); %>
+          <div class="radio-flex">
+            <% product.sizes.forEach((talle) => { %>
+              <input class="formulario__radio" type="radio" name="talle" value="<%= talle %>" id="<%= talle %>">
+              <label class="formulario__label" for="<%= talle %>"><%= talle %></label>
+            <% }); %>
+          </div>
+          
           
           <p class="formulario__opcion">Color</p>
           
-          <% product.colors.forEach((color) => { %>
-            <input class="formulario__radio" type="radio" name="color" value="<%= color %>" id="<%= color %>">
-            <label class="formulario__label" for="<%= color %>"><%= color %></label>
-          <% }); %>
+          <div class="radio-flex">
+            <% product.colors.forEach((color) => { %>
+              <input class="formulario__radio" type="radio" name="color" value="<%= color %>" id="<%= color %>">
+              <label class="formulario__label" for="<%= color %>"><%= color %></label>
+            <% }); %>
+          </div>
 
 
 

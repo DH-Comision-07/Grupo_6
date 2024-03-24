@@ -13,6 +13,7 @@
   "dependencies": {
     "ejs": "^3.1.9",
     "expres": "^0.0.5",
-    "express": "^4.18.3"
+    "express": "^4.18.3",
+    "method-override": "^3.0.0"
   }
 }

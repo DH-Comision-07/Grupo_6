@@ -15,7 +15,7 @@
     <main>
         <section class="contenedor-formulario">
             <h1 class="titulo">NUEVO ARTICULO</h1>  
-            <form action="" method="" class="formulario">
+            <form action="/producto" method="post" class="formulario">
             <div class="formulario__field">
                 <label for="name">Nombre del producto</label>
                 <input type="text" id="name" name="name" class="formulario__texto" required>
@@ -39,9 +39,11 @@
                     <option value="on-sale">On sale</option>
                 </select>
             </div>
+
+            <!-- TODO: admitir adicion de imagenes -->
             <div class="formulario__field">
                 <label for="image">Imagenes</label>
-                <input type="file" id="image" name="image" class="formulario__imagenes" required>
+                <input type="file" id="image" name="image" class="formulario__imagenes">
             </div>
             <div class="formulario__field">
                 <label for="colors">Colores</label> 
