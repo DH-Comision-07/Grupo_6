@@ -1,18 +1,19 @@
 const express = require('express');
 const path = require('path');
-let productos = require('../models/productsList.json');
+
+let productService = require('../data/productService');
 
 
 const productsController = { 
-    getAll: (req,res) => res.render("products/productAll", {products: productos}),
+    index: (req,res) => res.render("products/productAll", {products: productService.getAll()}),
 
-    getDetail: (req,res) => res.render("products/productDetail",{products: productos, product: productos.find ((producto) => producto.id==req.params.id)}),    
+    productDetail: (req,res) => res.render("products/productDetail",{products: productService.getAll(), product: productService.getOneBy(req.params.id)}),    
     
-    getCart: (req,res) => res.render("products/productCart"),
+    productCart: (req,res) => res.render("products/productCart"),
 
-    getNew: (req,res) => res.render("products/productCreate"),
+    productCreate: (req,res) => res.render("products/productCreate"), 
 
-    getEditBy: (req,res) => res.render("products/productEdit", {product: productos.find ((producto) => producto.id==req.params.id)}),
+    productEdit: (req,res) => res.render("products/productEdit", {product: productService.getOneBy(req.params.id)}),
     
 };
 
