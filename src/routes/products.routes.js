@@ -24,7 +24,7 @@ router.get('/carrito', productsController.productCart)
 router.get('/nuevo', productsController.productCreate)
 router.post('/', uploadFile.single("image"), productsController.store)
 
-router.get('/editar/:id', productsController.productEdit)
+router.get('/:id/editar', productsController.productEdit)
     
 
 module.exports = router;
