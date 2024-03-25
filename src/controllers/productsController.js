@@ -14,13 +14,12 @@ const productsController = {
     // creacion de productos
     productCreate: (req,res) => res.render("products/productCreate"), 
     
+    productEdit: (req,res) => res.render("products/productEdit", {product: productService.getOneBy(req.params.id)}),
+    
     store: (req,res) => {
         productService.save(req.body, req.file);
 		res.redirect('/producto');
     },
-    
-    productEdit: (req,res) => res.render("products/productEdit", {product: productService.getOneBy(req.params.id)}),
-    
 };
 
 module.exports = productsController;
