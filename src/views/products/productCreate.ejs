@@ -15,7 +15,7 @@
     <main>
         <section class="contenedor-formulario">
             <h1 class="titulo">NUEVO ARTICULO</h1>  
-            <form action="" method="" class="formulario">
+            <form action="/producto" method="post" enctype="multipart/form-data" class="formulario">
             <div class="formulario__field">
                 <label for="name">Nombre del producto</label>
                 <input type="text" id="name" name="name" class="formulario__texto" required>
@@ -25,20 +25,45 @@
                 <textarea id="description" name="description" class="formulario__textarea" required></textarea>
             </div>
             <div class="formulario__field">
+                <label for="materials">Materiales</label>
+                <textarea name="materials" id="materials" class="formulario__textarea" placeholder="Algodon, seda, spandex..." required></textarea>
+            </div>
+            <div class="formulario__field">
+                <label for="care">Cuidados</label>
+                <textarea name="care" id="care" class="formulario__textarea" placeholder="Lavar a mano, lavar con agua fria..." required></textarea>
+            </div>
+            <div class="formulario__field">
+                <label for="category">Categoria</label>
+                <select name="category" id="category">
+                    <option value="new-releases">Nuevos lanzamientos</option>
+                    <option value="on-sale">On sale</option>
+                </select>
+            </div>
+
+            <!-- TODO: admitir adicion de imagenes -->
+            <div class="formulario__field">
                 <label for="image">Imagenes</label>
-                <input type="file" id="image" name="image" class="formulario__imagenes" required>
+                <input type="file" id="image" name="image" class="formulario__imagenes">
             </div>
             <div class="formulario__field">
-                <label for="colors">Colores disponibles</label> 
-                <input type="text" id="colores" name="colores" class="formulario__texto" required>
+                <label for="colors">Colores</label> 
+                <input type="text" id="colores" name="colors" class="formulario__texto" required placeholder="Rojo, Azul, Blanco">
             </div>
             <div class="formulario__field">
-                <label for="talles">Talles disponibles</label>
-                <input type="text" id="colores" name="colores" class="formulario__texto" required>
+                <label for="sizes">Talles</label>
+                <input type="text" id="sizes" name="sizes" class="formulario__texto" placeholder="S, M, L" required>
             </div>
             <div class="formulario__field">
                 <label for="price">Precio</label>
                 <input type="number" id="price" name="price" class="formulario__precio" step="50" min="0" required>
+            </div>
+            <div class="formulario__field">
+                <label for="discount">Descuento</label>
+                <input type="number" id="discount" name="discount" class="formulario__precio" step="1" min="0" required>
+            </div>
+            <div class="formulario__field">
+                <label for="stock">Stock</label>
+                <input type="number" id="stock" name="stock" class="formulario__precio" step="1" min="0" required>
             </div>
                 <button class="formulario__boton" type="submit">Crear</button>
             </form>
