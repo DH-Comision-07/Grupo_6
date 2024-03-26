@@ -17,14 +17,16 @@ const productsController = require('../controllers/productsController');
 
 
 router.get('/', productsController.index);
-router.get('/detalle/:id', productsController.productDetail)
-router.get('/carrito', productsController.productCart)
 
-// creacion de productos
-router.get('/nuevo', productsController.productCreate)
+router.get('/detalle/:id', productsController.detail)
+
+router.get('/nuevo', productsController.create)
 router.post('/', uploadFile.single("image"), productsController.store)
 
-router.get('/:id/editar', productsController.productEdit)
-    
+router.get('/:id/editar', productsController.edit)
+router.put('/detalle/:id', uploadFile.single("image"), productsController.update)
+
+router.get('/carrito', productsController.cart)
+
 
 module.exports = router;

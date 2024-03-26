@@ -15,7 +15,7 @@
         <main>
             <section class="contenedor-formulario">
                 <h1 class="titulo">EDITAR ARTICULO</h1>
-                <form action="/producto" method="post" enctype="multipart/form-data" class="formulario">
+                <form action="/producto/detalle/<%= product.id %>?_method=put" method="POST" class="formulario" enctype="multipart/form-data">
                     <div class="formulario__field">
                         <label for="name">Nombre del producto</label>
                         <input type="text" id="name" name="name" class="formulario__texto" required value="<%= product.name %>">
@@ -70,7 +70,7 @@
                         <input type="number" id="stock" name="stock" class="formulario__precio" step="1" min="0"
                             required value="<%= product.stock %>">
                     </div>
-                    <button class="formulario__boton" type="submit">Crear</button>
+                    <button class="formulario__boton" type="submit">Guardar</button>
                 </form>
             </section>
         </main>
