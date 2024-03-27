@@ -21,10 +21,14 @@ app.set("views", __dirname+"/views");
 
 
 
-// routers
+// routes
 const indexRouter = require('./routes/index.routes');
+const productRouter = require('./routes/products.routes');
+const userRouter = require('./routes/users.routes');
 
 app.use('/', indexRouter);
+app.use('/producto', productRouter);
+app.use('/cuenta', userRouter);
 
 
 
