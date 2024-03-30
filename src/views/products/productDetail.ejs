@@ -58,11 +58,22 @@
             <% }); %>
           </div>
 
-
-
-          <button class="formulario__boton-carrito" type="submit" formaction="/producto/carrito" formmethod="get">
-            <i class="formulario__icono fa-solid fa-cart-shopping"></i>AGREGAR AL CARRITO
-          </button>
+          <div class="formulario__botones">
+            <button class="formulario__boton" type="submit" formaction="/producto/carrito" formmethod="get">
+              <i class="formulario__icono fa-solid fa-cart-shopping"></i>AGREGAR AL CARRITO
+            </button>
+            <div style="display: flex;">
+              <button class="formulario__boton --admin" type="submit" formaction="/producto/<%= product.id %>/editar" formmethod="get">
+                <i class="formulario__icono fa-solid fa-pencil"></i>EDITAR PRODUCTO
+              </button>
+              <button class="formulario__boton --admin" type="submit" formaction="/" formmethod="get">
+                <i class="formulario__icono fa-solid fa-trash-can"></i>ELIMINAR PRODUCTO
+              </button>
+            </div>
+            
+          </div>
+          
+          
         </form>
         
         <section class="producto__detalles">
