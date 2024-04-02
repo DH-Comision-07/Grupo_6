@@ -27,6 +27,10 @@ const productsController = {
     update: (req,res) => {
         productService.update(req.params.id, req.body, req.file);
         res.redirect('/producto/detalle/'+req.params.id)
+    },
+    destroy: (req, res) => {
+        productService.deleteById(req.params.id);
+		res.redirect('/products');
     }
 };
 
