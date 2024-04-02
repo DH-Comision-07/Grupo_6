@@ -28,7 +28,7 @@ router.put('/detalle/:id', uploadFile.single("image"), productsController.update
 
 router.get('/carrito', productsController.cart)
 
-router.delete('detalle/delete/:id', (req, res) => {
+router.delete('detalle/:id/delete', (req, res) => {
     res.send("estas borrando")
 })
 

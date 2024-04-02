@@ -66,9 +66,11 @@
               <button class="formulario__boton --admin" type="submit" formaction="/producto/<%= product.id %>/editar" formmethod="get">
                 <i class="formulario__icono fa-solid fa-pencil"></i>EDITAR PRODUCTO
               </button>
-              <button class="formulario__boton --admin" type="submit" formaction="/detalle/<%= product.id %>/delete?_method=DELETE" formmethod="post">
+              <form>
+              <button class="formulario__boton --admin" type="submit" formaction="producto/detalle/<%= product.id %>/delete?_method=DELETE" formmethod="post">
                 <i class="formulario__icono fa-solid fa-trash-can"></i>ELIMINAR PRODUCTO
               </button>
+            </form>
             </div>
             
           </div>
