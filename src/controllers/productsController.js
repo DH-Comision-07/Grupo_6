@@ -30,7 +30,7 @@ const productsController = {
     },
     destroy: (req, res) => {
         productService.deleteById(req.params.id);
-		res.redirect('/products');
+		res.redirect('/producto');
     }
 };
 
