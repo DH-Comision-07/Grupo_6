@@ -1,19 +1,37 @@
 const express = require('express');
 const path = require('path');
-let productos = require('../models/productsList.json');
+
+let productService = require('../data/productService');
 
 
 const productsController = { 
-    getAll: (req,res) => res.render("products/productAll", {products: productos}),
+    index: (req,res) => res.render("products/productAll", {products: productService.getAll()}),
 
-    getDetail: (req,res) => res.render("products/productDetail",{products: productos, product: productos.find ((producto) => producto.id==req.params.id)}),    
+
+    detail: (req,res) => res.render("products/productDetail",{products: productService.getAll(), product: productService.getOneBy(req.params.id)}),    
     
-    getCart: (req,res) => res.render("products/productCart"),
 
-    getNew: (req,res) => res.render("products/productCreate"),
+    cart: (req,res) => res.render("products/productCart"),
 
-    getEditBy: (req,res) => res.render("products/productEdit", {product: productos.find ((producto) => producto.id==req.params.id)}),
+
+    create: (req,res) => res.render("products/productCreate"), 
+    store: (req,res) => {
+        productService.store(req.body, req.file);
+		res.redirect('/producto');
+    },
     
+
+    edit: (req,res) => res.render("products/productEdit", {
+        product: productService.getOneBy(req.params.id)
+    }),
+    update: (req,res) => {
+        productService.update(req.params.id, req.body, req.file);
+        res.redirect('/producto/detalle/'+req.params.id)
+    },
+    destroy: (req, res) => {
+        productService.deleteById(req.params.id);
+		res.redirect('/producto');
+    }
 };
 
 module.exports = productsController;
