@@ -59,6 +59,12 @@ let productService = {
         products[updateIndex] = newProduct;
         fs.writeFileSync(productsFilePath, JSON.stringify(products));
 
+    },
+     
+    deleteById: function(id) {
+        let deleteIndex = products.findIndex((product) => product.id == id);
+        products.splice(deleteIndex, 1);
+        fs.writeFileSync(productsFilePath, JSON.stringify(products));
     }
 }
 
