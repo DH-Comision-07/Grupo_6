@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head') %>
+
+  <link rel="stylesheet" href="/css/productCart.css" />
+  <title>Carrito de compras</title>
+</head>
+
+<body>
+  <%- include("../partials/header") %>
+
+
+  <main>
+      <section class="cart">
+          <div id="cart-content">
+              <article class="product">
+                  <div class="image-container">
+                      <img class="image" src="/images/products/img-vestido-largo.PNG" alt="Producto 1">
+                  </div>
+                  
+                  <div class="product-details">
+                      <h2 class="product-details__nombre">VESTIDO LARGO</h2>
+                      <p class="product-details__precio">$25.000</p>
+                      <p class="product-details__info">Azul</p>
+                      <p class="product-details__info">M</p>
+                      
+                      <button class="quanity-button">-</button>
+                      <p class="quantity">2</p>
+                      <button class="quanity-button">+</button>
+                      <button class="remove-button">
+                          <i class="fa-solid fa-trash"></i>
+                          <p class="remove-text">Eliminar</p>
+                      </button>
+                      
+                  </div>
+              </article>
+
+              <article class="product">
+                  <div class="image-container">
+                      <img class="image" src="/images/products/img-top-chaleco-1.PNG" alt="Producto 1">
+                  </div>
+                  
+                  <div class="product-details">
+                      <h2 class="product-details__nombre">TOP CHALECO</h2>
+                      <p class="product-details__precio">$25.000</p>
+                      <p class="product-details__info">Negro</p>
+                      <p class="product-details__info">S</p>
+                      
+                      <button class="quanity-button">-</button>
+                      <p class="quantity">1</p>
+                      <button class="quanity-button">+</button>
+                      <button class="remove-button">
+                          <i class="fa-solid fa-trash"></i>
+                          <p class="remove-text">Eliminar</p>
+                      </button>
+                      
+                  </div>
+              </article>
+              
+          </div>
+
+          <div id="cart-summary">
+              <h2 class="summary__title">RESUMEN DE COMPRA</h2>
+              <p class="summary__line">Vestido largo<span class="line__price">$25.000</span></p>
+              <p class="summary__line">Vestido largo<span class="line__price">$25.000</span></p>
+              <p class="summary__line">Top chaleco<span class="line__price">$50.000</span></p>
+              <p class="summary__line">Envio<span class="line__price">$500</span></p>
+              
+              <h2 class="summary__title">TOTAL: $100.500</h2>
+
+              <form action="/" method="post">
+                  
+                  <a class="form-button" href="/producto/carrito">Finalizar Compra</button>
+                  <a class="form-button" href="/" >Seguir Comprando</a>
+              </form>
+              
+          </div>
+      </section>
+
+  </main>
+
+
+  <%- include("../partials/footer") %>
+
+</body>
+</html>

@@ -110,6 +110,9 @@
   cursor: pointer;
   transition: all 450ms;
   font-weight: bold;
+  font-size: 0.75em;
+  margin:5px;
+  text-decoration: none;
 }
 .form-button:hover {
   background-color: var(--color-crema-oscuro);

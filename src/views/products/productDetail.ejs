@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head') %>
+  <link rel="stylesheet" href="/css/productDetail.css" />
+  <title>Producto</title>
+</head>
+
+<body>
+
+    <%- include('../partials/header') %>
+  
+
+  <main>
+    <section class="producto">
+      <section class="producto__imagenes">
+        <div class="columna-grande">
+          <img class="imagen" src="<%= product.image %>" alt="">
+        </div>
+        <div class="columna-chica">
+          <div class="imagen-chica">
+            <img class="imagen" src="<%= product.image %>" alt="">
+          </div>
+          <div class="imagen-chica">
+            <img class="imagen" src="<%= product.image %>" alt="">
+          </div>
+          <div class="imagen-chica">
+            <img class="imagen" src="<%= product.image %>" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="producto__informacion">
+        <h2 class="info__nombre-producto"><%= product.name %></h2>
+        <p class="info__precio-actual">$ <%= product.price %></p>
+        <!-- <p class="info__cuotas">5 cuotas de $9000</p>
+        <p class="info__precio-original">$60.000</p> para agregar precios con descuentos -->
+        
+
+        <form action="/" class="info__formulario" method="post">
+          <p class="formulario__opcion">Talle</p>
+          
+          <div class="radio-flex">
+            <% product.sizes.forEach((talle) => { %>
+              <input class="formulario__radio" type="radio" name="talle" value="<%= talle %>" id="<%= talle %>">
+              <label class="formulario__label" for="<%= talle %>"><%= talle %></label>
+            <% }); %>
+          </div>
+          
+          
+          <p class="formulario__opcion">Color</p>
+          
+          <div class="radio-flex">
+            <% product.colors.forEach((color) => { %>
+              <input class="formulario__radio" type="radio" name="color" value="<%= color %>" id="<%= color %>">
+              <label class="formulario__label" for="<%= color %>"><%= color %></label>
+            <% }); %>
+          </div>
+
+          <div class="formulario__botones">
+            <button class="formulario__boton" type="submit" formaction="/producto/carrito" formmethod="get">
+              <i class="formulario__icono fa-solid fa-cart-shopping"></i>AGREGAR AL CARRITO
+            </button>
+            <div style="display: flex;">
+              <button class="formulario__boton --admin" type="submit" formaction="/producto/<%= product.id %>/editar" formmethod="get">
+                <i class="formulario__icono fa-solid fa-pencil"></i>EDITAR PRODUCTO
+              </button>
+              <form>
+              <button class="formulario__boton --admin" type="submit" formaction="/producto/detalle/<%= product.id %>/delete?_method=DELETE" formmethod="POST">
+                <i class="formulario__icono fa-solid fa-trash-can"></i>ELIMINAR PRODUCTO
+              </button>
+            </form>
+            </div>
+            
+          </div>
+          
+          
+        </form>
+        
+        <section class="producto__detalles">
+          <h3 class="detalles__titulo">DESCRIPCIÓN</h3>
+          <P class="detalles__texto"><%= product.description %></p>
+          <h3 class="detalles__titulo">MATERIALES</h3>
+          <P class="detalles__texto"><%= product.materials %></p>
+          <h3 class="detalles__titulo">CUIDADOS</h3>
+          <P class="detalles__texto"><%= product.care %></p>
+        </section>
+      </section>
+    </section>
+
+    <section class="ultimos-lanzamientos">
+      <h2 class="cabecera-de-seccion">TAMBIÉN TE PUEDE GUSTAR</h2>
+  
+      <%- include("../partials/productSlider") %>
+    </section>
+    
+  </main>
+
+
+
+  <%- include("../partials/footer") %>
+  
+</body>
+
+</html>

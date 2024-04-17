@@ -1,15 +1,37 @@
 const express = require('express');
 const path = require('path');
 
+let productService = require('../data/productService');
+
+
 const productsController = { 
-    getDetail: (req,res) => res.sendFile(path.join(__dirname,'../views/products/productDetail.html')),    
-    
-    getCart: (req,res) => res.sendFile(path.join(__dirname, '../views/products/productCart.html')),
+    index: (req,res) => res.render("products/productAll", {products: productService.getAll()}),
 
-    // getAll: (req, res) => res.send("Estas viendo el listado de productos"),
 
-    // getOne: (req, res) => res.send(productos.find((producto)=> producto.id == req.params.id)),
+    detail: (req,res) => res.render("products/productDetail",{products: productService.getAll(), product: productService.getOneBy(req.params.id)}),    
     
+
+    cart: (req,res) => res.render("products/productCart"),
+
+
+    create: (req,res) => res.render("products/productCreate"), 
+    store: (req,res) => {
+        productService.store(req.body, req.file);
+		res.redirect('/producto');
+    },
+    
+
+    edit: (req,res) => res.render("products/productEdit", {
+        product: productService.getOneBy(req.params.id)
+    }),
+    update: (req,res) => {
+        productService.update(req.params.id, req.body, req.file);
+        res.redirect('/producto/detalle/'+req.params.id)
+    },
+    destroy: (req, res) => {
+        productService.deleteById(req.params.id);
+		res.redirect('/producto');
+    }
 };
 
 module.exports = productsController;

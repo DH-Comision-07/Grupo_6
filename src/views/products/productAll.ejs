@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head') %>
+
+  <link rel="stylesheet" href="/css/productList.css" />
+  <title>Listado de productos</title>
+</head>
+
+<body>
+  <%- include("../partials/header") %>
+
+
+    <main>
+        <section class="product-list">
+
+            <a href="/producto/nuevo" class="new-product">NUEVO PRODUCTO</a>
+
+            <% products.forEach(product => { %>
+                <a href="/producto/detalle/<%= product.id %>" class="product-link">
+                    <article class="product">
+                        <div class="image-container">
+                            <!-- TODO: dinamismo imagenes -->
+                            <img class="image" src="<%= product.image %>" alt="">
+                        </div>
+                        
+                        <div class="product-details">
+                            <h2 class="product-details__nombre"><%= product.name %></h2>
+                            <p class="product-details__precio">$ <%= product.price %></p>
+                            <p class="product-details__info"><%= product.description %></p>
+                            <p class="product-details__info">ID: <%= product.id %></p>
+                            <p class="product-details__info"><%= product.colors.join(", ") %></p>
+                            <p class="product-details__info"><%= product.sizes.join(", ") %></p>
+
+                            <a href="/producto/<%= product.id %>/editar" class="product-details__edit"><i class="fa-solid fa-pencil"></i>EDITAR</a>
+                        </div>
+
+                    </article>
+                </a>
+            <% }); %>
+            
+            
+
+        </section>
+        
+    </main>
+
+  <%- include("../partials/footer") %>
+
+</body>
+</html>

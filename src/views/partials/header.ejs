@@ -1,0 +1,38 @@
+<header class="header">
+    
+    <a class="header-logo" href="/"><img src="/images/logo.png" alt="logo"></a>
+    
+    <div class="header-burger">
+      <i class="fas fa-bars"></i>
+    </div>
+    
+    <% if (typeof simplificarHeader == 'undefined') { %>
+     
+      <div class="header-shipping"> 
+        <i class="fas fa-solid fa-truck"></i> ENVIOS GRATIS 
+      </div>
+      
+      <div class="header-paymentsafe">
+        <i class="fas fa-solid fa-lock"></i> PAGO SEGURO 
+      </div>
+
+      <form action="/" method="GET" class="header-searchbar">
+        <input type="text" name="searchbar" placeholder="Buscar..."> 
+        <button type="submit"><i class="fas fa-solid fa-magnifying-glass"></i></button>
+      </form>
+      
+      <div class="header-icon">
+        <a href="/cuenta/login" rel="login">
+          <i class="fas fa-solid fa-user"></i>    
+        </a>
+      </div>
+
+      <div class="header-icon">
+        <a href="/producto/carrito" rel="carrito">
+          <i class="fas fa-solid fa-basket-shopping"></i>
+          <p class="carrito-icono__cantindad">2</p>
+        </a>
+      </div>
+
+    <% } %>
+  </header>

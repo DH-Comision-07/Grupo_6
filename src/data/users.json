@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "firstName": "Aurilia",
+        "lastName": "Westphalen",
+        "email": "awestphalen0@ibm.com",
+        "password": "qE5@TXYvN",
+        "type": "admin",
+        "avatar": "/images/avatars/pretzel.jpg"
+    },
+    {
+        "id": 2,
+        "firstName": "Lida",
+        "lastName": "Whitten",
+        "email": "lwhitten1@xinhuanet.com",
+        "password": "bX9\\w~pn0G0(iA9",
+        "type": "customer",
+        "avatar": "/images/avatars/pretzel.jpg"
+    },
+    {
+        "id": 3,
+        "firstName": "Tomlin",
+        "lastName": "Whaley",
+        "email": "twhaley2@senate.gov",
+        "password": "jX7~O6/pX`",
+        "type": "admin",
+        "avatar": "/images/avatars/jala.jpg"
+    },
+    {
+        "id": 4,
+        "firstName": "Anallise",
+        "lastName": "Codlin",
+        "email": "acodlin3@mtv.com",
+        "password": "cT5?6*)01N4$<|fS",
+        "type": "customer",
+        "avatar": "/images/avatars/jala.jpg"
+    },
+    {
+        "id": 5,
+        "firstName": "Corney",
+        "lastName": "Frankton",
+        "email": "cfrankton4@jiathis.com",
+        "password": "mA3!%92\\|0)9)",
+        "type": "customer",
+        "avatar": "/images/avatars/pretzel.jpg"
+    },
+    {
+        "id": 6,
+        "firstName": "Dino",
+        "lastName": "Malzard",
+        "email": "dmalzard5@dedecms.com",
+        "password": "fR3>>H71",
+        "type": "customer",
+        "avatar": "/images/avatars/polloCorazon.jpg"
+    },
+    {
+        "id": 7,
+        "firstName": "Edik",
+        "lastName": "Turland",
+        "email": "eturland6@youtu.be",
+        "password": "sX4+Mz'vI",
+        "type": "customer",
+        "avatar": "/images/avatars/jala.jpg"
+    },
+    {
+        "id": 8,
+        "firstName": "Rob",
+        "lastName": "Alpe",
+        "email": "ralpe7@harvard.edu",
+        "password": "qW3*P&Jx",
+        "type": "admin",
+        "avatar": "/images/avatars/kipa.jpg"
+    },
+    {
+        "id": 9,
+        "firstName": "Bryanty",
+        "lastName": "Pash",
+        "email": "bpash8@vistaprint.com",
+        "password": "gX6)__DWYl?&Y",
+        "type": "admin",
+        "avatar": "/images/avatars/pretzel.jpg"
+    },
+    {
+        "id": 10,
+        "firstName": "Bunnie",
+        "lastName": "Posnette",
+        "email": "bposnette9@elpais.com",
+        "password": "cR5=Ib{QPSa",
+        "type": "admin",
+        "avatar": "/images/avatars/tostada.jpg"
+    }
+]

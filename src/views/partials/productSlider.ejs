@@ -1,0 +1,29 @@
+<div class="thumbnail-slider--con_botones">
+    <button class="thumbnail-slider__boton"><i class="fas fa-solid fa-arrow-left"></i></button>
+    <div class="thumbnail-slider">
+      
+      <!-- TODO: hacer que cartel de descuento aparezca/desaparezca segun si esta o no en descuento -->
+      <!-- TODO: referencia a base de datos ? -->
+      
+      <% for (let i = 0; i < products.length; i++) { %>
+      
+        <article class="slider__articulo">
+          <a href="/producto/detalle/<%= products[i].id %>" class="articulo__link">
+            <div class="articulo__thumbnail">
+              <img class="thumbnail__imagen" src="<%= products[i].image %>" alt="" >
+             <!-- <p class="thumbnail__descuento">%50 OFF</p>linea para hacer precio con descuento --> 
+            </div>
+
+            <h3 class="articulo__nombre"><%= products[i].name %></h3>
+            <p class="articulo__precio-actual">$ <%= products[i].price %></p>
+            <!-- <p class="articulo__precio-original">50.000$</p> linea para hacer precio con descuento -->  
+          </a>
+        </article>
+            
+      <% } %>
+
+    </div>
+
+    <button class="thumbnail-slider__boton"><i class="fas fa-solid fa-arrow-right"></i></button>
+
+  </div>
