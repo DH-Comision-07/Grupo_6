@@ -1,10 +1,17 @@
 const express = require('express');
 const path = require('path');
 
-const usersController = { 
-    getLogin: (req,res) => res.render("users/login.ejs"),
+let userService = require('../data/userService');
 
-    getRegister: (req, res) => res.render("users/register.ejs"),
+const usersController = { 
+    login: (req,res) => res.render("users/login.ejs"),
+
+    register: (req, res) => res.render("users/register.ejs"),
+
+    storeRegister: (req,res) => {
+        userService.store(req.body, req.file);
+		res.redirect('/');
+    },
 }
 
 module.exports = usersController;

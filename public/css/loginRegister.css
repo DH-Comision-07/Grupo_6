@@ -44,12 +44,13 @@ form{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 60%;
+  width: 50%;
 }
 
 .form_field {
   display: flex;
   flex-direction: column;
+  margin: 10px 0;
 }
 
 .form-register{
