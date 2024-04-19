@@ -9,7 +9,7 @@ const usersController = {
     register: (req, res) => res.render("users/register.ejs"),
 
     storeRegister: (req,res) => {
-        userService.store(req.body);
+        userService.store(req.body, req.file);
 		res.redirect('/');
     },
 }

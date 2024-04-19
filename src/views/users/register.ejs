@@ -15,7 +15,7 @@
     <main>
         <section class="container_form">
             <h1 class="title">REGISTRATE</h1>
-            <form action="/cuenta" method="post">
+            <form action="/cuenta" method="post" enctype="multipart/form-data">
                 <div class="form_field">
                     <label for="firstName">Nombre</label>
                     <input name="firstName" id="firstName" type="text" required/>
@@ -23,6 +23,10 @@
                 <div class="form_field">
                     <label for="lastName">Apellidos</label>
                     <input name="lastName" id="lastName" type="text" required/>
+                </div>
+                <div class="form__field">
+                    <label for="avatar">Foto de perfil</label>
+                    <input type="file" id="avatar" name="avatar">
                 </div>
                 <div class="form_field">
                     <label for="email">Email</label>
@@ -35,6 +39,14 @@
                 <div class="form_field">
                     <label for="confirm-password">Confirmar contraseña</label>
                     <input type="password" required/>
+                </div>
+                <div class="form_field">
+                    <label for="admin">
+                        <input type="radio" name="type" id="admin" value="admin">Soy administrador
+                    </label>
+                    <label for="costumer">
+                        <input type="radio" name="type" id="costumer" value="costumer">Soy comprador
+                    </label>
                 </div>
                 <div class="condiciones">
                         <label for="checkbox1">
@@ -51,8 +63,6 @@
                         </p>
                         </label>
                 </div>
-
-                <input type="hidden" name="type" value="costumer"> <!-- hace que todos sean costumers, cambiar!! -->
                 <button class="button-login-reg" type="submit">
                     Continuar
                 </button>
