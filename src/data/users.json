@@ -7,5 +7,25 @@
         "password": "ada",
         "type": "admin",
         "avatar": "/images/users/img-leonkennedy.webp"
+    },
+    {
+        "id": 2,
+        "firstName": "ada",
+        "lastName": "wong",
+        "username": "adawong123",
+        "email": "adawong@gmail.com",
+        "password": "$2a$12$O9DzwiJ4x1M.x563EHPWdeZwJIdNCMNgtiTJWNN5V3437Lh49twS6",
+        "type": "admin",
+        "avatar": "/images/users/img-adawong123.avif"
+    },
+    {
+        "id": 3,
+        "firstName": "agent",
+        "lastName": "agent",
+        "username": "agentresident",
+        "email": "agent@resident.com",
+        "password": "$2a$12$0i3NTcmMj0MQzvtrF6aLuOU0g/L/6eE/1jCNEo4QPiKxv/bw.7fE.",
+        "type": "costumer",
+        "avatar": "/images/users/img-agentresident.jfif"
     }
 ]
