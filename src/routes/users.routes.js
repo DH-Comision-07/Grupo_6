@@ -18,10 +18,11 @@ const usersController = require('../controllers/usersController')
 const validateRegister = require("../middlewares/validateRegisterMid")
 
 
+
 router.get('/login', usersController.login);
 
 router.get('/registro', usersController.register);
-router.post('/', validateRegister,  uploadFile.single("avatar"), usersController.storeRegister);
+router.post('/', validateRegister, uploadFile.single("avatar"), usersController.storeRegister);
 
 
 module.exports = router;

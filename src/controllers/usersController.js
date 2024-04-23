@@ -4,6 +4,7 @@ const path = require('path');
 const {validationResult} = require("express-validator");
 
 let userService = require('../data/userService');
+const { error } = require('console');
 
 const usersController = { 
     login: (req,res) => res.render("users/login.ejs"),
