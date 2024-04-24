@@ -4,7 +4,6 @@ const path = require('path');
 const {validationResult} = require("express-validator");
 
 let userService = require('../data/userService');
-const { error } = require('console');
 
 const usersController = { 
     login: (req,res) => res.render("users/login.ejs"),
@@ -12,7 +11,6 @@ const usersController = {
     register: (req, res) => res.render("users/register.ejs"),
 
     storeRegister: (req,res) => {
-        //aca?
         let errors = validationResult(req);
         if(errors.isEmpty()){
             userService.store(req.body, req.file);

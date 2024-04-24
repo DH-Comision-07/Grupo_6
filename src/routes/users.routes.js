@@ -22,7 +22,7 @@ const validateRegister = require("../middlewares/validateRegisterMid")
 router.get('/login', usersController.login);
 
 router.get('/registro', usersController.register);
-router.post('/', validateRegister, uploadFile.single("avatar"), usersController.storeRegister);
+router.post('/', uploadFile.single("avatar"), validateRegister, usersController.storeRegister);
 
 
-module.exports = router;
+module.exports = router; 
