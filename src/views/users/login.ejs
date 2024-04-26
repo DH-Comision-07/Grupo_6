@@ -17,20 +17,25 @@
   <main>
     <section class="container_form">
       <h1 class="title">INGRESA A TU CUENTA</h1>
-      <form>
+
+      <form action="/cuenta" method="post">
         <div class="form_field">
             <label for="email">Email</label>
             <input type="email" name="email" id="email"/>
+        </div>
+        <div class="form_field">
+          <label for="usename">Nombre de Usuario</label>
+          <input type="text" name="username" id="username"/>
         </div>
         <div class="form_field">
             <label for="password">Contraseña</label>
             <input type="password" name="password" id="password"/>
         </div>
         <div class="condiciones">
-                <label for="recordar">
-                    <input type="checkbox" value="recordar" id="recordar" checked>
-                    <p> Recordarme</p>
-                </label>
+            <label for="recordar">
+                <input type="checkbox" value="recordar" id="recordar">
+                <p> Recordarme</p>
+            </label>
         </div>
   
         <button class="button-login-reg" type="submit">

@@ -6,8 +6,20 @@ const {validationResult} = require("express-validator");
 let userService = require('../data/userService');
 
 const usersController = { 
+    // loggeo
     login: (req,res) => res.render("users/login.ejs"),
 
+    checkLogin: (req,res) => {
+        if (userService.validate(req.body)){
+            res.send("valid login!")
+        }
+        else {
+            res.send("no accont!")
+        }
+    },
+
+
+    // registro
     register: (req, res) => res.render("users/register.ejs"),
 
     storeRegister: (req,res) => {

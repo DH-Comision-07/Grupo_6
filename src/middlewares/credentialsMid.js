@@ -1,5 +1,3 @@
-// mid que determinan acceso segun logueo
-
 let credentialMid = {
     isLogged: function(req){
         return req.session.usuarioLogueado != undefinded;
@@ -33,14 +31,6 @@ let credentialMid = {
         }
         next();
     }
-
-
-
-
-
-  
-
-
 }
 
 module.exports = credentialMid;

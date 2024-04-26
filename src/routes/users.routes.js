@@ -20,6 +20,7 @@ const validateRegister = require("../middlewares/validateRegisterMid")
 
 
 router.get('/login', usersController.login);
+router.post('/', usersController.checkLogin)
 
 router.get('/registro', usersController.register);
 router.post('/', uploadFile.single("avatar"), validateRegister, usersController.storeRegister);

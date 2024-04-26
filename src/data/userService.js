@@ -23,6 +23,15 @@ let usersService = {
         users.push(newUser);
         fs.writeFileSync(usersFilePath, JSON.stringify(users));
     },
+
+    validate: function(input) {
+        for (let user of users){
+            if (user.username === input.username && user.email === input.email && bcrypt.compareSync(input.password, user.password)){
+                return true;
+            }
+        }
+        return false
+    }
 };
 
 module.exports = usersService;
