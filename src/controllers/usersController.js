@@ -4,17 +4,24 @@ const path = require('path');
 const {validationResult} = require("express-validator");
 
 let userService = require('../data/userService');
+const { log } = require('console');
 
 const usersController = { 
+
     // loggeo
     login: (req,res) => res.render("users/login.ejs"),
 
     checkLogin: (req,res) => {
         if (userService.validate(req.body)){
-            res.send("valid login!")
+            let user = userService.getByUsername(req.body.username);
+            req.session.user = {
+                firstName: user.firstName,
+                lastName: user.lastName
+            }
+            res.redirect("/");
         }
         else {
-            res.send("no accont!")
+            res.render("users/login", {error: "Email, nombre de usuario o contraseña incorrectos.", old: req.body})
         }
     },
 
@@ -26,7 +33,7 @@ const usersController = {
         let errors = validationResult(req);
         if(errors.isEmpty()){
             userService.store(req.body, req.file);
-            res.redirect('/');
+            res.redirect('/cuenta/login');
         }
         else {
             res.render("users/register.ejs", {errors: errors.mapped(), old: req.body});

@@ -20,6 +20,14 @@
         <input type="text" name="searchbar" placeholder="Buscar..."> 
         <button type="submit"><i class="fas fa-solid fa-magnifying-glass"></i></button>
       </form>
+
+      
+      <% if (user) { %>
+        <div class="header-paymentsafe">
+          <p><%= user.firstName.toUpperCase() %> <%= user.lastName.toUpperCase() %></p>
+        </div>
+      <% } %>
+      
       
       <div class="header-icon">
         <a href="/cuenta/login" rel="login">

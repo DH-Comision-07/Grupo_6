@@ -3,10 +3,7 @@
 
 <head>
   <%- include('../partials/head') %>
-<<<<<<< HEAD
 
-=======
->>>>>>> develop
   <link rel="stylesheet" href="/css/loginRegister.css"/>
   <title>Inicia sesion</title>
 </head>
@@ -18,14 +15,18 @@
     <section class="container_form">
       <h1 class="title">INGRESA A TU CUENTA</h1>
 
-      <form action="/cuenta" method="post">
+      <% if (locals.error) { %>
+            <p class="error-message"><%= error %></p>
+      <% } %>
+
+      <form action="/cuenta/login" method="post">
         <div class="form_field">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email"/>
+            <input type="email" name="email" id="email"a value="<%= locals.old && old.email %>">
         </div>
         <div class="form_field">
           <label for="usename">Nombre de Usuario</label>
-          <input type="text" name="username" id="username"/>
+          <input type="text" name="username" id="username" value="<%= locals.old && old.username %>">
         </div>
         <div class="form_field">
             <label for="password">Contraseña</label>
@@ -34,7 +35,7 @@
         <div class="condiciones">
             <label for="recordar">
                 <input type="checkbox" value="recordar" id="recordar">
-                <p> Recordarme</p>
+                <p>Recordarme</p>
             </label>
         </div>
   
