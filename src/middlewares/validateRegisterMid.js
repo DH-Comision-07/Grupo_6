@@ -18,28 +18,28 @@ let validateRegister = [
   .isEmail().withMessage("Debe ingresar un mail valido"),
 
   check("password")
-  .notEmpty().withMessage("Debe ingresar una contrasena.")
-  .isLength({min: 8, max: 25}).withMessage("La contrasena ingresada debe tener entre 8 y 25 letras.")
+  .notEmpty().withMessage("Debe ingresar una contraseña.")
+  .isLength({min: 8, max: 25}).withMessage("La contraseña ingresada debe tener entre 8 y 25 letras.")
   .custom(value => {
     if (!(/[A-Z]/.test(value))) {
-      throw new Error("La contrasena ingresada debe contener mayusculas.");
+      throw new Error("La contraseña ingresada debe contener mayúsculas.");
     }
     return true;
   })
   .custom(value => {
     if (!(/[a-z]/.test(value))) {
-      throw new Error("La contrasena ingresada debe contener minusculas.");
+      throw new Error("La contraseña ingresada debe contener minúsculas.");
     }
     return true;
   })
   .custom(value => {
     if (!/[a-zA-Z]/.test(value) || !/\d/.test(value)) {
-        throw new Error("La contrasena ingresada debe contener numeros y letras")
+        throw new Error("La contraseña ingresada debe contener numeros y letras")
     }
     return true;
   })
 
-  //validar imagen y confirmar contrasena
+  //validar imagen y confirmar contraseña
   //administrador o comporador y terminos ?
 ]
 
