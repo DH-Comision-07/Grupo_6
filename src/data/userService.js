@@ -25,16 +25,6 @@ let usersService = {
         fs.writeFileSync(usersFilePath, JSON.stringify(users));
     },
 
-    // validar logeo
-    validate: function(input) {
-        for (let user of users){
-            if (user.username === input.username && user.email === input.email && bcrypt.compareSync(input.password, user.password)){
-                return true;
-            }
-        }
-        return false
-    },
-
     getByUsername: function(username) {
         return users.find(user => user.username === username)
     }

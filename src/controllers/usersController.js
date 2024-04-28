@@ -1,10 +1,10 @@
 const express = require('express');
 const path = require('path');
+const bcrypt = require("bcryptjs");
 
 const {validationResult} = require("express-validator");
 
 let userService = require('../data/userService');
-const { log } = require('console');
 
 const usersController = { 
 
@@ -12,7 +12,10 @@ const usersController = {
     login: (req,res) => res.render("users/login.ejs"),
 
     checkLogin: (req,res) => {
-        if (userService.validate(req.body)){
+        let input = req.body;
+        let user = userService.getByUsername(input.username);
+
+        if (user && user.username === input.username && user.email === input.email && bcrypt.compareSync(input.password, user.password)){
             let user = userService.getByUsername(req.body.username);
             req.session.user = {
                 firstName: user.firstName,
