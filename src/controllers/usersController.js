@@ -33,7 +33,7 @@ const usersController = {
         let errors = validationResult(req);
         if(errors.isEmpty()){
             userService.store(req.body, req.file);
-            res.redirect('/cuenta/login');
+            res.redirect('/');
         }
         else {
             res.render("users/register.ejs", {errors: errors.mapped(), old: req.body});
