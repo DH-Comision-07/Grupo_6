@@ -22,9 +22,12 @@ const adminOnly = require('../middlewares/adminOnly');
 
 
 
-// **RUTAS**
+// **CONTROLADOR**
 const productsController = require('../controllers/productsController');
 
+
+
+// **RUTAS**
 router.get('/', productsController.index);
 
 router.get('/detalle/:id', productsController.detail)
@@ -38,6 +41,7 @@ router.put('/detalle/:id', uploadFile.single("image"), productsController.update
 router.get('/carrito', productsController.cart)
 
 router.delete('/detalle/:id/delete', productsController.destroy)
+
 
 
 module.exports = router;

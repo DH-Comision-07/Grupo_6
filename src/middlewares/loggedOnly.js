@@ -4,7 +4,6 @@ function loggedOnly(req,res,next) {
     } else {
         next()
     }
-    
 }
 
 module.exports = loggedOnly;

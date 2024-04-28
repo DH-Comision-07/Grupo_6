@@ -4,7 +4,6 @@ function guestOnly(req,res,next) {
     } else {
         next()
     }
-    
 }
 
 module.exports = guestOnly;

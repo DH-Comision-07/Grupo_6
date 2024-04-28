@@ -1,14 +1,17 @@
-const express = require('express');
-const path = require('path');
 const bcrypt = require("bcryptjs");
-
 const {validationResult} = require("express-validator");
 
+
+
+// **SERVICE**
 let userService = require('../data/userService');
 
+
+
+// **CONTROLADOR**
 const usersController = { 
 
-    // loggeo
+    // **INCIAR SESION**
     login: (req,res) => res.render("users/login.ejs"),
 
     checkLogin: (req,res) => {
@@ -32,7 +35,8 @@ const usersController = {
     },
 
 
-    // registro
+
+    // **REGISTRAR USUARIO**
     register: (req, res) => res.render("users/register.ejs"),
 
     storeRegister: (req,res) => {
@@ -46,5 +50,7 @@ const usersController = {
         }
     },
 }
+
+
 
 module.exports = usersController;

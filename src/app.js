@@ -4,12 +4,16 @@ const path = require('path');
 const methodOverride =  require('method-override');
 const session = require("express-session");
 
+const userLogged = require('./middlewares/userLogged');
+
+
+
+// **PUERTO**
 const port = 3030;
 
-const userLoggedMid = require('./middlewares/userLoggedMid');
 
 
-// middlewares
+// **MIDDLEWARES**
 app.use(methodOverride('_method'));
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
@@ -20,16 +24,17 @@ app.use(session({
     saveUninitialized: false
 }));
 
-app.use(userLoggedMid);
+app.use(userLogged);
 
 
-// template negine
+
+// **TEMPLATE ENGINE**
 app.set("view engine", "ejs");
 app.set("views", __dirname+"/views");
 
 
 
-// routes
+// **ROUTERS**
 const indexRouter = require('./routes/index.routes');
 const productRouter = require('./routes/products.routes');
 const userRouter = require('./routes/users.routes');
