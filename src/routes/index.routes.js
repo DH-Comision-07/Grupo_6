@@ -6,7 +6,7 @@ const routes = express.Router();
 const productService = require("../data/productService");
 
 
-routes.get('/', (req,res) => res.render("index", {products: productService.getAll()}));
+routes.get('/', (req,res) => res.render("index", {products: productService.getAll(), user: req.session.user}));
 
 
 module.exports = routes;
