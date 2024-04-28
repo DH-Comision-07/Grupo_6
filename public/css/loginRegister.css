@@ -31,6 +31,14 @@
   padding-top: 20px;
 }
 
+.error-message {
+  border: var(--color-rojo) solid 1px;
+  border-radius: 10px;
+  padding: 20px;
+  color: var(--color-rojo);
+  font-weight: bold;
+}
+
 .container_form {
   display: flex;
   justify-content: center;
@@ -44,12 +52,13 @@ form{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 60%;
+  width: 50%;
 }
 
 .form_field {
   display: flex;
   flex-direction: column;
+  margin: 10px 0;
 }
 
 .form-register{
