@@ -22,9 +22,9 @@
       </form>
 
       
-      <% if (user) { %>
+      <% if (locals.isLogged) { %>
         <div class="header-paymentsafe">
-          <p><%= user.firstName.toUpperCase() %> <%= user.lastName.toUpperCase() %></p>
+          <p><%= locals.user.firstName.toUpperCase() %> <%= locals.user.lastName.toUpperCase() %></p>
         </div>
       <% } %>
       

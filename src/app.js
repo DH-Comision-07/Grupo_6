@@ -1,15 +1,15 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-
 const methodOverride =  require('method-override');
 const session = require("express-session");
 
 const port = 3030;
 
+const userLoggedMid = require('./middlewares/userLoggedMid');
 
 
-// middleware
+// middlewares
 app.use(methodOverride('_method'));
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
@@ -19,6 +19,8 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }));
+
+app.use(userLoggedMid);
 
 
 // template negine

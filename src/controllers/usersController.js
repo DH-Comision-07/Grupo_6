@@ -16,11 +16,14 @@ const usersController = {
         let user = userService.getByUsername(input.username);
 
         if (user && user.username === input.username && user.email === input.email && bcrypt.compareSync(input.password, user.password)){
-            let user = userService.getByUsername(req.body.username);
+            
             req.session.user = {
                 firstName: user.firstName,
-                lastName: user.lastName
+                lastName: user.lastName,
+                type: user.type
             }
+            req.session.isLogged = true;
+
             res.redirect("/");
         }
         else {

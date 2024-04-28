@@ -5,16 +5,16 @@ let productService = require('../data/productService');
 
 
 const productsController = { 
-    index: (req,res) => res.render("products/productAll", {products: productService.getAll(), user: req.session.user}),
+    index: (req,res) => res.render("products/productAll", {products: productService.getAll()}),
 
 
-    detail: (req,res) => res.render("products/productDetail",{products: productService.getAll(), product: productService.getOneBy(req.params.id), user: req.session.user}),    
+    detail: (req,res) => res.render("products/productDetail",{products: productService.getAll(), product: productService.getOneBy(req.params.id)}),    
     
 
-    cart: (req,res) => res.render("products/productCart", {user: req.session.user}),
+    cart: (req,res) => res.render("products/productCart"),
 
 
-    create: (req,res) => res.render("products/productCreate", {user: req.session.user}), 
+    create: (req,res) => res.render("products/productCreate"), 
     store: (req,res) => {
         productService.store(req.body, req.file);
 		res.redirect('/producto');
