@@ -1,8 +1,8 @@
-let credentialsMid = {
+
+let credentialMid = {
     isLogged: function(req){
         return req.session.usuarioLogueado != undefinded;
-    },
-
+    }
     // isAdmin: function(user){
     //     return user.role == 9;
     // },

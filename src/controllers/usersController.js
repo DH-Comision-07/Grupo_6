@@ -36,7 +36,7 @@ const usersController = {
             res.redirect('/');
         }
         else {
-            res.render("users/register.ejs", {errors: errors.mapped(), old: req.body});
+            res.render("users/register.ejs", {errors: errors.mapped(), old: req.body });
         }
     },
 }
