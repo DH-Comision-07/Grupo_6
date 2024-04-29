@@ -18,6 +18,10 @@ const uploadFile = multer({storage: storage});
 
 const validateRegister = require("../middlewares/validateRegister")
 
+const loggedOnly = require('../middlewares/loggedOnly');
+const guestOnly = require('../middlewares/guestOnly');
+const adminOnly = require('../middlewares/adminOnly');
+
 
 
 // **CONTROLADOR**
@@ -26,11 +30,11 @@ const usersController = require('../controllers/usersController')
 
 
 // **RUTAS**
-router.get('/login', usersController.login);
-router.post('/login', usersController.checkLogin)
+router.get('/login', guestOnly, usersController.login);
+router.post('/login', guestOnly, usersController.checkLogin)
 
-router.get('/registro', usersController.register);
-router.post('/', uploadFile.single("avatar"), validateRegister, usersController.storeRegister);
+router.get('/registro', guestOnly, usersController.register);
+router.post('/', guestOnly, uploadFile.single("avatar"), validateRegister, usersController.storeRegister);
 
 
 

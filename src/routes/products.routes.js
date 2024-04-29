@@ -28,19 +28,19 @@ const productsController = require('../controllers/productsController');
 
 
 // **RUTAS**
-router.get('/', productsController.index);
+router.get('/', adminOnly, productsController.index);
 
 router.get('/detalle/:id', productsController.detail)
 
-router.get('/nuevo', productsController.create)
-router.post('/', uploadFile.single("image"), productsController.store)
+router.get('/nuevo', adminOnly, productsController.create)
+router.post('/', adminOnly, uploadFile.single("image"), productsController.store)
 
 router.get('/:id/editar', adminOnly, productsController.edit)
-router.put('/detalle/:id', uploadFile.single("image"), productsController.update)
+router.put('/detalle/:id', adminOnly,  uploadFile.single("image"), productsController.update)
 
-router.get('/carrito', productsController.cart)
+router.get('/carrito', loggedOnly, productsController.cart)
 
-router.delete('/detalle/:id/delete', productsController.destroy)
+router.delete('/detalle/:id/delete', adminOnly, productsController.destroy)
 
 
 

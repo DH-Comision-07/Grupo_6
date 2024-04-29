@@ -1,6 +1,6 @@
 function adminOnly(req,res,next) {
-    if (req.session.user.type != "admin") {
-        res.redirect("/cuenta/login")
+    if (req.session.user == undefined || req.session.user.type != "admin") {
+        res.redirect("/")
     } 
     else {
         next()
