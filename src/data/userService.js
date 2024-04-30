@@ -1,14 +1,31 @@
 const fs = require('fs');
 const path = require('path');
 
+
+
+// **HASHEO**
 const bcrypt = require("bcryptjs");
 const salt = 12;
 
+
+
+// **BASE DE DATOS**
 const usersFilePath = path.join(__dirname, './users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
+
+
+// **SERVICE**
 let usersService = {
-    // guardar registro
+
+    // **GET**
+    getByUsername: function(username) {
+        return users.find(user => user.username === username)
+    },
+
+
+
+    // **GUARDAR**
     store: function(user, avatar) {
         let newUser = {
             id: users[users.length - 1].id + 1, // crea id, ARREGLAR?
@@ -23,21 +40,10 @@ let usersService = {
 
         users.push(newUser);
         fs.writeFileSync(usersFilePath, JSON.stringify(users));
-    },
-
-    // validar logeo
-    validate: function(input) {
-        for (let user of users){
-            if (user.username === input.username && user.email === input.email && bcrypt.compareSync(input.password, user.password)){
-                return true;
-            }
-        }
-        return false
-    },
-
-    getByUsername: function(username) {
-        return users.find(user => user.username === username)
     }
+
 };
+
+
 
 module.exports = usersService;

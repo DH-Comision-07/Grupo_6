@@ -1,23 +1,32 @@
-const express = require('express');
-const path = require('path');
-
+const bcrypt = require("bcryptjs");
 const {validationResult} = require("express-validator");
 
-let userService = require('../data/userService');
-const { log } = require('console');
 
+
+// **SERVICE**
+let userService = require('../data/userService');
+
+
+
+// **CONTROLADOR**
 const usersController = { 
 
-    // loggeo
+    // **INCIAR SESION**
     login: (req,res) => res.render("users/login.ejs"),
 
     checkLogin: (req,res) => {
-        if (userService.validate(req.body)){
-            let user = userService.getByUsername(req.body.username);
+        let input = req.body;
+        let user = userService.getByUsername(input.username);
+
+        if (user && user.username === input.username && user.email === input.email && bcrypt.compareSync(input.password, user.password)){
+            
             req.session.user = {
                 firstName: user.firstName,
-                lastName: user.lastName
+                lastName: user.lastName,
+                type: user.type
             }
+            req.session.isLogged = true;
+
             res.redirect("/");
         }
         else {
@@ -26,7 +35,8 @@ const usersController = {
     },
 
 
-    // registro
+
+    // **REGISTRAR USUARIO**
     register: (req, res) => res.render("users/register.ejs"),
 
     storeRegister: (req,res) => {
@@ -40,5 +50,7 @@ const usersController = {
         }
     },
 }
+
+
 
 module.exports = usersController;
