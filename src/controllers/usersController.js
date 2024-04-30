@@ -52,6 +52,14 @@ const usersController = {
             res.render("users/register.ejs", {errors: errors.mapped(), old: req.body });
         }
     },
+
+
+
+    // **CERRAR SESION**
+    logout: (req, res) => {
+        req.session.destroy();
+        res.redirect("/");
+    }
 }
 
 
