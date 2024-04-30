@@ -35,8 +35,13 @@ let usersService = {
             email: user.email,
             password: bcrypt.hashSync(user.password, salt),
             type: user.type,
-            avatar: "/images/users/"+avatar.filename,
+            // avatar: "/images/users/"+avatar.filename,
         };
+        if(avatar){
+            newUser.avatar = "/images/users/"+avatar.filename
+        } else {
+            newUser.avatar = "/images/users/default.png"
+        }
 
         users.push(newUser);
         fs.writeFileSync(usersFilePath, JSON.stringify(users));
