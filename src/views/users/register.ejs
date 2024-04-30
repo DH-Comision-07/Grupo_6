@@ -15,26 +15,55 @@
     <main>
         <section class="container_form">
             <h1 class="title">REGISTRATE</h1>
-            <form>
+
+            <% if (locals.errors) { %>
+                <% for (const property in errors) { %>
+                    <p class="error-message"><%= errors[property].msg %></p>
+                <% } %>
+            <% } %>
+
+            <form action="/cuenta" method="post" enctype="multipart/form-data">
                 <div class="form_field">
-                    <label for="name">Nombre</label>
-                    <input type="text" required/>
+                    <label for="firstName">Nombre</label>
+                    <input name="firstName" id="firstName" type="text" required value="<%= locals.old && old.firstName %>"/>
                 </div>
+
                 <div class="form_field">
-                    <label for="lastname">Apellidos</label>
-                    <input type="text" required/>
+                    <label for="lastName">Apellidos</label>
+                    <input name="lastName" id="lastName" type="text" required value="<%= locals.old && old.lastName %>"/>
                 </div>
+
+                <div class="form_field">
+                    <label for="username">Nombre de usuario</label>
+                    <input name="username" id="username" type="text" required value="<%= locals.old && old.username %>"/>
+                </div>
+
+                <div class="form__field">
+                    <label for="avatar">Foto de perfil</label>
+                    <input type="file" id="avatar" name="avatar">
+                </div>
+
                 <div class="form_field">
                     <label for="email">Email</label>
-                    <input type="email" required/>
+                    <input name="email" id="email" type="email" required value="<%= locals.old && old.email %>">
                 </div>
+
                 <div class="form_field">
                     <label for="password">Contraseña</label>
-                    <input type="password" required/>
+                    <input name="password" id="password" type="password" required/>
                 </div>
+                
                 <div class="form_field">
                     <label for="confirm-password">Confirmar contraseña</label>
                     <input type="password" required/>
+                </div>
+                <div class="form_field">
+                    <label for="admin">
+                        <input type="radio" name="type" id="admin" value="admin">Soy administrador
+                    </label>
+                    <label for="costumer">
+                        <input type="radio" name="type" id="costumer" value="costumer">Soy comprador
+                    </label>
                 </div>
                 <div class="condiciones">
                         <label for="checkbox1">
@@ -47,8 +76,8 @@
                         <label for="checkbox2">
                             <input type="checkbox" >
                             <p>
-                            Quiero recibir comunicaciones comerciales de D&H
-                        </p>
+                                Quiero recibir comunicaciones comerciales de D&H
+                            </p>
                         </label>
                 </div>
                 <button class="button-login-reg" type="submit">

@@ -41,9 +41,11 @@
       <%- include("./partials/productSlider") %>
     </section>
 
-    <section class="all-products">
-      <a href="/producto" class="all-products__button">VER TODOS LOS PRODUCTOS</a>
-    </section>
+    <% if (locals.user && locals.user.type == "admin") { %>
+      <section class="all-products">
+        <a href="/producto" class="all-products__button">VER TODOS LOS PRODUCTOS</a>
+      </section>
+    <% } %>
     
     <section class="newsletter">
       <h2 class="newsletter__titulo">
@@ -58,8 +60,6 @@
     
   </main>
 
-
-  
   <%- include('./partials/footer') %>
   
 </body>

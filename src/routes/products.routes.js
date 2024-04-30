@@ -2,6 +2,9 @@ const express = require('express');
 const path = require("path");
 const router = express.Router();
 
+
+
+// **MIDDLEWARES**
 const multer = require("multer");
 const storage = multer.diskStorage({
     destination: function(req,file,cb) {
@@ -13,22 +16,32 @@ const storage = multer.diskStorage({
 })
 const uploadFile = multer({storage: storage});
 
+const loggedOnly = require('../middlewares/loggedOnly');
+const guestOnly = require('../middlewares/guestOnly');
+const adminOnly = require('../middlewares/adminOnly');
+
+
+
+// **CONTROLADOR**
 const productsController = require('../controllers/productsController');
 
 
-router.get('/', productsController.index);
+
+// **RUTAS**
+router.get('/', adminOnly, productsController.index);
 
 router.get('/detalle/:id', productsController.detail)
 
-router.get('/nuevo', productsController.create)
-router.post('/', uploadFile.single("image"), productsController.store)
+router.get('/nuevo', adminOnly, productsController.create)
+router.post('/', adminOnly, uploadFile.single("image"), productsController.store)
 
-router.get('/:id/editar', productsController.edit)
-router.put('/detalle/:id', uploadFile.single("image"), productsController.update)
+router.get('/:id/editar', adminOnly, productsController.edit)
+router.put('/detalle/:id', adminOnly,  uploadFile.single("image"), productsController.update)
 
-router.get('/carrito', productsController.cart)
+router.get('/carrito', loggedOnly, productsController.cart)
 
-router.delete('/detalle/:id/delete', productsController.destroy)
+router.delete('/detalle/:id/delete', adminOnly, productsController.destroy)
+
 
 
 module.exports = router;

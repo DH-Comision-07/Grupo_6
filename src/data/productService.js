@@ -1,18 +1,25 @@
 const fs = require('fs');
 const path = require('path');
 
+
+
+// **BASE DE DATOS**
 const productsFilePath = path.join(__dirname, './products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
+
+
+// **SERVICE**
 let productService = {
-    getAll: function() {
-        return products;
-    },
 
-    getOneBy: function(id) {
-        return products.find((product) => product.id == id)
-    },
+    // **GET**
+    getAll: function() { return products; },
 
+    getOneBy: function(id) { return products.find((product) => product.id == id) },
+
+
+
+    // **GUARDAR**
     store: function(product, image) {
         let newProduct = {
             id: products[products.length - 1].id + 1, // crea id, ARREGLAR?
@@ -33,6 +40,9 @@ let productService = {
         fs.writeFileSync(productsFilePath, JSON.stringify(products));
     },
 
+
+
+    // **EDITAR**
     update: function(id, update, image) {
         let updateIndex = products.findIndex((product) => product.id == id);
         let newProduct = {
@@ -61,11 +71,16 @@ let productService = {
 
     },
      
+
+    
+    // **ELIMINAR**
     deleteById: function(id) {
         let deleteIndex = products.findIndex((product) => product.id == id);
         products.splice(deleteIndex, 1);
         fs.writeFileSync(productsFilePath, JSON.stringify(products));
     }
 }
+
+
 
 module.exports = productService;
