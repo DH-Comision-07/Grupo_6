@@ -29,11 +29,19 @@
       <% } %>
       
       
-      <div class="header-icon">
-        <a href="/cuenta/login" rel="login">
-          <i class="fas fa-solid fa-user"></i>    
-        </a>
-      </div>
+      <% if (locals.isLogged) { %>
+        <div class="header-icon">
+          <a href="/cuenta/logout" rel="login">
+            <i class="fa-solid fa-right-from-bracket"></i>  
+          </a>
+        </div>
+      <% } else { %>
+        <div class="header-icon">
+          <a href="/cuenta/login" rel="login">
+            <i class="fas fa-solid fa-user"></i>    
+          </a>
+        </div>
+      <% } %>
 
       <div class="header-icon">
         <a href="/producto/carrito" rel="carrito">
