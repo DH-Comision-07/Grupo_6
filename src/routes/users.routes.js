@@ -36,6 +36,7 @@ router.post('/login', guestOnly, usersController.checkLogin)
 router.get('/registro', guestOnly, usersController.register);
 router.post('/', guestOnly, uploadFile.single("avatar"), validateRegister, usersController.storeRegister);
 
+router.get("/logout", usersController.logout)
 
 
 module.exports = router; 
