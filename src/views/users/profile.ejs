@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include('../partials/head') %>
+
+  <link rel="stylesheet" href="/css/loginRegister.css"/>
+  <title>Perfil</title>
+</head>
+
+<body>
+  <%- include("../partials/header", {simplificarHeader: true}) %>
+
+  <main>
+    <section class="container_form">
+      <h1 class="title">PERFIL DE USUARIO</h1>
+
+      <div class="form_field">
+          <p><%= user.firstName %> <%= user.lastName %></p>
+      </div>
+
+      <div class="form_field">
+          <p><%= user.email %></p>
+      </div>
+
+        <img src=<%= user.avatar %>>
+
+
+    </section>
+    
+  </main>
+    
+  
+  <%- include("../partials/footer", {simplificarFooter: true}) %>
+      
+</body>
+
+</html>

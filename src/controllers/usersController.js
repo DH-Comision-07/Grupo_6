@@ -19,7 +19,7 @@ const usersController = {
         let user = userService.getByUsername(input.username);
 
         if (user && user.username === input.username && user.email === input.email && bcrypt.compareSync(input.password, user.password)){
-            
+            delete user.password;
             req.session.user = {
                 firstName: user.firstName,
                 lastName: user.lastName,
@@ -34,7 +34,10 @@ const usersController = {
         }
     },
 
-
+    // **MOSTRAR USUARIO**
+    profile: (req, res) => res.render('profile', {
+        user: req.session.user
+    }),
 
     // **REGISTRAR USUARIO**
     register: (req, res) => res.render("users/register.ejs"),

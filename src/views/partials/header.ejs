@@ -24,7 +24,9 @@
       
       <% if (locals.isLogged) { %>
         <div class="header-paymentsafe">
-          <p><%= locals.user.firstName.toUpperCase() %> <%= locals.user.lastName.toUpperCase() %></p>
+          <a href="/cuenta/perfil" rel="perfil">
+            <p><%= locals.user.firstName.toUpperCase() %> <%= locals.user.lastName.toUpperCase() %></p>
+          </a>
         </div>
       <% } %>
       
