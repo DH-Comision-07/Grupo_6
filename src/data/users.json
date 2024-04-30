@@ -88,5 +88,43 @@
         "password": "$2a$12$AiApVOQ69Re1IUA6Hwcuc.dgoqhzShgV3khKXAVSeLLc5lWXGQBvu",
         "type": "costumer",
         "avatar": "/images/users/img-matrix.png"
+    },
+    {
+        "id": 10,
+        "firstName": "gonza",
+        "lastName": "digital",
+        "username": "GonzaDH",
+        "email": "gonzadh@gmail.com",
+        "type": "admin",
+        "avatar": "/images/users/img-gonzadh.png"
+    },
+    {
+        "id": 11,
+        "firstName": "mate",
+        "lastName": "yerba",
+        "username": "matecito",
+        "email": "mate@gmail.com",
+        "type": "costumer",
+        "avatar": "/images/users/img-matecito.png"
+    },
+    {
+        "id": 12,
+        "firstName": "cafe",
+        "lastName": "amargo",
+        "username": "cafecito",
+        "email": "cafe@gmail.com",
+        "password": "$2a$12$qlw9YQpX14Yh2zQXoClgMO789kXXFFv0AvrzYwz7JlMb6sVrhqObu",
+        "type": "costumer",
+        "avatar": "/images/users/img-cafecito.png"
+    },
+    {
+        "id": 13,
+        "firstName": "tobi",
+        "lastName": "gomez",
+        "username": "tobigom",
+        "email": "tgom@gmail.com",
+        "password": "$2a$12$gjSZeyee1y2xukaZDxv47Osa3RrZw.spRjTTf4dXeu8NoBvG0Y772",
+        "type": "admin",
+        "avatar": "/images/users/img-tobigom.png"
     }
 ]

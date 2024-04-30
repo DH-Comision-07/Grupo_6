@@ -20,18 +20,18 @@
       </div>
 
       <div class="form_field">
-          <p><%= user.email %></p>
+          <p> <%= user.email %> </p>
       </div>
-
-        <img src=<%= user.avatar %>>
-
+      <div>
+        <img src="<%= user.avatar %>"></img>
+      </div>
 
     </section>
     
   </main>
     
   
-  <%- include("../partials/footer", {simplificarFooter: true}) %>
+  <%- include("../partials/footer") %>
       
 </body>
 

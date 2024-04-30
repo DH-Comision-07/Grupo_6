@@ -20,11 +20,7 @@ const usersController = {
 
         if (user && user.username === input.username && user.email === input.email && bcrypt.compareSync(input.password, user.password)){
             delete user.password;
-            req.session.user = {
-                firstName: user.firstName,
-                lastName: user.lastName,
-                type: user.type
-            }
+            req.session.user = user
             req.session.isLogged = true;
 
             res.redirect("/");
@@ -35,7 +31,7 @@ const usersController = {
     },
 
     // **MOSTRAR USUARIO**
-    profile: (req, res) => res.render('profile', {
+    profile: (req, res) => res.render('users/profile', {
         user: req.session.user
     }),
 
@@ -46,7 +42,7 @@ const usersController = {
         let errors = validationResult(req);
         if(errors.isEmpty()){
             userService.store(req.body, req.file);
-            res.redirect('/');
+            res.redirect('/cuenta/login');
         }
         else {
             res.render("users/register.ejs", {errors: errors.mapped(), old: req.body });
