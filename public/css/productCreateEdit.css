@@ -57,6 +57,11 @@
     grid-template-rows: repeat(5,1fr);
     grid-auto-flow: column;
 }
+.checkbox-flex {
+    display: flex;
+    gap: 10px;
+    grid-auto-flow: row;
+}
 .formulario__checkbox {
     display: none;
 }
