@@ -59,8 +59,10 @@
 }
 .checkbox-flex {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     grid-auto-flow: row;
+    justify-content: space-around;
 }
 .formulario__checkbox {
     display: none;
