@@ -45,16 +45,39 @@
                         <label for="image">Imagenes</label>
                         <input type="file" id="image" name="image" class="formulario__imagenes">
                     </div>
-                    <div class="formulario__field">
-                        <label for="colors">Colores</label>
-                        <input type="text" id="colores" name="colors" class="formulario__texto" required
-                            placeholder="Rojo, Azul, Blanco" value="<%= product.colors %>">
-                    </div>
-                    <div class="formulario__field">
-                        <label for="sizes">Talles</label>
-                        <input type="text" id="sizes" name="sizes" class="formulario__texto" placeholder="S, M, L"
-                            required value="<%= product.sizes %>">
-                    </div>
+                    
+                    <label>Colores</label> 
+                    <section class="checkbox-flex">
+                    <% let colors = ['rojo', 'azul', 'marron', 'blanco', 'negro', 'beige', 'rosa', 'celeste', 'gris', 'amarillo', 'violeta', 'naranja', 'verde', 'lila', 'bordo'] %>
+                    <% colors.forEach(color => { %>
+                        <div class="formulario__field">
+
+                        <input class="formulario__checkbox" type="checkbox" name="colors" id=<%= color %> value=<%= color %>
+                        <% if (product.colors.includes(color)) { %>
+                             checked
+                        <% } %>
+                        >
+
+                        <label class="formulario__label" for=<%= color %>><%= color.toUpperCase() %></label>
+                        </div>
+                    <% }) %>
+                    </section> 
+
+                    <label>Talles</label> 
+                    <section class="checkbox-flex">
+                    <% let sizes = ['xxxs', 'xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl', 'unico'] %>
+                    <% sizes.forEach(size => { %>
+                        <div class="formulario__field">
+                        <input class="formulario__checkbox" type="checkbox" name="sizes" id=<%= size %> value=<%= size %>
+                        <% if (product.sizes.includes(size)) { %>
+                            checked
+                       <% } %>
+                       >
+                        <label class="formulario__label" for=<%= size %>><%= size.toUpperCase() %></label>
+                        </div>
+                    <% }) %>
+                    </section> 
+
                     <div class="formulario__field">
                         <label for="price">Precio</label>
                         <input type="number" id="price" name="price" class="formulario__precio" step="50" min="0"

@@ -20,6 +20,7 @@ const productsController = {
     create: (req,res) => res.render("products/productCreate"), 
 
     store: (req,res) => {
+        // res.send(req.body)
         productService.store(req.body, req.file);
 		res.redirect('/producto');
     },
