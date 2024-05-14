@@ -19,7 +19,7 @@ const usersController = {
         let user = userService.getByUsername(input.username);
 
         if (user && user.username === input.username && user.email === input.email && bcrypt.compareSync(input.password, user.password)){
-            delete user.password;
+            // delete user.password;
             req.session.user = user
             req.session.isLogged = true;
 

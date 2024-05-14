@@ -58,23 +58,25 @@
             <% }); %>
           </div>
 
-          <% if (locals.user && locals.user.type == "admin") { %>
+          
             <div class="formulario__botones">
               <button class="formulario__boton" type="submit" formaction="/producto/carrito" formmethod="get">
                 <i class="formulario__icono fa-solid fa-cart-shopping"></i>AGREGAR AL CARRITO
               </button>
-              <div style="display: flex;">
-                <button class="formulario__boton --admin" type="submit" formaction="/producto/<%= product.id %>/editar" formmethod="get">
-                  <i class="formulario__icono fa-solid fa-pencil"></i>EDITAR PRODUCTO
-                </button>
-                <form>
-                <button class="formulario__boton --admin" type="submit" formaction="/producto/detalle/<%= product.id %>/delete?_method=DELETE" formmethod="POST">
-                  <i class="formulario__icono fa-solid fa-trash-can"></i>ELIMINAR PRODUCTO
-                </button>
-              </form>
-              </div>
+              <% if (locals.user && locals.user.type == "admin") { %>
+                <div style="display: flex;">
+                  <button class="formulario__boton --admin" type="submit" formaction="/producto/<%= product.id %>/editar" formmethod="get">
+                    <i class="formulario__icono fa-solid fa-pencil"></i>EDITAR PRODUCTO
+                  </button>
+                  <form>
+                    <button class="formulario__boton --admin" type="submit" formaction="/producto/detalle/<%= product.id %>/delete?_method=DELETE" formmethod="POST">
+                      <i class="formulario__icono fa-solid fa-trash-can"></i>ELIMINAR PRODUCTO
+                    </button>
+                  </form>
+                </div>
+                <% } %>
             </div>
-          <% } %>
+          
           
           
         </form>

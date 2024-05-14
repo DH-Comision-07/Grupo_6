@@ -21,6 +21,7 @@ let productService = {
 
     // **GUARDAR**
     store: function(product, image) {
+        
         let newProduct = {
             id: products[products.length - 1].id + 1, // crea id, ARREGLAR?
             name: product.name.toUpperCase(),
@@ -28,8 +29,8 @@ let productService = {
             materials: product.materials,
             care: product.care,
             category: product.category,
-            colors: product.colors.replace(/\s/g, "").split(","),
-            sizes: product.sizes.replace(/\s/g, "").split(","),
+            colors: typeof product.colors == "string" ? [product.colors] : product.colors,
+            sizes: typeof product.sizes == "string" ? [product.sizes] : product.sizes,
             price: product.price,
             image: "/images/products/"+image.filename,
             discount: product.discount,
@@ -45,6 +46,7 @@ let productService = {
     // **EDITAR**
     update: function(id, update, image) {
         let updateIndex = products.findIndex((product) => product.id == id);
+
         let newProduct = {
             id: id,
             name: update.name.toUpperCase(),
@@ -52,8 +54,8 @@ let productService = {
             materials: update.materials,
             care: update.care,
             category: update.category,
-            colors: update.colors.replace(/\s/g, "").split(","),
-            sizes: update.sizes.replace(/\s/g, "").split(","),
+            colors: typeof update.colors == "string" ? [update.colors] : update.colors,
+            sizes: typeof update.sizes == "string" ? [update.sizes] : update.sizes,
             price: update.price,
             // image: "/images/updates/"+image.filename,
             discount: update.discount,
