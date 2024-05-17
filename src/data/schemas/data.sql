@@ -18,6 +18,7 @@ insert into colors values (default, 'salmon');
 insert into colors values (default, 'beige');
 insert into colors values (default, 'plateado');
 insert into colors values (default, 'dorado');
+insert into colors values (default, 'lila');
 
 
 
@@ -68,3 +69,46 @@ insert into sizes values (default, 'l');
 insert into sizes values (default, 'xl');
 insert into sizes values (default, 'xxl');
 insert into sizes values (default, 'xxxl');
+
+
+
+-- products
+insert into products values (default, 'blusa con volados', 'Algodon.', 'Lavar en lavarropas.', 'Blusa con volados en los hombros.', 10000, 50, 5000, 12344, 1, 1, 0, 12, 60000, 1);
+insert into products values (default, 'jean mom', 'Algodon.', 'Lavar en lavarropas.', 'Jean estilo Mom.', 10000, 50, 5000, 12345, 1, 0, 1, 12, 60000, 2);
+
+
+
+-- product_size
+insert into product_size values (default, 3, 4);
+insert into product_size values (default, 3, 5);
+insert into product_size values (default, 3, 6);
+insert into product_size values (default, 3, 7);
+
+insert into product_size values (default, 4, 3);
+insert into product_size values (default, 4, 4);
+insert into product_size values (default, 4, 5);
+insert into product_size values (default, 4, 6);
+insert into product_size values (default, 4, 7);
+
+
+
+-- product_color
+insert into product_color values (default, 3, 1);
+insert into product_color values (default, 3, 18);
+insert into product_color values (default, 3, 12);
+insert into product_color values (default, 3, 15);
+
+insert into product_color values (default, 4, 2);
+
+
+
+-- images
+insert into images values (default, '/images/products/img-blusa-con-volados.jpg');
+insert into images values (default, '/images/products/img-jean-mom.jpg');
+
+
+
+-- product_image
+insert into product_image values (default, 3, 2);
+
+insert into product_image values (default, 4, 1);
