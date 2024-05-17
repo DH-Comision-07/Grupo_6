@@ -10,22 +10,15 @@ create table users (
   password varchar(40) NOT NULL,
   email varchar(300) NOT NULL,
   img_url varchar(300) not null,
-  primary key (id)
+  role_id int not null,
+  primary key (id),
+  foreign key (role_id) references roles(id)
 );
 
 create table roles (
 	id INT NOT NULL AUTO_INCREMENT,
     name varchar(50) not null,
     primary key (id)
-);
-
-create table user_role (
-	id INT NOT NULL AUTO_INCREMENT,
-    user_id int not null,
-    role_id int not null,
-    primary key (id),
-    foreign key (user_id) references users(id),
-    foreign key (role_id) references roles(id)
 );
 
 
@@ -47,6 +40,9 @@ create table products (
     on_sale tinyint not null,
     primary key (id)
 );
+
+alter table products add sales_amount float not null;
+alter table products add units_sold int not null;
 
 create table colors (
 	id int not null auto_increment,
