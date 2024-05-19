@@ -23,7 +23,7 @@
     <section class="on-sale">
       <h2 class="cabecera-de-seccion">ON SALE</h2>
 
-      <%- include("./partials/productSlider") %>
+      <%- include("./partials/productSlider", {products: productsOnSale}) %>
 
     </section>
     
@@ -38,7 +38,7 @@
     <section class="ultimos-lanzamientos">
       <h2 class="cabecera-de-seccion">ULTIMOS LANZAMIENTOS</h2>
 
-      <%- include("./partials/productSlider") %>
+      <%- include("./partials/productSlider", {products: productsNew}) %>
     </section>
 
     <% if (locals.user && locals.user.type == "admin") { %>

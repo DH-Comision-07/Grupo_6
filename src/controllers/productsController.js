@@ -18,7 +18,8 @@ const productsController = {
     detail: async function(req,res){
         return res.render("products/productDetail",{
             products: await productService.getAll(), 
-            product: await productService.getOneBy(req.params.id)
+            product: await productService.getOneBy(req.params.id),
+            onSale: await productService.getOnSale()
         })
     }, 
     

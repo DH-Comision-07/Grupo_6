@@ -70,7 +70,7 @@ module.exports = (sequelize, dataTypes) => {
     })
 
     Product.associate = function(models) {
-        Product.belongsToMany(models.Color, {
+        Product.belongsToMany(models.Color, { 
             as: 'colors',
             through: 'product_color',
             foreignKey: 'product_id',

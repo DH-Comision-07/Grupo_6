@@ -10,7 +10,11 @@ const productService = require("../data/productService");
 
 // **RUTAS**
 routes.get('/', async function(req,res) {
-    return res.render("index", {products: await productService.getAll()})
+    return res.render("index", {
+        products: await productService.getAll(),
+        productsOnSale: await productService.getOnSale(),
+        productsNew: await productService.getNew()
+    })
 });
 
 

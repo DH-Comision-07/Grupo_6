@@ -45,6 +45,40 @@ let productService = {
         }
     },
 
+    getOnSale: async function() {
+        try {
+            return await db.Product.findAll({
+                where: {
+                    on_sale: 1
+                },
+                include: [
+                    {association: 'colors'},
+                    {association: 'sizes'},
+                    {association: 'images'}
+                ]
+            })
+        } catch (error) {
+            return error 
+        }
+    },
+
+    getNew: async function() {
+        try {
+            return await db.Product.findAll({
+                where: {
+                    new_release: 1
+                },
+                include: [
+                    {association: 'colors'},
+                    {association: 'sizes'},
+                    {association: 'images'}
+                ]
+            })
+        } catch (error) {
+            return error 
+        }
+    },
+
 
 
     // **GUARDAR**
