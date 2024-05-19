@@ -104,11 +104,21 @@ insert into product_color values (default, 4, 2);
 
 -- images
 insert into images values (default, '/images/products/img-blusa-con-volados.jpg');
+insert into images values (default, '/images/products/img-blusa-con-volados-2.jpg');
+insert into images values (default, '/images/products/img-blusa-con-volados-3.jpg');
 insert into images values (default, '/images/products/img-jean-mom.jpg');
+insert into images values (default, '/images/products/img-jean-mom-2.jpg');
+insert into images values (default, '/images/products/img-jean-mom-3.jpg');
 
-
+select * from images;
 
 -- product_image
 insert into product_image values (default, 3, 2);
+insert into product_image values (default, 3, 4);
+insert into product_image values (default, 3, 5);
 
 insert into product_image values (default, 4, 1);
+insert into product_image values (default, 4, 3);
+insert into product_image values (default, 4, 6);
+
+select * from product_image;

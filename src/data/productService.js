@@ -4,6 +4,8 @@ const path = require('path');
 
 
 // **BASE DE DATOS**
+const db = require('./models');
+
 const productsFilePath = path.join(__dirname, './products.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
@@ -13,9 +15,35 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 let productService = {
 
     // **GET**
-    getAll: function() { return products; },
+    // getAll: function() { return products; },
+    getAll: async function() {
+        try {
+            return await db.Product.findAll({
+                include: [
+                    {association: 'colors'},
+                    {association: 'sizes'},
+                    {association: 'images'}
+                ]
+            })
+        } catch (error) {
+            return error 
+        }
+    },
 
-    getOneBy: function(id) { return products.find((product) => product.id == id) },
+    // getOneBy: function(id) { return products.find((product) => product.id == id) },
+    getOneBy: async function(id) {
+        try {
+            return await db.Product.findByPk(id, {
+                include: [
+                    {association: 'colors'},
+                    {association: 'sizes'},
+                    {association: 'images'}
+                ]
+            })
+        } catch (error) {
+            return error 
+        }
+    },
 
 
 

@@ -16,26 +16,26 @@
     <section class="producto">
       <section class="producto__imagenes">
         <div class="columna-grande">
-          <img class="imagen" src="<%= product.image %>" alt="">
+          <img class="imagen" src="<%= product.images[0].url %>" alt="mom jean">
         </div>
-        <div class="columna-chica">
-          <div class="imagen-chica">
-            <img class="imagen" src="<%= product.image %>" alt="">
+        
+        <% if (product.images.length > 1) { %>
+          <div class="columna-chica">
+            <% product.images.forEach(image => { %>
+              <div class="imagen-chica">
+                <img class="imagen" src="<%= image.url %>" alt="">
+              </div>
+            <% }) %>
           </div>
-          <div class="imagen-chica">
-            <img class="imagen" src="<%= product.image %>" alt="">
-          </div>
-          <div class="imagen-chica">
-            <img class="imagen" src="<%= product.image %>" alt="">
-          </div>
-        </div>
+        <% } %>
+        
       </section>
 
       <section class="producto__informacion">
-        <h2 class="info__nombre-producto"><%= product.name %></h2>
-        <p class="info__precio-actual">$ <%= product.price %></p>
-        <!-- <p class="info__cuotas">5 cuotas de $9000</p>
-        <p class="info__precio-original">$60.000</p> para agregar precios con descuentos -->
+        <h2 class="info__nombre-producto"><%= product.name.toUpperCase() %></h2>
+        <p class="info__precio-actual">$ <%= product.final_price %></p>
+        <p class="info__cuotas">% <%= product.discount %></p>
+        <p class="info__precio-original">$ <%= product.price %></p>
         
 
         <form action="/" class="info__formulario" method="post">
@@ -43,9 +43,9 @@
           
           <div class="radio-flex">
             <% product.sizes.forEach((talle) => { %>
-              <input class="formulario__radio" type="radio" name="talle" value="<%= talle %>" id="<%= talle %>">
-              <label class="formulario__label" for="<%= talle %>"><%= talle %></label>
-            <% }); %>
+              <input class="formulario__radio" type="radio" name="talle" value="<%= talle.name.toUpperCase() %>" id="<%= talle.name.toUpperCase() %>">
+              <label class="formulario__label" for="<%= talle.name.toUpperCase() %>"><%= talle.name.toUpperCase() %></label>
+            <%}); %>
           </div>
           
           
@@ -53,9 +53,9 @@
           
           <div class="radio-flex">
             <% product.colors.forEach((color) => { %>
-              <input class="formulario__radio" type="radio" name="color" value="<%= color %>" id="<%= color %>">
-              <label class="formulario__label" for="<%= color %>"><%= color %></label>
-            <% }); %>
+              <input class="formulario__radio" type="radio" name="color.name" value="<%= color.name %>" id="<%= color.name %>">
+              <label class="formulario__label" for="<%= color.name %>"><%= color.name %></label>
+            <%  }); %>
           </div>
 
           
