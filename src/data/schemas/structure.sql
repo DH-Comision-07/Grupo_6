@@ -70,21 +70,6 @@ create table product_color (
     foreign key (color_id) references colors(id)
 );
 
-create table images (
-	id int not null auto_increment,
-    url varchar(150) not null,
-    primary key (id)
-);
-
-create table product_image (
-	id int not null auto_increment,
-    product_id int not null,
-    image_id int not null,
-    primary key (id),
-    foreign key (product_id) references products(id),
-    foreign key (image_id) references images(id)
-);
-
 create table categories (
 	id int not null auto_increment,
     name varchar(50) not null,
@@ -93,15 +78,6 @@ create table categories (
 );
 
 alter table categories modify column size_guide_url varchar(150);
-
--- create table product_category (
--- 	id int not null auto_increment,
---     product_id int not null,
---     category_id int not null,
---     primary key (id),
---     foreign key (product_id) references products(id),
---     foreign key (category_id) references categories(id)
--- );
 
 create table sizes (
 	id int not null auto_increment,

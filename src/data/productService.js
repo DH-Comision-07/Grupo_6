@@ -123,10 +123,6 @@ let productService = {
             image_url: "/images/products/"+image.filename,
         };
 
-        //sizes
-        //colors
-        //images
-
         db.Product.create(newProduct)
         .then(p => {
             let colors = typeof product.colors == "string" ? [product.colors] : product.colors
@@ -144,8 +140,6 @@ let productService = {
                 })
             })
         })
-            
-        
     },
 
 
