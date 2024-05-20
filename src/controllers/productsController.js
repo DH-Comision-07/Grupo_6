@@ -1,6 +1,7 @@
 
-// **SERVICE**
+// **SERVICES**
 let productService = require('../data/productService');
+let categoryService = require('../data/categoryService');
 
 
 
@@ -28,7 +29,12 @@ const productsController = {
 
 
     // **CREACION DE PRODUCTOS**
-    create: (req,res) => res.render("products/productCreate"), 
+    create: async function(req,res) {
+        return res.render("products/productCreate",
+        {
+            categories: await categoryService.getAll()
+        }
+    )}, 
 
     store: (req,res) => {
         // res.send(req.body)
