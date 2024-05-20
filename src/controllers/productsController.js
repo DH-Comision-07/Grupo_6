@@ -17,7 +17,6 @@ const productsController = {
         })
     },
 
-    // detail: (req,res) => res.render("products/productDetail",{products: productService.getAll(), product: productService.getOneBy(req.params.id)}), 
     detail: async function(req,res){
         return res.render("products/productDetail",{
             products: await productService.getAll(), 
@@ -41,7 +40,6 @@ const productsController = {
     )}, 
 
     store: (req,res) => {
-        // res.send(req.body)
         productService.store(req.body, req.file);
 		res.redirect('/producto');
     },
@@ -49,8 +47,18 @@ const productsController = {
     
     
     // **EDICION DE PRODUCTOS**
-    edit: (req,res) => res.render("products/productEdit", {
-        product: productService.getOneBy(req.params.id), user: req.session.user}),
+    // edit: (req,res) => res.render("products/productEdit", {
+    //     product: productService.getOneBy(req.params.id), user: req.session.user
+    // }),
+    edit: async function(req,res) { 
+        return res.render("products/productEdit", 
+        {
+            user: req.session.user,
+            product: await productService.getOneBy(req.params.id), 
+            categories: await categoryService.getAll(),
+            colors: await colorService.getAll(),
+            sizes: await sizeService.getAll(),
+    })},
 
     update: (req,res) => {
         productService.update(req.params.id, req.body, req.file);

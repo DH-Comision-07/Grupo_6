@@ -34,9 +34,11 @@
       <section class="producto__informacion">
         <h2 class="info__nombre-producto"><%= product.name.toUpperCase() %></h2>
         <p class="info__precio-actual">$ <%= product.final_price %></p>
-        <p class="info__cuotas">% <%= product.discount %></p>
-        <p class="info__precio-original">$ <%= product.price %></p>
-        
+
+        <% if (product.discount != 0) { %>
+          <p class="info__cuotas">% <%= product.discount %></p>
+          <p class="info__precio-original">$ <%= product.price %></p>
+        <% } %>
 
         <form action="/" class="info__formulario" method="post">
           <p class="formulario__opcion">Talle</p>
