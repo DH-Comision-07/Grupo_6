@@ -42,18 +42,18 @@
                 <label for="category">Categoria</label>
                 <select name="category" id="category">
                     <% categories.forEach(category => { %>
-                        <option value="<%= category.name  %>"><%= category.name  %></option>
+                        <option value="<%= category.id %>"><%= category.name.toUpperCase()  %></option>
                     <% }) %>
                 </select>
             </div>
 
             <label>Colores</label> 
             <section class="checkbox-flex">
-              <% let colors = ['rojo', 'azul', 'marron', 'blanco', 'negro', 'beige', 'rosa', 'celeste', 'gris', 'amarillo', 'violeta', 'naranja', 'verde', 'lila', 'bordo'] %>
+              
               <% colors.forEach(color => { %>
                 <div class="formulario__field">
-                  <input class="formulario__checkbox" type="checkbox" name="colors" id=<%= color %> value=<%= color %>>
-                  <label class="formulario__label" for=<%= color %>><%= color.toUpperCase() %></label>
+                  <input class="formulario__checkbox" type="checkbox" name="colors" id=<%= color.name %> value=<%= color.id %>>
+                  <label class="formulario__label" for=<%= color.name %>><%= color.name.toUpperCase() %></label>
                 </div>
               <% }) %>
             </section> 
@@ -65,14 +65,14 @@
 
             <label>Talles</label> 
             <section class="checkbox-flex">
-              <% let sizes = ['xxxs', 'xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl', 'unico'] %>
-              <% sizes.forEach(size => { %>
-                <div class="formulario__field">
-                  <input class="formulario__checkbox" type="checkbox" name="sizes" id=<%= size %> value=<%= size %>>
-                  <label class="formulario__label" for=<%= size %>><%= size.toUpperCase() %></label>
-                </div>
-              <% }) %>
-            </section> 
+              
+                <% sizes.forEach(size => { %>
+                  <div class="formulario__field">
+                    <input class="formulario__checkbox" type="checkbox" name="sizes" id=<%= size.name %> value=<%= size.id %>>
+                    <label class="formulario__label" for=<%= size.name %>><%= size.name.toUpperCase() %></label>
+                  </div>
+                <% }) %>
+              </section> 
               
             <div class="formulario__field">
                 <label for="price">Precio</label>
@@ -84,10 +84,10 @@
                 <input type="number" id="discount" name="discount" class="formulario__precio" step="1" min="0" required>
             </div>
 
-            <div class="formulario__field">
+            <!-- <div class="formulario__field">
                 <label for="stock">Stock</label>
                 <input type="number" id="stock" name="stock" class="formulario__precio" step="1" min="0" required>
-            </div>
+            </div> -->
 
             <div class="formulario__field">
                 <label for="product_id">Codigo de producto</label>

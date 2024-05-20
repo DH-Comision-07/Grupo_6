@@ -22,7 +22,7 @@ let productService = {
                 include: [
                     {association: 'colors'},
                     {association: 'sizes'},
-                    {association: 'images'}
+                    // {association: 'images'}
                 ]
             })
         } catch (error) {
@@ -37,7 +37,7 @@ let productService = {
                 include: [
                     {association: 'colors'},
                     {association: 'sizes'},
-                    {association: 'images'}
+                    // {association: 'images'}
                 ]
             })
         } catch (error) {
@@ -54,7 +54,7 @@ let productService = {
                 include: [
                     {association: 'colors'},
                     {association: 'sizes'},
-                    {association: 'images'}
+                    // {association: 'images'}
                 ]
             })
         } catch (error) {
@@ -70,8 +70,8 @@ let productService = {
                 },
                 include: [
                     {association: 'colors'},
-                    {association: 'sizes'},
-                    {association: 'images'}
+                    {association: 'sizes'}
+                    // {association: 'images'}
                 ]
             })
         } catch (error) {
@@ -82,25 +82,70 @@ let productService = {
 
 
     // **GUARDAR**
+    // store: function(product, image) {
+        
+    //     let newProduct = {
+    //         id: products[products.length - 1].id + 1, // crea id, ARREGLAR?
+    //         name: product.name.toUpperCase(),
+    //         description: product.description,
+    //         materials: product.materials,
+    //         care: product.care,
+    //         category: product.category,
+    //         colors: typeof product.colors == "string" ? [product.colors] : product.colors,
+    //         sizes: typeof product.sizes == "string" ? [product.sizes] : product.sizes,
+    //         price: product.price,
+    //         image: "/images/products/"+image.filename,
+    //         discount: product.discount,
+    //         stock: product.stock,
+    //     };
+
+    //     products.push(newProduct);
+    //     fs.writeFileSync(productsFilePath, JSON.stringify(products));
+    // },
     store: function(product, image) {
         
         let newProduct = {
-            id: products[products.length - 1].id + 1, // crea id, ARREGLAR?
-            name: product.name.toUpperCase(),
+            // id: products[products.length - 1].id + 1,
+            name: product.name.toLowerCase(),
             description: product.description,
             materials: product.materials,
             care: product.care,
-            category: product.category,
-            colors: typeof product.colors == "string" ? [product.colors] : product.colors,
-            sizes: typeof product.sizes == "string" ? [product.sizes] : product.sizes,
+            category_id: product.category,
+            // colors: typeof product.colors == "string" ? [product.colors] : product.colors,
+            // sizes: typeof product.sizes == "string" ? [product.sizes] : product.sizes,
             price: product.price,
-            image: "/images/products/"+image.filename,
             discount: product.discount,
-            stock: product.stock,
+            final_price: product.price-((product.discount*product.price)/100),
+            product_id: product.product_id,
+            visibility: product.visibility == 'on' ? 1 : 0,
+            on_sale: product.on_sale == 'on' ? 1 : 0,
+            new_release: product.new_release == 'on' ? 1 : 0,
+            image_url: "/images/products/"+image.filename,
         };
 
-        products.push(newProduct);
-        fs.writeFileSync(productsFilePath, JSON.stringify(products));
+        //sizes
+        //colors
+        //images
+
+        db.Product.create(newProduct)
+        .then(p => {
+            let colors = typeof product.colors == "string" ? [product.colors] : product.colors
+            colors.forEach(color => {
+                db.ProductColor.create({
+                    product_id: p.id,
+                    color_id: color
+                })
+            })
+            let sizes = typeof product.sizes == "string" ? [product.sizes] : product.sizes
+            sizes.forEach(size => {
+                db.ProductSize.create({
+                    product_id: p.id,
+                    size_id: size
+                })
+            })
+        })
+            
+        
     },
 
 

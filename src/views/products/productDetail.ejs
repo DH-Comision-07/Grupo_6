@@ -16,18 +16,18 @@
     <section class="producto">
       <section class="producto__imagenes">
         <div class="columna-grande">
-          <img class="imagen" src="<%= product.images[0].url %>" alt="mom jean">
+          <img class="imagen" src="<%= product.image_url %>">
         </div>
         
-        <% if (product.images.length > 1) { %>
+        <!-- <% //if (product.images.length > 1) { %>
           <div class="columna-chica">
-            <% product.images.forEach(image => { %>
+            <% //product.images.forEach(image => { %>
               <div class="imagen-chica">
-                <img class="imagen" src="<%= image.url %>" alt="">
+                <img class="imagen" src="<%=// image.url %>" alt="">
               </div>
-            <% }) %>
+            <% //}) %>
           </div>
-        <% } %>
+        <% //} %> -->
         
       </section>
 

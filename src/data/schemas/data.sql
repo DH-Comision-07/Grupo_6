@@ -76,6 +76,12 @@ insert into sizes values (default, 'xxxl');
 insert into products values (default, 'blusa con volados', 'Algodon.', 'Lavar en lavarropas.', 'Blusa con volados en los hombros.', 10000, 50, 5000, 12344, 1, 1, 0, 12, 60000, 1);
 insert into products values (default, 'jean mom', 'Algodon.', 'Lavar en lavarropas.', 'Jean estilo Mom.', 10000, 50, 5000, 12345, 1, 0, 1, 12, 60000, 2);
 
+update products
+set image_url = '/images/products/img-jean-mom.jpg'
+where id = 4;
+
+select * from products;
+
 
 
 -- product_size

@@ -53,14 +53,20 @@ module.exports = (sequelize, dataTypes) => {
         },
         sales_amount: {
             type: dataTypes.FLOAT,
-            allowNull: false
+            allowNull: false,
+            defaultValue: 0
         },
         units_sold: {
             type: dataTypes.INTEGER,
-            allowNull: false
+            allowNull: false,
+            defaultValue: 0
         },
         category_id: {
             type: dataTypes.INTEGER,
+            allowNull: false
+        },
+        image_url: {
+            type: dataTypes.STRING(200),
             allowNull: false
         }
     },
@@ -84,13 +90,13 @@ module.exports = (sequelize, dataTypes) => {
             otherKey: 'size_id',
             timestamps: false
         })
-        Product.belongsToMany(models.Image, {
-            as: 'images',
-            through: 'product_image',
-            foreignKey: 'product_id',
-            otherKey: 'image_id',
-            timestamps: false
-        })
+        // Product.belongsToMany(models.Image, {
+        //     as: 'images',
+        //     through: 'product_image',
+        //     foreignKey: 'product_id',
+        //     otherKey: 'image_id',
+        //     timestamps: false
+        // })
     }
 
     return Product

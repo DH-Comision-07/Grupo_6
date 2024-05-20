@@ -47,9 +47,13 @@ create table products (
 alter table products add sales_amount float not null;
 alter table products add units_sold int not null;
 alter table products add category_id int not null;
+alter table products add image_url varchar(200) not null;
 
 alter table products modify column sales_amount float not null default 0;
 alter table products modify column units_sold float not null default 0;
+
+select * from products;
+select * from product_color;
 
 create table colors (
 	id int not null auto_increment,

@@ -2,6 +2,8 @@
 // **SERVICES**
 let productService = require('../data/productService');
 let categoryService = require('../data/categoryService');
+let colorService = require('../data/colorService');
+let sizeService = require('../data/sizeService');
 
 
 
@@ -32,7 +34,9 @@ const productsController = {
     create: async function(req,res) {
         return res.render("products/productCreate",
         {
-            categories: await categoryService.getAll()
+            categories: await categoryService.getAll(),
+            colors: await colorService.getAll(),
+            sizes: await sizeService.getAll(),
         }
     )}, 
 
