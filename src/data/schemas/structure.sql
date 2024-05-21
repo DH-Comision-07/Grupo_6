@@ -24,7 +24,7 @@ create table roles (
     primary key (id)
 );
 
-select * from uses;
+select * from users;
 
 
 -- PRODUCTS
