@@ -16,27 +16,29 @@
     <section class="producto">
       <section class="producto__imagenes">
         <div class="columna-grande">
-          <img class="imagen" src="<%= product.images[0].url %>" alt="mom jean">
+          <img class="imagen" src="<%= product.image_url %>">
         </div>
         
-        <% if (product.images.length > 1) { %>
+        <!-- <% //if (product.images.length > 1) { %>
           <div class="columna-chica">
-            <% product.images.forEach(image => { %>
+            <% //product.images.forEach(image => { %>
               <div class="imagen-chica">
-                <img class="imagen" src="<%= image.url %>" alt="">
+                <img class="imagen" src="<%=// image.url %>" alt="">
               </div>
-            <% }) %>
+            <% //}) %>
           </div>
-        <% } %>
+        <% //} %> -->
         
       </section>
 
       <section class="producto__informacion">
         <h2 class="info__nombre-producto"><%= product.name.toUpperCase() %></h2>
         <p class="info__precio-actual">$ <%= product.final_price %></p>
-        <p class="info__cuotas">% <%= product.discount %></p>
-        <p class="info__precio-original">$ <%= product.price %></p>
-        
+
+        <% if (product.discount != 0) { %>
+          <p class="info__cuotas">% <%= product.discount %></p>
+          <p class="info__precio-original">$ <%= product.price %></p>
+        <% } %>
 
         <form action="/" class="info__formulario" method="post">
           <p class="formulario__opcion">Talle</p>
@@ -63,7 +65,7 @@
               <button class="formulario__boton" type="submit" formaction="/producto/carrito" formmethod="get">
                 <i class="formulario__icono fa-solid fa-cart-shopping"></i>AGREGAR AL CARRITO
               </button>
-              <% if (locals.user && locals.user.type == "admin") { %>
+              <% if (locals.user && locals.user.role_id == 1) { %>
                 <div style="display: flex;">
                   <button class="formulario__boton --admin" type="submit" formaction="/producto/<%= product.id %>/editar" formmethod="get">
                     <i class="formulario__icono fa-solid fa-pencil"></i>EDITAR PRODUCTO

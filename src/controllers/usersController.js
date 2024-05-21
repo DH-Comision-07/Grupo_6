@@ -5,6 +5,7 @@ const {validationResult} = require("express-validator");
 
 // **SERVICE**
 let userService = require('../data/userService');
+let roleService = require('../data/roleService')
 
 
 
@@ -14,9 +15,9 @@ const usersController = {
     // **INCIAR SESION**
     login: (req,res) => res.render("users/login.ejs"),
 
-    checkLogin: (req,res) => {
+    checkLogin: async function(req,res) {
         let input = req.body;
-        let user = userService.getByUsername(input.username);
+        let user = await userService.getByUsername(input.username);
 
         if (user && user.username === input.username && user.email === input.email && bcrypt.compareSync(input.password, user.password)){
             // delete user.password;
@@ -26,26 +27,42 @@ const usersController = {
             res.redirect("/");
         }
         else {
-            res.render("users/login", {error: "Email, nombre de usuario o contraseña incorrectos.", old: req.body})
+            res.render("users/login", {
+                error: "Email, nombre de usuario o contraseña incorrectos.", 
+                old: req.body
+            })
         }
     },
+
+
 
     // **MOSTRAR USUARIO**
     profile: (req, res) => res.render('users/profile', {
         user: req.session.user
     }),
 
-    // **REGISTRAR USUARIO**
-    register: (req, res) => res.render("users/register.ejs"),
 
-    storeRegister: (req,res) => {
+
+    // **REGISTRAR USUARIO**
+    register: async function(req, res) 
+    {
+        res.render("users/register.ejs", {
+            roles: await roleService.getAll()
+        })
+    },
+
+    storeRegister: async function(req,res) {
         let errors = validationResult(req);
         if(errors.isEmpty()){
             userService.store(req.body, req.file);
             res.redirect('/cuenta/login');
         }
         else {
-            res.render("users/register.ejs", {errors: errors.mapped(), old: req.body });
+            res.render("users/register.ejs", {
+                errors: errors.mapped(), 
+                old: req.body,
+                roles: await roleService.getAll()
+            });
         }
     },
 
