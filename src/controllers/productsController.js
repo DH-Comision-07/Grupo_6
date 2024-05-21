@@ -47,9 +47,6 @@ const productsController = {
     
     
     // **EDICION DE PRODUCTOS**
-    // edit: (req,res) => res.render("products/productEdit", {
-    //     product: productService.getOneBy(req.params.id), user: req.session.user
-    // }),
     edit: async function(req,res) { 
         return res.render("products/productEdit", 
         {

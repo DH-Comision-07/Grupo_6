@@ -24,6 +24,7 @@ create table roles (
     primary key (id)
 );
 
+select * from uses;
 
 
 -- PRODUCTS
@@ -53,7 +54,6 @@ alter table products modify column sales_amount float not null default 0;
 alter table products modify column units_sold float not null default 0;
 
 select * from product_color;
-delete from product_size where product_id = 21;
 
 
 create table colors (

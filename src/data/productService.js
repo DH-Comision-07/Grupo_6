@@ -6,9 +6,6 @@ const path = require('path');
 // **BASE DE DATOS**
 const db = require('./models');
 
-const productsFilePath = path.join(__dirname, './products.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-
 
 
 // **SERVICE**
@@ -20,8 +17,7 @@ let productService = {
             return await db.Product.findAll({
                 include: [
                     {association: 'colors'},
-                    {association: 'sizes'},
-                    // {association: 'images'}
+                    {association: 'sizes'}
                 ]
             })
         } catch (error) {
@@ -120,34 +116,6 @@ let productService = {
 
 
     // **EDITAR**
-    // update: function(id, update, image) {
-    //     let updateIndex = products.findIndex((product) => product.id == id);
-
-    //     let newProduct = {
-    //         id: id,
-    //         name: update.name.toUpperCase(),
-    //         description: update.description,
-    //         materials: update.materials,
-    //         care: update.care,
-    //         category: update.category,
-    //         colors: typeof update.colors == "string" ? [update.colors] : update.colors,
-    //         sizes: typeof update.sizes == "string" ? [update.sizes] : update.sizes,
-    //         price: update.price,
-    //         // image: "/images/updates/"+image.filename,
-    //         discount: update.discount,
-    //         stock: update.stock,
-    //     };
-
-    //     if (image != undefined) {
-    //         newProduct.image = "/images/products/"+image.filename;
-    //     } else {
-    //         newProduct.image = products[updateIndex].image;
-    //     }
-
-    //     products[updateIndex] = newProduct;
-    //     fs.writeFileSync(productsFilePath, JSON.stringify(products));
-
-    // },
     update: async function(id, product, image) {
         
         let updatedProduct = {
@@ -164,7 +132,6 @@ let productService = {
             visibility: product.visibility == 'on' ? 1 : 0,
             on_sale: product.on_sale == 'on' ? 1 : 0,
             new_release: product.new_release == 'on' ? 1 : 0,
-            // image_url: "/images/products/"+image.filename,
         };
 
         if (image != undefined) {

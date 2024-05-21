@@ -13,38 +13,53 @@ const salt = 12;
 const usersFilePath = path.join(__dirname, './users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 
+const db = require('./models');
+
 
 
 // **SERVICE**
 let usersService = {
 
     // **GET**
-    getByUsername: function(username) {
-        return users.find(user => user.username === username)
+    getByUsername: async function(username) {
+        try {
+            return await db.User.findOne({
+                where: {
+                    username: username
+                }
+            })
+        } catch (error) {
+            console.error(error)
+            return undefined
+        }
     },
 
 
 
     // **GUARDAR**
-    store: function(user, avatar) {
+    store: async function(user, avatar) {
         let newUser = {
-            id: users[users.length - 1].id + 1, // crea id, ARREGLAR?
-            firstName: user.firstName.toLowerCase(),
-            lastName: user.lastName.toLowerCase(),
+            // id: users[users.length - 1].id + 1, 
+            name: user.firstName.toLowerCase(),
+            lastname: user.lastName.toLowerCase(),
             username: user.username,
             email: user.email,
             password: bcrypt.hashSync(user.password, salt),
-            type: user.type,
-            // avatar: "/images/users/"+avatar.filename,
+            role_id: user.role,
         };
         if(avatar){
-            newUser.avatar = "/images/users/"+avatar.filename
+            newUser.img_url = "/images/users/"+avatar.filename
         } else {
-            newUser.avatar = "/images/users/default.png"
+            newUser.img_url = "/images/users/default.png"
         }
 
-        users.push(newUser);
-        fs.writeFileSync(usersFilePath, JSON.stringify(users));
+        // users.push(newUser);
+        // fs.writeFileSync(usersFilePath, JSON.stringify(users));
+        try {
+            await db.User.create(newUser)
+        } catch (error) {
+            console.error(error)
+        }
     }
 
 };
