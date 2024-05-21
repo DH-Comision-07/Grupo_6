@@ -68,8 +68,8 @@ const productsController = {
 
 
     // **ELIMINACION DE PRODUCTOS**
-    destroy: (req, res) => {
-        productService.deleteById(req.params.id);
+    destroy: async function (req, res){
+        await productService.deleteById(req.params.id);
 		res.redirect('/producto');
     }
 };

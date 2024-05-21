@@ -148,7 +148,7 @@ let productService = {
     //     fs.writeFileSync(productsFilePath, JSON.stringify(products));
 
     // },
-    update: function(id, product, image) {
+    update: async function(id, product, image) {
         
         let updatedProduct = {
             id: id,
@@ -177,11 +177,14 @@ let productService = {
         db.ProductColor.destroy({
             where: {product_id: id}
         })
+
         db.ProductSize.destroy({
             where: {product_id: id}
         })
         
+
         db.Product.update(updatedProduct, {where: {id: id}})
+        
         .then(p => {
             let colors = typeof product.colors == "string" ? [product.colors] : product.colors
             colors.forEach(color => {
@@ -201,12 +204,20 @@ let productService = {
     },
      
 
-    
+
     // **ELIMINAR**
-    deleteById: function(id) {
-        let deleteIndex = products.findIndex((product) => product.id == id);
-        products.splice(deleteIndex, 1);
-        fs.writeFileSync(productsFilePath, JSON.stringify(products));
+    deleteById: async function(id){
+        try {
+
+            await db.ProductColor.destroy({where: {product_id: id}})
+
+            await db.ProductSize.destroy({where: {product_id: id}})
+
+            await db.Product.destroy({where: {id: id}})
+
+        } catch (error) {
+            console.error(error);
+        }
     }
 }
 
