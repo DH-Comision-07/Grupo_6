@@ -1,6 +1,12 @@
 create database dyh;
 use dyh;
 
+create table roles (
+	id INT NOT NULL AUTO_INCREMENT,
+    name varchar(50) not null,
+    primary key (id)
+);
+
 -- USERS
 
 create table users (
@@ -18,11 +24,7 @@ create table users (
 alter table users modify column password text not null;
 alter table users add column username varchar(15) not null;
 
-create table roles (
-	id INT NOT NULL AUTO_INCREMENT,
-    name varchar(50) not null,
-    primary key (id)
-);
+
 
 
 
