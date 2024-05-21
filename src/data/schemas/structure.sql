@@ -15,6 +15,9 @@ create table users (
   foreign key (role_id) references roles(id)
 );
 
+alter table users modify column password text not null;
+alter table users add column username varchar(15) not null;
+
 create table roles (
 	id INT NOT NULL AUTO_INCREMENT,
     name varchar(50) not null,
@@ -43,6 +46,7 @@ create table products (
 
 alter table products add sales_amount float not null;
 alter table products add units_sold int not null;
+alter table products add category_id int not null;
 
 create table colors (
 	id int not null auto_increment,
@@ -81,6 +85,8 @@ create table categories (
     primary key (id)
 );
 
+alter table categories modify column size_guide_url varchar(150);
+
 create table product_category (
 	id int not null auto_increment,
     product_id int not null,
@@ -104,9 +110,3 @@ create table product_size (
     foreign key (product_id) references products(id),
     foreign key (size_id) references sizes(id)
 );
-
-
-
-
-
-

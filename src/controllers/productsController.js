@@ -8,9 +8,20 @@ let productService = require('../data/productService');
 const productsController = { 
 
     // **VISTAS**
-    index: (req,res) => res.render("products/productAll", {products: productService.getAll()}),
+    index: async function(req,res) {
+        return res.render("products/productAll", {
+            products: await productService.getAll()
+        })
+    },
 
-    detail: (req,res) => res.render("products/productDetail",{products: productService.getAll(), product: productService.getOneBy(req.params.id)}),    
+    // detail: (req,res) => res.render("products/productDetail",{products: productService.getAll(), product: productService.getOneBy(req.params.id)}), 
+    detail: async function(req,res){
+        return res.render("products/productDetail",{
+            products: await productService.getAll(), 
+            product: await productService.getOneBy(req.params.id),
+            onSale: await productService.getOnSale()
+        })
+    }, 
     
     cart: (req,res) => res.render("products/productCart"),
 
