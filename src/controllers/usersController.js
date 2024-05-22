@@ -37,9 +37,7 @@ const usersController = {
 
 
     // **MOSTRAR USUARIO**
-    profile: (req, res) => res.render('users/profile', {
-        user: req.session.user
-    }),
+    profile: (req, res) => res.render('users/profile'),
 
 
 
@@ -47,7 +45,7 @@ const usersController = {
     register: async function(req, res) 
     {
         res.render("users/register.ejs", {
-            roles: await roleService.getAll()
+            roles: await roleService.getAll(),
         })
     },
 
@@ -72,6 +70,20 @@ const usersController = {
     logout: (req, res) => {
         req.session.destroy();
         res.redirect("/");
+    },
+
+
+
+    // **EDITAR USUARIO**
+    edit: async function(req, res) {
+        res.render('users/edit.ejs', {
+            roles: await roleService.getAll()
+        })
+    },
+
+    storeEdit: async function(req,res) {
+        userService.update(req.body, req.params.id);
+        res.redirect('/cuenta/perfil');
     }
 }
 
