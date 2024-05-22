@@ -60,6 +60,23 @@ let usersService = {
         } catch (error) {
             console.error(error)
         }
+    },
+
+
+
+    // **EDITAR**
+    update: async function(update, updateId) {
+        
+        console.log(update)
+
+        let updatedUser = {
+            id: updateId,
+            name: update.firstName,
+            lastname: update.lastName,
+            username: update.username
+        }
+
+        db.User.update(updatedUser, {where: {id: updateId}})
     }
 
 };

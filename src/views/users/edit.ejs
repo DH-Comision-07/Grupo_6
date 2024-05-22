@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/loginRegister.css"/>
+
+    <title>Editar usuario</title>
+</head>
+  
+<body>
+    
+    <%- include("../partials/header", {simplificarHeader: true}) %>
+
+    <main>
+        <section class="container_form">
+            <h1 class="title">EDITAR USUARIO</h1>
+
+            <!-- <% // if (locals.errors) { %>
+                <% // for (const property in errors) { %>
+                    <p class="error-message"><%= // errors[property].msg %></p>
+                <% // } %>
+            <% // } %> -->
+
+            <form action="/cuenta/<%= user.id %>/editar" method="post">
+                <div class="form_field">
+                    <label for="firstName">Nombre</label>
+                    <input name="firstName" id="firstName" type="text" required value="<%= user.name %>"/>
+                </div>
+
+                <div class="form_field">
+                    <label for="lastName">Apellidos</label>
+                    <input name="lastName" id="lastName" type="text" required value="<%= user.lastname %>"/>
+                </div>
+
+                <div class="form_field">
+                    <label for="username">Nombre de usuario</label>
+                    <input name="username" id="username" type="text" required value="<%= user.username %>"/>
+                </div>
+
+                <!-- <div class="form__field">
+                    <label for="avatar">Foto de perfil</label>
+                    <input type="file" id="avatar" name="avatar">
+                </div> -->
+
+                <!-- <div class="form_field">
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="email" required value="<%= user.email %>">
+                </div> -->
+
+                <div class="form_field">
+                    <% roles.forEach(role => { %>
+                        <label for="<%= role.name %>">
+                            <input type="radio" name="role" id="<%= role.name %>" value="<%= role.id %>"
+                            <% if (role.id == user.role_id) { %>
+                                checked
+                            <% } %>
+                            >Soy <%= role.name %>
+                        </label>
+                    <% }) %>
+                    
+                </div>
+
+                <button class="button-login-reg" type="submit">
+                    GUARDAR
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <%- include("../partials/footer", {simplificarFooter: true}) %>
+
+</body>
+
+  
+</html>
+  
