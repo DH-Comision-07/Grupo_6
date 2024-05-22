@@ -1,27 +1,5 @@
 use dyh;
 
--- colors
-insert into colors values (default, 'rojo');
-insert into colors values (default, 'azul');
-insert into colors values (default, 'verde');
-insert into colors values (default, 'amarillo');
-insert into colors values (default, 'naranja');
-insert into colors values (default, 'rosa');
-insert into colors values (default, 'negro');
-insert into colors values (default, 'blanco');
-insert into colors values (default, 'gris');
-insert into colors values (default, 'turquesa');
-insert into colors values (default, 'marrón');
-insert into colors values (default, 'celeste');
-insert into colors values (default, 'violeta');
-insert into colors values (default, 'salmon');
-insert into colors values (default, 'beige');
-insert into colors values (default, 'plateado');
-insert into colors values (default, 'dorado');
-insert into colors values (default, 'lila');
-
-
-
 -- categories
 insert into categories values (default, 'remeras', '/images/size_guides/remeras.png');
 insert into categories values (default, 'pantalones', '/images/size_guides/pantalones.png');
@@ -37,6 +15,7 @@ insert into categories values (default, 'buzos', '/images/size_guides/buzos.png'
 insert into categories values (default, 'polleras', '/images/size_guides/polleras.png');
 insert into categories values (default, 'lentes de sol', null);
 insert into categories values (default, 'trajes de baño', '/images/size_guides/trajes_de_baño.png');
+
 
 
 
@@ -69,44 +48,53 @@ insert into sizes values (default, 'l');
 insert into sizes values (default, 'xl');
 insert into sizes values (default, 'xxl');
 insert into sizes values (default, 'xxxl');
-insert into sizes values (default, 'unico');
+insert into sizes values (default, 'único');
 
+
+-- colors
+insert into colors values (default, 'rojo');
+insert into colors values (default, 'azul');
+insert into colors values (default, 'verde');
+insert into colors values (default, 'amarillo');
+insert into colors values (default, 'naranja');
+insert into colors values (default, 'rosa');
+insert into colors values (default, 'negro');
+insert into colors values (default, 'blanco');
+insert into colors values (default, 'gris');
+insert into colors values (default, 'turquesa');
+insert into colors values (default, 'marrón');
+insert into colors values (default, 'celeste');
+insert into colors values (default, 'violeta');
+insert into colors values (default, 'salmon');
+insert into colors values (default, 'beige');
+insert into colors values (default, 'plateado');
+insert into colors values (default, 'dorado');
+insert into colors values (default, 'lila');
 
 
 -- products
-insert into products values (default, 'blusa con volados', 'Algodon.', 'Lavar en lavarropas.', 'Blusa con volados en los hombros.', 10000, 50, 5000, 12344, 1, 1, 0, 12, 60000, 1);
-insert into products values (default, 'jean mom', 'Algodon.', 'Lavar en lavarropas.', 'Jean estilo Mom.', 10000, 50, 5000, 12345, 1, 0, 1, 12, 60000, 2);
-
-update products
-set image_url = '/images/products/img-jean-mom.jpg'
-where id = 4;
-update products
-set image_url = '/images/products/img-blusa-volados.jpg'
-where id = 3;
-
-select * from products;
-
+insert into products values (default, 'blusa con volados', 'Algodon.', 'Lavar en lavarropas.', 'Blusa con volados en los hombros.', 10000, 50, 5000, 12344, 1, 1, 0, 12, 60000, 1,  '/images/products/img-blusa-volados.jpg');
+insert into products values (default, 'jean mom', 'Algodon.', 'Lavar en lavarropas.', 'Jean estilo Mom.', 10000, 50, 5000, 12345, 1, 0, 1, 12, 60000, 2, '/images/products/img-jean-mom.jpg');
 
 
 -- product_size
-insert into product_size values (default, 3, 4);
-insert into product_size values (default, 3, 5);
-insert into product_size values (default, 3, 6);
-insert into product_size values (default, 3, 7);
-
-insert into product_size values (default, 4, 3);
-insert into product_size values (default, 4, 4);
-insert into product_size values (default, 4, 5);
-insert into product_size values (default, 4, 6);
-insert into product_size values (default, 4, 7);
-
+insert into product_size values (default, 1, 4);
+insert into product_size values (default, 1, 5);
+insert into product_size values (default, 1, 6);
+insert into product_size values (default, 1, 7);
+insert into product_size values (default, 2, 3);
+insert into product_size values (default, 2, 4);
+insert into product_size values (default, 2, 5);
+insert into product_size values (default, 2, 6);
+insert into product_size values (default, 2, 7);
 
 
 -- product_color
-insert into product_color values (default, 3, 1);
-insert into product_color values (default, 3, 18);
-insert into product_color values (default, 3, 12);
-insert into product_color values (default, 3, 15);
+insert into product_color values (default, 1, 1);
+insert into product_color values (default, 1, 18);
+insert into product_color values (default, 1, 12);
+insert into product_color values (default, 2, 15);
+insert into product_color values (default, 2, 2);
 
-insert into product_color values (default, 4, 2);
+
 

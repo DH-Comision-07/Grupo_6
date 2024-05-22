@@ -25,10 +25,6 @@ alter table users modify column password text not null;
 alter table users add column username varchar(15) not null;
 
 
-
-select * from users;
-
-
 -- PRODUCTS
 
 create table products (
@@ -50,13 +46,7 @@ create table products (
 alter table products add sales_amount float not null;
 alter table products add units_sold int not null;
 alter table products add category_id int not null;
-alter table products add image_url varchar(200) not null;
-
-alter table products modify column sales_amount float not null default 0;
-alter table products modify column units_sold float not null default 0;
-
-select * from product_color;
-
+alter table products add image_url VARCHAR(400) not null;
 
 create table colors (
 	id int not null auto_increment,
@@ -73,6 +63,7 @@ create table product_color (
     foreign key (color_id) references colors(id)
 );
 
+
 create table categories (
 	id int not null auto_increment,
     name varchar(50) not null,
@@ -81,6 +72,15 @@ create table categories (
 );
 
 alter table categories modify column size_guide_url varchar(150);
+
+create table product_category (
+	id int not null auto_increment,
+    product_id int not null,
+    category_id int not null,
+    primary key (id),
+    foreign key (product_id) references products(id),
+    foreign key (category_id) references categories(id)
+);
 
 create table sizes (
 	id int not null auto_increment,
