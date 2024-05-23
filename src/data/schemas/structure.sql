@@ -24,7 +24,6 @@ create table users (
 alter table users modify column password text not null;
 alter table users add column username varchar(15) not null;
 
-
 -- PRODUCTS
 
 create table products (

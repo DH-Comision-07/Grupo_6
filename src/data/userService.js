@@ -34,6 +34,19 @@ let usersService = {
         }
     },
 
+    getById: async function(id) {
+        try {
+            return await db.User.findOne({
+                where: {
+                    id: id
+                }
+            })
+        } catch (error) {
+            console.error(error)
+            return undefined
+        }
+    },
+
 
 
     // **GUARDAR**
@@ -73,7 +86,8 @@ let usersService = {
             id: updateId,
             name: update.firstName,
             lastname: update.lastName,
-            username: update.username
+            username: update.username,
+            role_id: update.role
         }
 
         db.User.update(updatedUser, {where: {id: updateId}})

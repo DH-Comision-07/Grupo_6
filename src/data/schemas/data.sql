@@ -76,6 +76,18 @@ insert into colors values (default, 'lila');
 insert into products values (default, 'blusa con volados', 'Algodon.', 'Lavar en lavarropas.', 'Blusa con volados en los hombros.', 10000, 50, 5000, 12344, 1, 1, 0, 12, 60000, 1,  '/images/products/img-blusa-volados.jpg');
 insert into products values (default, 'jean mom', 'Algodon.', 'Lavar en lavarropas.', 'Jean estilo Mom.', 10000, 50, 5000, 12345, 1, 0, 1, 12, 60000, 2, '/images/products/img-jean-mom.jpg');
 
+insert into products values (default, 'bufanda tejida', 'Lana.', 'Lavar en lavarropas.', 'Bufanda tejida a mano.', 2000, 50, 1000, 12320, 1, 0, 1, 0, 0, 8, '/images/products/img-asdasd.jpg');
+insert into products values (default, 'Blusa floreada', 'Seda.', 'Lavar en lavarropas.', 'Blusa con patron de flores.', 30000, 0, 30000, 12321, 1, 1, 0, 0, 0, 1, '/images/products/img-blusa-floreada.webp');
+insert into products values (default, 'Body cutout', 'Lycra.', 'Lavar a mano.', 'Body cutout.', 30000, 0, 30000, 12321, 1, 1, 0, 0, 0, 1, '/images/products/img-body-cutout.jpg');
+
+insert into products values (default, 'Bolson', 'Cuero sintetico.', 'Lavar con pano humedo.', 'Bolson de cuero ecologico.', 50000, 50, 25000, 12002, 1, 0, 1, 0, 0, 6, '/images/products/img-bolson.jpg');
+insert into products values (default, 'Borcegos', 'Cuero sintetico.', 'Lavar con pano humedo.', 'Borcegos de cuero sintetico.', 50000, 50, 25000, 12002, 1, 0, 1, 0, 0, 5, '/images/products/img-borcegos.webp');
+
+insert into products values (default, 'Musculosa', 'Algodon.', 'Lavar a lavarropas.', 'Remera musculosa.', 30000, 0, 30000, 12321, 1, 1, 0, 0, 0, 1, '/images/products/img-musculosa-remera.png');
+
+insert into products values (default, 'Pantalon cargo.', 'Algodon.', 'Lavar con agua fria.', 'Pantalon cargo con muchos bolsillos.', 50000, 50, 25000, 12002, 1, 0, 1, 0, 0, 2, '/images/products/img-pantalon-cargo.jpeg');
+
+select * from products;
 
 -- product_size
 insert into product_size values (default, 1, 4);
@@ -87,7 +99,26 @@ insert into product_size values (default, 2, 4);
 insert into product_size values (default, 2, 5);
 insert into product_size values (default, 2, 6);
 insert into product_size values (default, 2, 7);
+insert into product_size values (default, 3, 10);
+insert into product_size values (default, 4, 5);
+insert into product_size values (default, 4, 6);
+insert into product_size values (default, 4, 7);
+insert into product_size values (default, 5, 5);
+insert into product_size values (default, 5, 6);
+insert into product_size values (default, 5, 7);
 
+insert into product_size values (default, 6, 10);
+insert into product_size values (default, 7, 5);
+insert into product_size values (default, 7, 6);
+insert into product_size values (default, 7, 7);
+
+insert into product_size values (default, 8, 5);
+insert into product_size values (default, 8, 6);
+insert into product_size values (default, 8, 7);
+
+insert into product_size values (default, 9, 5);
+insert into product_size values (default, 9, 6);
+insert into product_size values (default, 9, 7);
 
 -- product_color
 insert into product_color values (default, 1, 1);
@@ -95,6 +126,25 @@ insert into product_color values (default, 1, 18);
 insert into product_color values (default, 1, 12);
 insert into product_color values (default, 2, 15);
 insert into product_color values (default, 2, 2);
+insert into product_color values (default, 3, 1);
+insert into product_color values (default, 3, 18);
+insert into product_color values (default, 3, 12);
+insert into product_color values (default, 4, 1);
+insert into product_color values (default, 4, 18);
+insert into product_color values (default, 4, 12);
+insert into product_color values (default, 5, 1);
+insert into product_color values (default, 5, 18);
+insert into product_color values (default, 5, 12);
+insert into product_color values (default, 6, 1);
+insert into product_color values (default, 6, 18);
+insert into product_color values (default, 6, 12);
+insert into product_color values (default, 7, 1);
+insert into product_color values (default, 7, 18);
+insert into product_color values (default, 7, 12);
+insert into product_color values (default, 8, 15);
+insert into product_color values (default, 8, 2);
+insert into product_color values (default, 9, 15);
+insert into product_color values (default, 9, 2);
 
 
 

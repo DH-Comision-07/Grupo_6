@@ -22,7 +22,7 @@ const usersController = {
         if (user && user.username === input.username && user.email === input.email && bcrypt.compareSync(input.password, user.password)){
             // delete user.password;
             req.session.user = user
-            req.session.isLogged = true;
+            // req.session.isLogged = true;
 
             res.redirect("/");
         }
