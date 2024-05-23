@@ -87,8 +87,6 @@ insert into products values (default, 'Musculosa', 'Algodon.', 'Lavar a lavarrop
 
 insert into products values (default, 'Pantalon cargo.', 'Algodon.', 'Lavar con agua fria.', 'Pantalon cargo con muchos bolsillos.', 50000, 50, 25000, 12002, 1, 0, 1, 0, 0, 2, '/images/products/img-pantalon-cargo.jpeg');
 
-select * from products;
-
 -- product_size
 insert into product_size values (default, 1, 4);
 insert into product_size values (default, 1, 5);
