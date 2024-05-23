@@ -1,4 +1,4 @@
-let userService = require('../data/userService')
+let userService = require('../model/db/src/data/userService')
 
 async function userLoggedMid(req,res,next) {
     if (req.session.user != undefined) {

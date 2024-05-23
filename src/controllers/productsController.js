@@ -1,9 +1,9 @@
 
 // **SERVICES**
-let productService = require('../data/productService');
-let categoryService = require('../data/categoryService');
-let colorService = require('../data/colorService');
-let sizeService = require('../data/sizeService');
+let productService = require('../model/db/src/data/productService');
+let categoryService = require('../model/db/src/data/categoryService');
+let colorService = require('../model/db/src/data/colorService');
+let sizeService = require('../model/db/src/data/sizeService');
 
 
 
