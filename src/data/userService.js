@@ -80,7 +80,6 @@ let usersService = {
     // **EDITAR**
     update: async function(update, updateId) {
         
-        console.log(update)
 
         let updatedUser = {
             id: updateId,
