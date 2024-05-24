@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
     "expres": "^0.0.5",
     "express": "^4.19.2",
@@ -20,6 +21,8 @@
     "method": "^2.0.0",
     "method-override": "^3.0.0",
     "multer": "^1.4.5-lts.1",
-    "override": "^0.0.1"
+    "mysql2": "^3.9.7",
+    "override": "^0.0.1",
+    "sequelize": "^6.37.3"
   }
 }

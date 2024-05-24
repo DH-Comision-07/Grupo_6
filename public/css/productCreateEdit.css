@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 60%;
+    width: 90%;
 }
 .formulario__field {
     display: flex;
@@ -56,6 +56,13 @@
     display: grid;
     grid-template-rows: repeat(5,1fr);
     grid-auto-flow: column;
+}
+.checkbox-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    grid-auto-flow: row;
+    justify-content: space-around;
 }
 .formulario__checkbox {
     display: none;
@@ -97,4 +104,12 @@
 .formulario__boton:hover {
     background-color: var(--color-crema-oscuro);
     color: var(--color-negro);
-  }
+}
+
+
+@media (min-width: 1200px){
+    .formulario{
+        width: 60%;
+        gap: 50px;
+    }
+}

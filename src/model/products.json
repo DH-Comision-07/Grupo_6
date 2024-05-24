@@ -1,0 +1,277 @@
+[
+    {
+        "id": "2",
+        "name": "TOP CHALECO",
+        "description": "Chaleco corte top.",
+        "materials": "Algodon.",
+        "care": "Lavar a mano, evitar usar agua caliente.",
+        "category": "new-releases",
+        "colors": [
+            "rojo",
+            "azul",
+            "blanco"
+        ],
+        "sizes": [
+            "s",
+            "m",
+            "l",
+            "xl"
+        ],
+        "price": "25000",
+        "discount": "20",
+        "stock": "30",
+        "image": "/images/products/img-top-chaleco-1.png"
+    },
+    {
+        "id": 3,
+        "name": "VESTIDO CAMISERO",
+        "description": "Camisa onda vestido, perfecto para el verano.",
+        "materials": "Seda.",
+        "care": "Lavar en lavarropas.",
+        "category": "new-releases",
+        "colors": [
+            "rojo",
+            "azul",
+            "blanco",
+            "floreado"
+        ],
+        "sizes": [
+            "xs",
+            "s",
+            "m",
+            "l"
+        ],
+        "price": 30000,
+        "image": "/images/products/img-vestido-camisero.png",
+        "discount": 50,
+        "stock": 10
+    },
+    {
+        "id": "4",
+        "name": "VESTIDO LARGO",
+        "description": "Vestido largo.",
+        "materials": "Seda.",
+        "care": "Lavar en lavarropas.",
+        "category": "new-releases",
+        "colors": [
+            "rojo",
+            "azul",
+            "celeste"
+        ],
+        "sizes": [
+            "s",
+            "m"
+        ],
+        "price": "35000",
+        "discount": "10",
+        "stock": "2",
+        "image": "/images/products/img-vestido-largo.png"
+    },
+    {
+        "id": 5,
+        "name": "PANTALÓN CARGO",
+        "description": "Pantalón estilo cargo.",
+        "materials": "Algodon.",
+        "care": "Lavar a máquina.",
+        "category": "new-releases",
+        "colors": [
+            "verde",
+            "negro",
+            "caqui"
+        ],
+        "sizes": [
+            "s",
+            "m",
+            "l",
+            "xl"
+        ],
+        "price": 28000,
+        "image": "/images/products/img-pantalon-cargo.jpeg",
+        "discount": 15,
+        "stock": 25
+    },
+    {
+        "id": "6",
+        "name": "CAMPERA DE CUERO",
+        "description": "Campera de cuero genuino.",
+        "materials": "Cuero de vaca.",
+        "care": "Limpieza profesional.",
+        "category": "new-releases",
+        "colors": [
+            "rojo",
+            "negro"
+        ],
+        "sizes": [
+            "xl"
+        ],
+        "price": "70000",
+        "discount": "0",
+        "stock": "8",
+        "image": "/images/products/img-campera-cuero.jpg"
+    },
+    {
+        "id": "7",
+        "name": "BUFANDA TEJIDA",
+        "description": "Bufanda tejida a mano.",
+        "materials": "Lana de oveja.",
+        "care": "Lavar a mano con agua fría.",
+        "category": "new-releases",
+        "colors": [
+            "rojo",
+            "azul",
+            "blanco",
+            "gris",
+            "violeta"
+        ],
+        "sizes": [
+            "unico"
+        ],
+        "price": "15000",
+        "discount": "10",
+        "stock": "15",
+        "image": "/images/products/img-bufanda-tejida.jpg"
+    },
+    {
+        "id": 8,
+        "name": "GORRA ESTILO TRUCKER",
+        "description": "Gorra estilo trucker con estampado.",
+        "materials": "Algodón y malla.",
+        "care": "Lavar a mano.",
+        "category": "new-releases",
+        "colors": [
+            "negro",
+            "blanco",
+            "rojo",
+            "azul"
+        ],
+        "sizes": [
+            "única"
+        ],
+        "price": 18000,
+        "image": "/images/products/img-gorra-trucker.jpeg",
+        "discount": 0,
+        "stock": 20
+    },
+    {
+        "id": 11,
+        "name": "BLUSA FLOREADA",
+        "description": "Blusa con estampado floral.",
+        "materials": "Poliéster.",
+        "care": "Lavar a mano.",
+        "category": "on-sale",
+        "colors": [
+            "blanco",
+            "rosa",
+            "azul"
+        ],
+        "sizes": [
+            "xs",
+            "s",
+            "m",
+            "l"
+        ],
+        "price": 28000,
+        "image": "/images/products/img-blusa-floreada.webp",
+        "discount": 0,
+        "stock": 22
+    },
+    {
+        "id": 12,
+        "name": "MALLA FLOREADA",
+        "description": "Malla floreada de una pieza.",
+        "materials": "Microfibra.",
+        "care": "Lavar en lavarropas.",
+        "category": "new-releases",
+        "colors": [
+            "Verde/Negro",
+            "Azul/Rosa"
+        ],
+        "sizes": [
+            "xs",
+            "s",
+            "m",
+            "l",
+            "xl"
+        ],
+        "price": "10000",
+        "image": "/images/products/img-malla-floreada.jpg",
+        "discount": "10",
+        "stock": "90"
+    },
+    {
+        "id": 13,
+        "name": "BORCEGOS",
+        "description": "Borcegos de cuero ecologico.",
+        "materials": "Cuero sintetico ecologico.",
+        "care": "Lavar a mano.",
+        "category": "on-sale",
+        "colors": [
+            "Rojo",
+            "Marron",
+            "Negro",
+            "Blanco"
+        ],
+        "sizes": [
+            "37",
+            "38",
+            "39"
+        ],
+        "price": "25000",
+        "image": "/images/products/img-borcegos.webp",
+        "discount": "10",
+        "stock": "30"
+    },
+    {
+        "id": 14,
+        "name": "MOM JEAN",
+        "description": "Mom jean.",
+        "materials": "Algodon.",
+        "care": "Lavar a lavarropas.",
+        "category": "new-releases",
+        "colors": [
+            "azul"
+        ],
+        "sizes": [
+            "l"
+        ],
+        "price": "30000",
+        "image": "/images/products/img-mom-jean.jpg",
+        "discount": "20",
+        "stock": "20"
+    },
+    {
+        "id": 15,
+        "name": "BODY CUTOUT",
+        "description": "Body cutout.",
+        "materials": "Lycra.",
+        "care": "Lavar a lavarropas.",
+        "category": "on-sale",
+        "colors": [
+            "rojo",
+            "azul",
+            "blanco",
+            "negro",
+            "rosa",
+            "celeste",
+            "gris",
+            "amarillo",
+            "naranja",
+            "verde",
+            "lila",
+            "bordo"
+        ],
+        "sizes": [
+            "xxxs",
+            "xxs",
+            "s",
+            "m",
+            "l",
+            "xl",
+            "xxl"
+        ],
+        "price": "20000",
+        "image": "/images/products/img-body-cutout.jpg",
+        "discount": "10",
+        "stock": "4"
+    }
+]

@@ -129,6 +129,26 @@ button {
 
 
 
+.button {
+  outline: none;
+  border: none;
+  background-color: var(--color-negro);
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 10px;
+  display: block;
+  margin: 10px;
+  transition: all 500ms;
+}
+.button:hover {
+  background-color: var(--color-crema-claro);
+  color: var(--color-negro);
+  text-decoration: underline;
+}
 
 
 @media (min-width: 768px){

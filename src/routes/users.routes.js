@@ -33,7 +33,10 @@ const usersController = require('../controllers/usersController')
 router.get('/login', guestOnly, usersController.login);
 router.post('/login', guestOnly, usersController.checkLogin)
 
-router.get('/perfil/', usersController.profile)
+router.get('/perfil', usersController.profile)
+
+router.get('/:id/editar', loggedOnly, usersController.edit)
+router.post('/:id/editar', loggedOnly , usersController.storeEdit)
 
 router.get('/registro', guestOnly, usersController.register);
 router.post('/', guestOnly, uploadFile.single("avatar"), validateRegister, usersController.storeRegister);

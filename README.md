@@ -1,5 +1,17 @@
 # Grupo 6: "D&H"
 
+## SOBRE EL REPOSITORIO:
+
+· Se deberán instalar todas las dependencias desde la terminal bash con el comando 'npm install'.
+· Se deberá generar un archivo '.env' a nivel de raíz con las credenciales de la base de datos.
+· Se deberán ejecutar los archivos de 'src/data/schemas' de estructura y datos
+    ó
+    mediante migration seeders con los comandos:
+    sequelize db:create
+    sequelize db:migrate
+
+
+
 ## ACERCA DE NOSOTROS:
 
  Somos un e-commerce dedicado a la venta de indumentaria femenina. Le acercamos la posibilidad a nuestros clientes a lo largo de todo el pais de expresarse a si mismos a traves de la moda y el diseño mientras lo hacemos de una manera sustentable.

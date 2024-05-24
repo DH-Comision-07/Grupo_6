@@ -1,0 +1,150 @@
+[
+    {
+        "id": 1,
+        "firstName": "ada",
+        "lastName": "wong",
+        "username": "adawong123",
+        "email": "adawong@gmail.com",
+        "password": "$2a$12$O9DzwiJ4x1M.x563EHPWdeZwJIdNCMNgtiTJWNN5V3437Lh49twS6",
+        "type": "admin",
+        "avatar": "/images/users/img-adawong123.avif"
+    },
+    {
+        "id": 2,
+        "firstName": "agent",
+        "lastName": "agent",
+        "username": "agentresident",
+        "email": "agent@resident.com",
+        "password": "$2a$12$0i3NTcmMj0MQzvtrF6aLuOU0g/L/6eE/1jCNEo4QPiKxv/bw.7fE.",
+        "type": "costumer",
+        "avatar": "/images/users/img-agentresident.jfif"
+    },
+    {
+        "id": 3,
+        "firstName": "leon",
+        "lastName": "kennedy",
+        "username": "leon-keneddy",
+        "email": "residentevil@gmail.com",
+        "password": "$2a$12$gEVCtX0.fLxkO2.WHjHkyeZBH2SnN0cLS7ElJNvOO.Vz/OlMFXC6q",
+        "type": "costumer",
+        "avatar": "/images/users/img-leon-keneddy.webp"
+    },
+    {
+        "id": 4,
+        "firstName": "leon",
+        "lastName": "kennedy",
+        "username": "leliistyping",
+        "email": "ramirezleylen@gmail.com",
+        "password": "$2a$12$SHtZI86972ZYfyv9BwDnuuQcQF7/JXCUaEW4Cx5ySNdYpQiGpQSIq",
+        "type": "costumer",
+        "avatar": "/images/users/img-leliistyping.PNG"
+    },
+    {
+        "id": 5,
+        "firstName": "keanu",
+        "lastName": "reeves",
+        "username": "tinykeanu",
+        "email": "mail@gmail.com",
+        "password": "$2a$12$YnraI0tvny4q9dz2waTRXOKSKpI.aTnPBWrGawMUq6xmfMizN08Ge",
+        "type": "costumer",
+        "avatar": "/images/users/img-tinykeanu.jpg"
+    },
+    {
+        "id": 6,
+        "firstName": "sonia",
+        "lastName": "nevermind",
+        "username": "sonianevermind",
+        "email": "sonianevermind@gmail.com",
+        "password": "$2a$12$.gCMcryqFOgEw6.ADaErqeIo6AU2VKGUKIUYOOlE5a2VIZnUyWTZC",
+        "type": "costumer",
+        "avatar": "/images/users/img-sonianevermind.jpg"
+    },
+    {
+        "id": 7,
+        "firstName": "admin",
+        "lastName": "leli",
+        "username": "adminleli",
+        "email": "adminleli@gmail.com",
+        "password": "$2a$12$znNeEdZ3EapToj3torjIqerFelq804xoT33vRwMn0woMcC7KHQ5ja",
+        "type": "admin",
+        "avatar": "/images/users/img-adminleli.png"
+    },
+    {
+        "id": 8,
+        "firstName": "thomas",
+        "lastName": "shelby",
+        "username": "tshelby",
+        "email": "tshelby@gmail.com",
+        "password": "$2a$12$6t34AHK44VbehZrgyj..d.t4hT4NchlHopDPhyWdQ8pAFRbaL8hlm",
+        "type": "costumer",
+        "avatar": "/images/users/img-tshelby.png"
+    },
+    {
+        "id": 9,
+        "firstName": "neo",
+        "lastName": "anderson",
+        "username": "matrix",
+        "email": "elegido@gmail.com",
+        "password": "$2a$12$AiApVOQ69Re1IUA6Hwcuc.dgoqhzShgV3khKXAVSeLLc5lWXGQBvu",
+        "type": "costumer",
+        "avatar": "/images/users/img-matrix.png"
+    },
+    {
+        "id": 10,
+        "firstName": "gonza",
+        "lastName": "digital",
+        "username": "GonzaDH",
+        "email": "gonzadh@gmail.com",
+        "type": "admin",
+        "avatar": "/images/users/img-gonzadh.png"
+    },
+    {
+        "id": 11,
+        "firstName": "mate",
+        "lastName": "yerba",
+        "username": "matecito",
+        "email": "mate@gmail.com",
+        "type": "costumer",
+        "avatar": "/images/users/img-matecito.png"
+    },
+    {
+        "id": 12,
+        "firstName": "cafe",
+        "lastName": "amargo",
+        "username": "cafecito",
+        "email": "cafe@gmail.com",
+        "password": "$2a$12$qlw9YQpX14Yh2zQXoClgMO789kXXFFv0AvrzYwz7JlMb6sVrhqObu",
+        "type": "costumer",
+        "avatar": "/images/users/img-cafecito.png"
+    },
+    {
+        "id": 13,
+        "firstName": "tobi",
+        "lastName": "gomez",
+        "username": "tobigom",
+        "email": "tgom@gmail.com",
+        "password": "$2a$12$gjSZeyee1y2xukaZDxv47Osa3RrZw.spRjTTf4dXeu8NoBvG0Y772",
+        "type": "admin",
+        "avatar": "/images/users/img-tobigom.png"
+    },
+    {
+        "id": 14,
+        "firstName": "martin",
+        "lastName": "pescador",
+        "username": "PipoKPO",
+        "email": "mpesc@gmail.com",
+        "password": "$2a$12$fla6PdDVdzZHghXCurUtJe9V9lC6Su79dF0lEqGYcRMqizRdbHIu2",
+        "type": "costumer",
+        "avatar": "/images/users/default.png"
+    },
+    {
+        "id": 15,
+        "firstName": "admin",
+        "lastName": "admin",
+        "username": "admin",
+        "email": "admin@gmail.com",
+        "password": "$2a$12$tJmvDvMUJXmfqvCQQSg5q.k/RO2idvqv639kjAjSv6ffTtfEC7x1a",
+        "type": "admin",
+        "avatar": "/images/users/default.png"
+    }
+]
