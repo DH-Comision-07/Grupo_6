@@ -9,22 +9,25 @@
 </head>
 
 <body>
-  <%- include("../partials/header", {simplificarHeader: true}) %>
+  <%- include("../partials/header", {simplificarHeader: false}) %>
 
   <main>
     <section class="container_form">
       <h1 class="title">PERFIL DE USUARIO</h1>
 
       <div class="form_field">
-          <p><%= user.firstName %> <%= user.lastName %></p>
+          <p><%= user.name %> <%= user.lastname %></p>
       </div>
 
       <div class="form_field">
           <p> <%= user.email %> </p>
       </div>
       <div>
-        <img src="<%= user.avatar %>"></img>
+        <img src="<%= user.img_url %>"></img>
       </div>
+
+      <a href="/cuenta/<%= user.id %>/editar" class="button">EDITAR</a>
+      
 
     </section>
     

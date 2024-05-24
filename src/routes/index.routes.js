@@ -4,7 +4,7 @@ const routes = express.Router();
 
 
 // **SERVICE**
-const productService = require("../data/productService");
+const productService = require("../model/productService");
 
 
 

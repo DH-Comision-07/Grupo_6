@@ -7,13 +7,19 @@
         <article class="slider__articulo">
           <a href="/producto/detalle/<%= product.id %>" class="articulo__link">
             <div class="articulo__thumbnail">
-              <img class="thumbnail__imagen" src="<%= product.images[0].url %>" alt="" >
-             <p class="thumbnail__descuento">%<%= product.discount %> OFF</p>
+              <img class="thumbnail__imagen" src="<%= product.image_url %>" alt="" >
+              <% if (product.discount != 0) { %>
+                <p class="thumbnail__descuento">%<%= product.discount %> OFF</p>
+              <% } %>
+              
             </div>
 
             <h3 class="articulo__nombre"><%= product.name.toUpperCase() %></h3>
             <p class="articulo__precio-actual">$ <%= product.final_price %></p>
-            <p class="articulo__precio-original">$ <%= product.price %></p>
+            
+            <% if (product.discount != 0) { %>
+              <p class="articulo__precio-original">$ <%= product.price %></p>
+            <% } %>
           </a>
         </article>
             

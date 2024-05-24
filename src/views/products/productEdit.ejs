@@ -5,7 +5,7 @@
     <%- include("../partials/head") %>
 
         <link rel="stylesheet" href="/css/productCreateEdit.css">
-        <title>Nuevo Articulo</title>
+        <title>Editar Articulo</title>
 </head>
 
 <body>
@@ -13,87 +13,119 @@
     <%- include("../partials/header") %>
 
         <main>
-            <section class="contenedor-formulario">
+            <section class="contenedor-formulario"> 
                 <h1 class="titulo">EDITAR ARTICULO</h1>
+
                 <form action="/producto/detalle/<%= product.id %>?_method=put" method="POST" class="formulario" enctype="multipart/form-data">
+                    
                     <div class="formulario__field">
                         <label for="name">Nombre del producto</label>
-                        <input type="text" id="name" name="name" class="formulario__texto" required value="<%= product.name %>">
+                        <input type="text" id="name" name="name" class="formulario__texto" value="<%= product.name %>" required>
                     </div>
-                    <div class="formulario__field">
+        
+                    <div class="formulario__field">    
                         <label for="description">Descripción</label>
                         <textarea id="description" name="description" class="formulario__textarea" required><%= product.description %></textarea>
                     </div>
+        
                     <div class="formulario__field">
                         <label for="materials">Materiales</label>
-                        <textarea name="materials" id="materials" class="formulario__textarea"
-                            placeholder="Algodon, seda, spandex..." required><%= product.materials %></textarea>
+                        <textarea name="materials" id="materials" class="formulario__textarea" placeholder="Algodon, seda, spandex..." required><%= product.materials %></textarea>
                     </div>
+        
                     <div class="formulario__field">
                         <label for="care">Cuidados</label>
-                        <textarea name="care" id="care" class="formulario__textarea"
-                            placeholder="Lavar a mano, lavar con agua fria..." required><%= product.care %></textarea>
+                        <textarea name="care" id="care" class="formulario__textarea" placeholder="Lavar a mano, lavar con agua fria..." required><%= product.care %></textarea>
                     </div>
+        
                     <div class="formulario__field">
                         <label for="category">Categoria</label>
                         <select name="category" id="category">
-                            <option value="new-releases">Nuevos lanzamientos</option>
-                            <option value="on-sale">On sale</option>
+                            <% categories.forEach(category => { %>
+                                <option value="<%= category.id %>"
+                                <% if (product.category_id == category.id) { %>
+                                    selected="selected"
+                                <% } %>
+                                ><%= category.name.toUpperCase() %></option>
+                            <% }) %>
                         </select>
                     </div>
-                    <div class="formulario__field">
-                        <label for="image">Imagenes</label>
-                        <input type="file" id="image" name="image" class="formulario__imagenes">
-                    </div>
-                    
+        
                     <label>Colores</label> 
                     <section class="checkbox-flex">
-                    <% let colors = ['rojo', 'azul', 'marron', 'blanco', 'negro', 'beige', 'rosa', 'celeste', 'gris', 'amarillo', 'violeta', 'naranja', 'verde', 'lila', 'bordo'] %>
-                    <% colors.forEach(color => { %>
-                        <div class="formulario__field">
-
-                        <input class="formulario__checkbox" type="checkbox" name="colors" id=<%= color %> value=<%= color %>
-                        <% if (product.colors.includes(color)) { %>
-                             checked
-                        <% } %>
-                        >
-
-                        <label class="formulario__label" for=<%= color %>><%= color.toUpperCase() %></label>
-                        </div>
-                    <% }) %>
+                        <% let prodColors = product.colors.map(c => c.id) %>
+                        <% colors.forEach(color => { %>
+                            <div class="formulario__field">
+                                <input class="formulario__checkbox" type="checkbox" name="colors" id=<%= color.name %> value=<%= color.id %> 
+                                <% if (prodColors.includes(color.id)) { %>
+                                    checked
+                                <% } %>
+                                >
+                            <label class="formulario__label" for=<%= color.name %>><%= color.name.toUpperCase() %></label>
+                            </div>
+                        <% }) %>
                     </section> 
-
+        
+                    <!-- <div class="formulario__field">
+                        <label for="image">Imagen</label>
+                        <input type="file" id="image" name="image" class="formulario__imagenes" required>
+                    </div> -->
+        
                     <label>Talles</label> 
                     <section class="checkbox-flex">
-                    <% let sizes = ['xxxs', 'xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl', 'unico'] %>
-                    <% sizes.forEach(size => { %>
-                        <div class="formulario__field">
-                        <input class="formulario__checkbox" type="checkbox" name="sizes" id=<%= size %> value=<%= size %>
-                        <% if (product.sizes.includes(size)) { %>
-                            checked
-                       <% } %>
-                       >
-                        <label class="formulario__label" for=<%= size %>><%= size.toUpperCase() %></label>
-                        </div>
-                    <% }) %>
+                        <% let prodSizes = product.sizes.map(c => c.id) %>
+                        <% sizes.forEach(size => { %>
+                            <div class="formulario__field">
+                                <input class="formulario__checkbox" type="checkbox" name="sizes" id=<%= size.name %> value=<%= size.id %> 
+                                <% if (prodSizes.includes(size.id)) { %>
+                                    checked
+                                <% } %>
+                                >
+                            <label class="formulario__label" for=<%= size.name %>><%= size.name.toUpperCase() %></label>
+                            </div>
+                        <% }) %>
                     </section> 
-
+                      
                     <div class="formulario__field">
                         <label for="price">Precio</label>
-                        <input type="number" id="price" name="price" class="formulario__precio" step="50" min="0"
-                            required value="<%= product.price %>">
+                        <input type="number" id="price" name="price" class="formulario__precio" step="50" min="0" required value="<%= product.price %>">
                     </div>
+        
                     <div class="formulario__field">
                         <label for="discount">Descuento</label>
-                        <input type="number" id="discount" name="discount" class="formulario__precio" step="1" min="0"
-                            required value="<%= product.discount %>">
+                        <input type="number" id="discount" name="discount" class="formulario__precio" step="1" min="0" required value="<%= product.discount %>">
                     </div>
+        
                     <div class="formulario__field">
-                        <label for="stock">Stock</label>
-                        <input type="number" id="stock" name="stock" class="formulario__precio" step="1" min="0"
-                            required value="<%= product.stock %>">
+                        <label for="product_id">Codigo de producto</label>
+                        <input type="text" id="product_id" name="product_id" class="formulario__precio" required value="<%= product.product_id %>">
                     </div>
-                    <button class="formulario__boton" type="submit">Guardar</button>
+        
+                    <div class="formulario__field">
+                        <input class="formulario__checkbox" type="checkbox" name="visibility" id="visibility" 
+                        <% if (product.visibility == 1) { %>
+                            checked
+                        <% } %>
+                        >
+                        <label class="formulario__label" for="visibility">Hacer publico</label>
+                    </div>
+        
+                    <div class="formulario__field">
+                        <input class="formulario__checkbox" type="checkbox" name="new_release" id="new_release"
+                        <% if (product.new_release == 1) { %>
+                            checked
+                        <% } %>
+                        >
+                        <label class="formulario__label" for="new_release">Ultimo lanzamiento</label>
+                        <input class="formulario__checkbox" type="checkbox" name="on_sale" id="on_sale"
+                        <% if (product.on_sale == 1) { %>
+                            checked
+                        <% } %>
+                        >
+                        <label class="formulario__label" for="on_sale">On sale</label>
+                    </div>
+                    
+                    <button class="formulario__boton" type="submit">GUARDAR</button>
                 </form>
             </section>
         </main>

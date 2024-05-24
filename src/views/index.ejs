@@ -41,7 +41,7 @@
       <%- include("./partials/productSlider", {products: productsNew}) %>
     </section>
 
-    <% if (locals.user && locals.user.type == "admin") { %>
+    <% if (locals.user && locals.user.role_id == 1) { %>
       <section class="all-products">
         <a href="/producto" class="all-products__button">VER TODOS LOS PRODUCTOS</a>
       </section>
