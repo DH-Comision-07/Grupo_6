@@ -1,4 +1,4 @@
-const roleService = require('../model/db/src/data/roleService')
+const roleService = require('../model/roleService')
 
 async function adminOnly(req,res,next) {
     let adminId = await roleService.getBy("admin")

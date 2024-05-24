@@ -4,8 +4,8 @@ const {validationResult} = require("express-validator");
 
 
 // **SERVICE**
-let userService = require('../model/db/src/data/userService');
-let roleService = require('../model/db/src/data/roleService')
+let userService = require('../model/userService');
+let roleService = require('../model/roleService')
 
 
 
