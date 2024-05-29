@@ -15,7 +15,14 @@ let validateRegister = [
 
   check("email")
   .notEmpty().withMessage("Debe ingresar un mail.")
-  .isEmail().withMessage("Debe ingresar un mail valido"),
+  .isEmail().withMessage("Debe ingresar un mail valido")
+  .custom(async (value) => {
+    const user = await User.findOne({ email: value });
+    if (user) {
+      throw new Error('El correo electrónico ya está en uso');
+    }
+    return true;
+  }),
 
   check("password")
   .notEmpty().withMessage("Debe ingresar una contraseña.")
