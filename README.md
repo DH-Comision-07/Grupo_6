@@ -46,3 +46,7 @@ Mi nombre es Leylén, tengo 19 años y me gusta coser y tejer, así como el mode
 
 ### RODRIGO
 Mi nombre es Rodrigo Suárez tengo 27 años, me gustan los autos y la tecnología, soy de Argentina y estoy empezando en el mundo como desarrollador en Digital House en el curso de desarrollador web. Actualmente rindo las últimas materias de técnico superior en marketing, y actualmente trabajo en el área de ventas y marketing de redes en una empresa de software.
+
+### TOBIAS
+
+Mi nombre es Tobias Gomez, tengo 24 años, me gusta mucho los libros de novela negra y fantasia, como tambien el Handball. Soy de Argentina, Buenos Aires, y empece el mundo de desarrollador en Puerta 18 donde me dieron la posibilidad de realizar este curso en Digital House. Actualmente estoy trabajando en un Call Center, en atencion al cliente de una procesadora de pagos.
