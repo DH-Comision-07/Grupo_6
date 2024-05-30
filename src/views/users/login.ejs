@@ -15,8 +15,10 @@
     <section class="container_form">
       <h1 class="title">INGRESA A TU CUENTA</h1>
 
-      <% if (locals.error) { %>
-            <p class="error-message"><%= error %></p>
+      <% if (locals.errors) { %>
+        <% for (const property in errors) { %>
+            <p class="error-message"><%= errors[property].msg %></p>
+        <% } %>
       <% } %>
 
       <form action="/cuenta/login" method="post">
