@@ -37,6 +37,7 @@
   padding: 20px;
   color: var(--color-rojo);
   font-weight: bold;
+  margin:3px;
 }
 
 .container_form {
