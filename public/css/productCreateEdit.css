@@ -106,6 +106,14 @@
     color: var(--color-negro);
 }
 
+.error-message {
+    border: var(--color-rojo) solid 1px;
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--color-rojo);
+    font-weight: bold;
+    margin:3px;
+  }
 
 @media (min-width: 1200px){
     .formulario{

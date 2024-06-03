@@ -16,6 +16,12 @@
         <section class="contenedor-formulario">
             <h1 class="titulo">NUEVO ARTICULO</h1>  
             
+            <% if (locals.errors) { %>
+                <% for (const property in errors) { %>
+                    <p class="error-message"><%= errors[property].msg %></p>
+                <% } %>
+            <% } %>
+
             <form action="/producto" method="post" enctype="multipart/form-data" class="formulario">
             
             <div class="formulario__field">
