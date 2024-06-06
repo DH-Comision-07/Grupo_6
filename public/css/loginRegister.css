@@ -130,6 +130,13 @@ button {
 
 
 
+.validation {
+  color: var(--color-rojo);
+  display: none;
+}
+
+
+
 .button {
   outline: none;
   border: none;
