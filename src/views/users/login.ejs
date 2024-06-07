@@ -25,14 +25,17 @@
         <div class="form_field">
             <label for="email">Email</label>
             <input type="email" name="email" id="email"a value="<%= locals.old && old.email %>">
+            <small class="validation" id="valiemail"></small>
         </div>
         <div class="form_field">
           <label for="usename">Nombre de Usuario</label>
           <input type="text" name="username" id="username" value="<%= locals.old && old.username %>">
+          <small class="validation" id="valiuser"></small>
         </div>
         <div class="form_field">
             <label for="password">Contraseña</label>
             <input type="password" name="password" id="password"/>
+            <small class="validation" id="valipass"></small>
         </div>
         <div class="condiciones">
             <label for="recordar">
@@ -58,6 +61,8 @@
     
   
   <%- include("../partials/footer", {simplificarFooter: true}) %>
+
+  <script src="/js/validationLogin.js"></script>
       
 </body>
 
