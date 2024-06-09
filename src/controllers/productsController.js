@@ -69,9 +69,21 @@ const productsController = {
             sizes: await sizeService.getAll(),
     })},
 
-    update: (req,res) => {
-        productService.update(req.params.id, req.body, req.file);
-        res.redirect('/producto/detalle/'+req.params.id)
+    update: async function(req,res){
+        let errors = validationResult(req);
+        if(errors.isEmpty()){
+            productService.update(req.params.id, req.body, req.file);
+            res.redirect('/producto/detalle/'+req.params.id)
+        } else {
+            res.render("products/productEdit.ejs", {
+            errors: errors.mapped(), 
+            old: req.body,
+            product: await productService.getOneBy(req.params.id), 
+            categories: await categoryService.getAll(),
+            colors: await colorService.getAll(),
+            sizes: await sizeService.getAll(),
+        });
+        }
     },
 
 

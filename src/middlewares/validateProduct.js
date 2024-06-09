@@ -6,12 +6,12 @@ let validateProduct = [
   .notEmpty()
   .withMessage('El nombre no puede estar vacío')
   .isLength({min:5})
-  .withMessage('El nombre debe tener al menos 5 caracteres'),
+  .withMessage('El nombre debe tener mas de 5 caracteres'),
 
   check('description')
   .notEmpty()
   .isLength({min:20})
-  .withMessage('La descripción debe ser más larga'),
+  .withMessage('La descripción debe tener mas de 20 caracteres'),
   
   check('image')
   .custom((value, {req}) => {

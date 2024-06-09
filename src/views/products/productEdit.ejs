@@ -16,6 +16,12 @@
             <section class="contenedor-formulario"> 
                 <h1 class="titulo">EDITAR ARTICULO</h1>
 
+                <% if (locals.errors) { %>
+                    <% for (const property in errors) { %>
+                        <p class="error-message"><%= errors[property].msg %></p>
+                    <% } %>
+                <% } %>
+
                 <form action="/producto/detalle/<%= product.id %>?_method=put" method="POST" class="formulario" enctype="multipart/form-data">
                     
                     <div class="formulario__field">
@@ -66,10 +72,10 @@
                         <% }) %>
                     </section> 
         
-                    <!-- <div class="formulario__field">
+                    <div class="formulario__field">
                         <label for="image">Imagen</label>
                         <input type="file" id="image" name="image" class="formulario__imagenes" required>
-                    </div> -->
+                    </div>
         
                     <label>Talles</label> 
                     <section class="checkbox-flex">
