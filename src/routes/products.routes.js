@@ -36,7 +36,7 @@ router.get('/nuevo', adminOnly, productsController.create)
 router.post('/', adminOnly, uploadFile.single("image"), validateProduct, productsController.store)
 
 router.get('/:id/editar', adminOnly, productsController.edit)
-router.put('/detalle/:id', adminOnly,  uploadFile.single("image"), productsController.update)
+router.put('/detalle/:id', adminOnly,  uploadFile.single("image"), validateProduct, productsController.update)
 
 router.get('/carrito', loggedOnly, productsController.cart)
 

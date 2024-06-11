@@ -115,6 +115,11 @@
     margin:3px;
   }
 
+.validation {
+    color: var(--color-rojo);
+    display: none;
+}
+
 @media (min-width: 1200px){
     .formulario{
         width: 60%;
