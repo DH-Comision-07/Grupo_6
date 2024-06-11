@@ -5,10 +5,7 @@
 · Se deberán instalar todas las dependencias desde la terminal bash con el comando 'npm install'.
 · Se deberá generar un archivo '.env' a nivel de raíz con las credenciales de la base de datos.
 · Se deberán ejecutar los archivos de 'src/data/schemas' de estructura y datos
-    ó
-    mediante migration seeders con los comandos:
-    sequelize db:create
-    sequelize db:migrate
+· Iniciar el proyecto con 'npm start'
 
 
 
