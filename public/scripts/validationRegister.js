@@ -52,7 +52,7 @@ window.onload = () => {
     // AVATAR
     avatar.onchange = () => {
         valiAvatar.style.display = 'none'
-        let file = document.querySelector("#avatar").value
+        let file = avatar.value
         let ext = file.substring(file.lastIndexOf('.'),file.length)
         if(avatar.getAttribute('accept').split(',').indexOf(ext) < 0) {
             valiAvatar.style.display = 'block'

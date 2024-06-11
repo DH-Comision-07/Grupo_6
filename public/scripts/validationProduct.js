@@ -34,13 +34,13 @@ window.onload = () => {
   };
 
   // IMAGEN
-  // image.onchange = () => {
-  //     valiImg.style.display = 'none'
-  //     let file = document.querySelector("#image").value
-  //     let ext = file.substring(file.lastIndexOf('.'),file.length)
-  //     if(image.getAttribute('accept').split(',').indexOf(ext) < 0) {
-  //         valiImg.style.display = 'block'
-  //         valiImg.innerText = 'La imagen debe ser formato PNG, JPEG, JPG o GIF.'
-  //     }
-  // }
+  image.onchange = () => {
+      valiImg.style.display = 'none'
+      let file = document.querySelector("#image").value
+      let ext = file.substring(file.lastIndexOf('.'),file.length)
+      if(image.getAttribute('accept').split(',').indexOf(ext) < 0) {
+          valiImg.style.display = 'block'
+          valiImg.innerText = 'La imagen debe ser formato PNG, JPEG, JPG o GIF.'
+      }
+  }
 };
