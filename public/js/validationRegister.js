@@ -7,6 +7,8 @@ window.onload = () => {
     let valiLast = document.querySelector("#valilast")
     let username = document.querySelector("#username")
     let valiUser = document.querySelector("#valiuser")
+    let avatar = document.querySelector("#avatar")
+    let valiAvatar = document.querySelector("#valiava")
     let email = document.querySelector("#email")
     let valiEmail = document.querySelector("#valiemail")
     let password = document.querySelector("#password")
@@ -44,6 +46,17 @@ window.onload = () => {
         if(username.value.length < 5 || username.value.length > 15) {
             valiUser.style.display = 'block'
             valiUser.innerText = "El nombre de usuario debe tener entre 5 y 15 caracteres."
+        }
+    }
+
+    // AVATAR
+    avatar.onchange = () => {
+        valiAvatar.style.display = 'none'
+        let file = document.querySelector("#avatar").value
+        let ext = file.substring(file.lastIndexOf('.'),file.length)
+        if(avatar.getAttribute('accept').split(',').indexOf(ext) < 0) {
+            valiAvatar.style.display = 'block'
+            valiAvatar.innerText = 'La imagen debe ser formato PNG, JPEG, JPG o GIF.'
         }
     }
 
