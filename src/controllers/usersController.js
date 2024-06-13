@@ -16,21 +16,42 @@ const usersController = {
     login: (req,res) => res.render("users/login.ejs"),
 
     checkLogin: async function(req,res) {
-        let input = req.body;
-        let user = await userService.getByUsername(input.username);
+        // let input = req.body;
+        // let user = await userService.getByUsername(input.username);
 
-        if (user && user.username === input.username && user.email === input.email && bcrypt.compareSync(input.password, user.password)){
-            // delete user.password;
-            req.session.user = user
-            // req.session.isLogged = true;
+        // if (user && user.username === input.username && user.email === input.email && bcrypt.compareSync(input.password, user.password)){
+        //     req.session.user = user
 
-            res.redirect("/");
+        //     res.redirect("/");
+        // }
+        // else {
+        //     res.render("users/login", {
+        //         error: "Email, nombre de usuario o contraseña incorrectos.", 
+        //         old: req.body
+        //     })
+        // }
+        let errors = validationResult(req);
+        if(errors.isEmpty()){
+            let input = req.body;
+            let user = await userService.getByUsername(input.username);
+
+            if (user && user.username === input.username && user.email === input.email && bcrypt.compareSync(input.password, user.password)){
+                req.session.user = user
+
+                res.redirect("/");
+            }
+            else {
+                res.render("users/login", {
+                    error: "Email, nombre de usuario o contraseña incorrectos.", 
+                    old: req.body
+                })
+            }
         }
         else {
-            res.render("users/login", {
-                error: "Email, nombre de usuario o contraseña incorrectos.", 
+            res.render("users/login.ejs", {
+                errors: errors.mapped(), 
                 old: req.body
-            })
+            });
         }
     },
 

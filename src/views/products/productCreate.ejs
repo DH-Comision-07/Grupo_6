@@ -16,16 +16,24 @@
         <section class="contenedor-formulario">
             <h1 class="titulo">NUEVO ARTICULO</h1>  
             
+            <% if (locals.errors) { %>
+                <% for (const property in errors) { %>
+                    <p class="error-message"><%= errors[property].msg %></p>
+                <% } %>
+            <% } %>
+
             <form action="/producto" method="post" enctype="multipart/form-data" class="formulario">
             
             <div class="formulario__field">
                 <label for="name">Nombre del producto</label>
                 <input type="text" id="name" name="name" class="formulario__texto" required>
+                <small class="validation" id="valiname"></small>
             </div>
 
             <div class="formulario__field">    
                 <label for="description">Descripción</label>
                 <textarea id="description" name="description" class="formulario__textarea" required></textarea>
+                <small class="validation" id="validesc"></small>
             </div>
 
             <div class="formulario__field">
@@ -60,7 +68,8 @@
 
             <div class="formulario__field">
                 <label for="image">Imagen</label>
-                <input type="file" id="image" name="image" class="formulario__imagenes" required>
+                <input type="file" id="image" name="image" class="formulario__imagenes" accept=".jpg,.png,.jpeg,.gif" required>
+                <small class="validation" id="valiimg"></small>
             </div>
 
             <label>Talles</label> 
@@ -112,7 +121,9 @@
     </main>
 
     <%- include("../partials/footer") %>
-        
+
+    <script src="/scripts/validationProduct.js"></script>
+
 </body>
 
 </html>

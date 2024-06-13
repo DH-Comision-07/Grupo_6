@@ -19,7 +19,7 @@ const uploadFile = multer({storage: storage});
 const loggedOnly = require('../middlewares/loggedOnly');
 const guestOnly = require('../middlewares/guestOnly');
 const adminOnly = require('../middlewares/adminOnly');
-
+const validateProduct = require('../middlewares/validateProduct')
 
 
 // **CONTROLADOR**
@@ -33,10 +33,10 @@ router.get('/', adminOnly, productsController.index);
 router.get('/detalle/:id', productsController.detail)
 
 router.get('/nuevo', adminOnly, productsController.create)
-router.post('/', adminOnly, uploadFile.single("image"), productsController.store)
+router.post('/', adminOnly, uploadFile.single("image"), validateProduct, productsController.store)
 
 router.get('/:id/editar', adminOnly, productsController.edit)
-router.put('/detalle/:id', adminOnly,  uploadFile.single("image"), productsController.update)
+router.put('/detalle/:id', adminOnly,  uploadFile.single("image"), validateProduct, productsController.update)
 
 router.get('/carrito', loggedOnly, productsController.cart)
 

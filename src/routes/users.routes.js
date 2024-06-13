@@ -17,6 +17,7 @@ const storage = multer.diskStorage({
 const uploadFile = multer({storage: storage});
 
 const validateRegister = require("../middlewares/validateRegister")
+const validateLogin = require("../middlewares/validateLogin")
 
 const loggedOnly = require('../middlewares/loggedOnly');
 const guestOnly = require('../middlewares/guestOnly');
@@ -31,7 +32,7 @@ const usersController = require('../controllers/usersController')
 
 // **RUTAS**
 router.get('/login', guestOnly, usersController.login);
-router.post('/login', guestOnly, usersController.checkLogin)
+router.post('/login', guestOnly, validateLogin, usersController.checkLogin);
 
 router.get('/perfil', usersController.profile)
 

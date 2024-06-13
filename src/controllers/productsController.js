@@ -1,3 +1,4 @@
+const {validationResult} = require("express-validator");
 
 // **SERVICES**
 let productService = require('../model/productService');
@@ -39,9 +40,20 @@ const productsController = {
         }
     )}, 
 
-    store: (req,res) => {
-        productService.store(req.body, req.file);
-		res.redirect('/producto');
+    store: async function (req,res) {
+        let errors = validationResult(req);
+        if(errors.isEmpty()){
+            productService.store(req.body, req.file);
+		    res.redirect('/producto');
+        } else {
+            res.render("products/productCreate.ejs", {
+            errors: errors.mapped(), 
+            old: req.body,
+            categories: await categoryService.getAll(),
+            colors: await colorService.getAll(),
+            sizes: await sizeService.getAll(),
+        });
+    }
     },
     
     

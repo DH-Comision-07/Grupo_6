@@ -1,5 +1,16 @@
 # Retrospectiva de estrella
 
+# SPRINT 6
+
+**Más de:** hacer dailies, es fundamental las dailies no solo para complementar e informar el progeso, tambien nos sirvio para poder buscar segundas opiniones o ayuda en los demas. Tambien, debemos hacer mas de reuniones con dias fijos antes de las clases, que antes haciamos mucho y dejamos de hacer, eso nos servia para saber que nos faltaba, donde teniamos que focalizar mas la atencion y que cosas ya estaban realizadas. Y una practica, que arrancamos en el sprint anterior (que es muy importante), es la de revisar los ISSUES que puedan existir, ya sea en base a las correcciones que nos brindan los profesores, como tambien si encontramos algun bug nosotros
+
+**Seguir haciendo:** Mas retrospectivas, nos ayuda a enfocarnos en lo que estuvimos haciendo bien y mal, que nos falta para completar nuestro objetivos y que cosas puedan ayudar a mejorar a la hora de codear. Entre ellas, el PAIR PROGRAMMING que se estuvo realizando en este sprint, se nota mucho la eficacia no solo a la hora de codear, si no tambien en como salen las cosas mas rapido y mejores, es algo que debemos seguir haciendo. Y tambien, por ultimo pero no menos importante, seguir actualizando el tablero de trello, ya que es nuestra guia de lo que falta por hacer, de lo que tenemos que hacer, y demas.
+
+**Menos de:** LETTUCE MEET, no funciono como esperabamos, y no es tan rentable para ver y cargar la informacion de los horarios, es preferible organizar por WhatsApp en el cual con una simple encuesta ya organizamos para vernos y hacer la dailies.
+
+**Comenzar a hacer:** Revisiones de código detalladas grupales, creemos que es algo que nos puede ayudar un monton, aun no definimos como aplicarla, si al final del sprint donde con una final daily veamos el codigo nuevo que se implemento, que se hizo, porqué se hizo y demas, o la alternativa seria que lo hagamos segun vayamos haciendo PULL REQUEST a DEVELOP, en los cuales expliquemos lo dicho anteriormente.
+Tambien, algo importante para empezar a hacer, seria un log de dailies, el cual nos vamos a ir sorteando quien lo escriba, y digamos la fecha que fue esa daily, cuanto duro, que se hablo, que se determino.
+
 # SPRINT 4 
 
 Pair programming: Si bien pensamos que no es algo en lo que hayamos fallado en el anterior sprint sentimos que cuando lo aplicamos es cuando tenemos la mejor eficiencia y calidad de trabajo por lo que lo dejamos en el extremo de "HACER MAS DE" y nos permite tener reuniones mas largas que las daily y avanzar de forma conjunta en el proyecto.
