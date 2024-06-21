@@ -38,10 +38,12 @@ app.set("views", __dirname+"/views");
 const indexRouter = require('./routes/index.routes');
 const productRouter = require('./routes/products.routes');
 const userRouter = require('./routes/users.routes');
+const APIRouter = require('./routes/api.routes');
 
 app.use('/', indexRouter);
 app.use('/producto', productRouter);
 app.use('/cuenta', userRouter);
+app.use('/api', APIRouter);
 
 
 
