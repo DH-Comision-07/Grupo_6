@@ -73,6 +73,19 @@ let productService = {
         }
     },
 
+    getAmmPerCategory: async function(){
+        try {
+            let products = await db.Product.findAll()
+            let categories = await db.Category.findAll()
+            let count = Object.fromEntries(categories.map(key => [key.name, products.filter(prod => prod.category_id === key.id).length ]));
+
+            return count
+
+        } catch(error) {
+            return error
+        }
+    },
+
 
 
     // **GUARDAR**

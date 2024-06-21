@@ -5,6 +5,8 @@ const path = require('path');
 
 // **BASE DE DATOS**
 const db = require('./models');
+const { Association } = require('sequelize');
+const { count } = require('console');
 
 
 

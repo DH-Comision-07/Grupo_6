@@ -21,6 +21,15 @@ const db = require('./models');
 let usersService = {
 
     // **GET**
+    getAll: async function(){
+        try {
+            return await db.User.findAll()
+        } catch(error) {
+            console.error(error)
+            return undefined
+        }
+    },
+
     getByUsername: async function(username) {
         try {
             return await db.User.findOne({
